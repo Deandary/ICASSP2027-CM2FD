@@ -401,24 +401,3 @@ Yafei Zhang, Lingqi Kong, Huafeng Li, and Jie Wen,
 “Weakly Supervised Visible-Infrared Person Re-Identification via Heterogeneous Expert Collaborative Consistency Learning,”
 in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), October 2025, pp. 12659–12669.
 
-
-
-## License
-
-A license has not yet been specified in the public repository.
-
-Before redistribution or commercial use, please add an explicit open-source license (for example, MIT, Apache-2.0, or another license compatible with all upstream code and datasets).
-
-Dataset licenses and usage agreements are controlled by the respective dataset owners.
-
----
-
-## Contact
-
-For questions, please open a GitHub issue in this repository:
-
-https://github.com/Deandary/ICASSP2027-CM2FD/issues
-
-Project page:
-
-https://github.com/Deandary/ICASSP2027-CM2FD
