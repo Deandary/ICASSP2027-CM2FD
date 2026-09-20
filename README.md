@@ -198,15 +198,6 @@ SYSU-MM01 contains visible and infrared images captured by multiple cameras and 
 Dataset information:  
 https://github.com/wuancong/SYSU-MM01
 
-### RegDB
-
-RegDB contains paired visible and thermal images and is commonly evaluated in two retrieval directions:
-
-- **Visible → Thermal**
-- **Thermal → Visible**
-
-Dataset information:  
-http://dm.dongguk.edu/link.html
 
 ### LLCM
 
@@ -231,10 +222,6 @@ A recommended data layout is:
 │   ├── cam5/
 │   ├── cam6/
 │   └── exp/
-├── RegDB/
-│   ├── idx/
-│   ├── Visible/
-│   └── Thermal/
 └── LLCM/
     ├── idx/
     ├── vis/
@@ -309,24 +296,7 @@ Or use the provided script after verifying its arguments:
 bash sysu.sh
 ```
 
-### RegDB
 
-RegDB is normally evaluated over multiple random trials. Example for Trial 1:
-
-```bash
-python main.py \
-  --dataset regdb \
-  --mode train \
-  --debug wsl \
-  --save-path regdb_cm2fd \
-  --arch resnet \
-  --trial 1 \
-  --stage1-epoch 50 \
-  --stage2-epoch 150 \
-  --milestones 50 70 \
-  --lr 0.00045 \
-  --device 0
-```
 
 A complete RegDB experiment should repeat the experiment across the required trials and report the averaged result according to the standard protocol.
 
@@ -348,43 +318,7 @@ python main.py \
   --device 0
 ```
 
-### Key Arguments
 
-| Argument | Description | Typical value |
-|---|---|---|
-| `--dataset` | Dataset name | `sysu`, `regdb`, `llcm` |
-| `--mode` | Run mode | `train`, `test` |
-| `--data-path` | Dataset root | `/path/to/datasets/` |
-| `--save-path` | Experiment output folder | `sysu_cm2fd` |
-| `--arch` | Backbone / architecture setting | `cssp`, `resnet` |
-| `--lr` | Initial learning rate | `3e-4`, RegDB `4.5e-4` |
-| `--weight-decay` | Weight decay | `5e-4` |
-| `--stage1-epoch` | Stage-1 training epochs | dataset dependent |
-| `--stage2-epoch` | Total stage-2 schedule | `150` |
-| `--milestones` | LR decay milestones | e.g. `30 70` |
-| `--batch-pidnum` | Identities per mini-batch | `8` |
-| `--pid-numsample` | Samples per identity | `4` |
-| `--temperature` | Softmax temperature | `3` |
-| `--sigma` | Momentum factor for memory update | `0.8` |
-| `--conf_filter_thresh` | Base confidence threshold | `0.3` |
-| `--diffusion_weight` | Feature denoising/diffusion loss weight | `0.25` |
-| `--cross_weight` | Cross-modality loss weight | `1.0` |
-| `--weak_weight` | Weak-supervision loss weight | `0.25` |
-| `--tri_weight` | Triplet-loss weight | `1.0` |
-| `--diffusion_timesteps` | Denoising / diffusion steps | `12` |
-| `--trial` | RegDB trial index | `1`–`10` |
-| `--search-mode` | SYSU evaluation mode | `all`, `indoor` |
-| `--gall-mode` | Gallery mode | `single`, `multi` |
-| `--test-mode` | Retrieval direction | e.g. `t2v` |
-| `--model-path` | Checkpoint to load | checkpoint path |
-
-To view all available parameters:
-
-```bash
-python main.py --help
-```
-
----
 
 ## Evaluation
 
@@ -423,22 +357,7 @@ python main.py \
   --device 0
 ```
 
-### RegDB
 
-Thermal → Visible:
-
-```bash
-python main.py \
-  --dataset regdb \
-  --mode test \
-  --arch resnet \
-  --trial 1 \
-  --test-mode t2v \
-  --model-path /path/to/checkpoint \
-  --device 0
-```
-
-If the dataloader/evaluation implementation provides the reverse direction, switch the corresponding `--test-mode` value according to the code.
 
 ### LLCM
 
@@ -507,95 +426,10 @@ The main script writes logs and model checkpoints under the experiment save dire
 
 ---
 
-## Results
 
-Pretrained checkpoints and final benchmark results will be released after the experimental version is finalized.
 
-### SYSU-MM01
 
-| Method | Setting | Rank-1 | Rank-10 | Rank-20 | mAP | mINP |
-|---|---|---:|---:|---:|---:|---:|
-| CM2FD | All-search / Single-shot | TBD | TBD | TBD | TBD | TBD |
-| CM2FD | Indoor-search / Single-shot | TBD | TBD | TBD | TBD | TBD |
 
-### RegDB
-
-| Method | Direction | Rank-1 | Rank-10 | Rank-20 | mAP | mINP |
-|---|---|---:|---:|---:|---:|---:|
-| CM2FD | Visible → Thermal | TBD | TBD | TBD | TBD | TBD |
-| CM2FD | Thermal → Visible | TBD | TBD | TBD | TBD | TBD |
-
-### LLCM
-
-| Method | Direction | Rank-1 | Rank-10 | Rank-20 | mAP | mINP |
-|---|---|---:|---:|---:|---:|---:|
-| CM2FD | Standard protocol | TBD | TBD | TBD | TBD | TBD |
-
-> To ensure a fair comparison, report results using the official dataset protocols and clearly specify search direction, gallery setting, random trial configuration, and whether results are averaged.
-
----
-
-## Reproducibility Checklist
-
-For a reproducible release, we recommend publishing the following together with the final code:
-
-- [x] Main training and evaluation entry
-- [x] Dependency file
-- [x] SYSU-MM01 preprocessing script
-- [x] Dataset-specific example scripts
-- [x] Framework figure
-- [ ] Complete model modules and task package
-- [ ] Exact environment lock file
-- [ ] Dataset path configuration example
-- [ ] Pretrained checkpoints
-- [ ] Final benchmark tables
-- [ ] RegDB 10-trial averaged results
-- [ ] Training curves / TensorBoard logs
-- [ ] Ablation-study configurations
-- [ ] Random seeds used for reported numbers
-- [ ] FLOPs / parameter count / inference speed
-- [ ] Paper / arXiv link
-- [ ] BibTeX citation
-- [ ] Open-source license
-
----
-
-## Acknowledgements
-
-This project is developed in the VI-ReID research ecosystem. We thank the authors of the following projects and papers for making their work publicly available:
-
-- **Weakly Supervised Visible-Infrared Person Re-Identification via Heterogeneous Expert Collaborative Consistency Learning (ICCV 2025)**  
-  https://github.com/KongLingqi2333/WSL-VIReID
-
-- **Prototype-Driven Multi-Feature Generation for Visible-Infrared Person Re-Identification (PDM)**  
-  https://github.com/mmunhappy/ICASSP2025-PDM
-
-- **Cross-Modal Re-ID Baseline / AGW-style VI-ReID codebase**  
-  https://github.com/mangye16/Cross-Modal-Re-ID-baseline
-
-- **LLCM / Diverse Embedding Expansion Network**  
-  https://github.com/ZYK100/LLCM
-
-If any part of this repository is adapted from an existing implementation, please also cite the corresponding original paper and repository.
-
----
-
-## Citation
-
-If this work is useful for your research, please consider citing the paper after the official bibliographic information is released.
-
-```bibtex
-@inproceedings{cm2fd,
-  title     = {Center-Masked Context Modeling and Feature Denoising for Weakly-Supervised Visible-Infrared Person Re-Identification},
-  author    = {TBD},
-  booktitle = {TBD},
-  year      = {TBD}
-}
-```
-
-> Replace the placeholder entry above with the official BibTeX after publication.
-
----
 
 ## License
 
