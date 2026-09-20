@@ -395,7 +395,11 @@ The main script writes logs and model checkpoints under the experiment save dire
 ---
 
 
+## Reference
 
+Yafei Zhang, Lingqi Kong, Huafeng Li, and Jie Wen,
+“Weakly Supervised Visible-Infrared Person Re-Identification via Heterogeneous Expert Collaborative Consistency Learning,”
+in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), October 2025, pp. 12659–12669.
 
 
 
