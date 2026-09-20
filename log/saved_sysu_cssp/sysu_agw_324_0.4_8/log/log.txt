@@ -1,0 +1,163 @@
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.4_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-24 19:52:58 | start phase1 from epoch 0
+Time: 2026-03-24 20:38:17 | phase 1 epoch 1; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 2.9999999999999997e-06
+r2r_id_loss: 5.90783;  i2i_id_loss: 5.8686967;  
+r2r_tri_loss: 0.30783397;  i2i_tri_loss: 0.25385964;  
+
+R1:0.0203;   R10:0.1637;  R20:0.2956;  mAP:0.0450;  mINP:0.0251
+                       Best_R1: 0.0203;    Best mAP: 0.0450
+=================================================
+Time: 2026-03-24 21:23:29 | phase 1 epoch 2; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 3.27e-05
+r2r_id_loss: 4.2491426;  i2i_id_loss: 3.9782686;  
+r2r_tri_loss: 0.15089884;  i2i_tri_loss: 0.101947986;  
+
+R1:0.1376;   R10:0.5213;  R20:0.6910;  mAP:0.1733;  mINP:0.1096
+                       Best_R1: 0.1376;    Best mAP: 0.1733
+=================================================
+Time: 2026-03-24 22:08:44 | phase 1 epoch 3; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 6.24e-05
+r2r_id_loss: 2.0333998;  i2i_id_loss: 1.670707;  
+r2r_tri_loss: 0.08180517;  i2i_tri_loss: 0.042798467;  
+
+R1:0.2024;   R10:0.6144;  R20:0.7746;  mAP:0.2244;  mINP:0.1364
+                       Best_R1: 0.2024;    Best mAP: 0.2244
+=================================================
+Time: 2026-03-24 22:53:52 | phase 1 epoch 4; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 9.209999999999999e-05
+r2r_id_loss: 1.0062662;  i2i_id_loss: 0.72911185;  
+r2r_tri_loss: 0.06202146;  i2i_tri_loss: 0.031152174;  
+
+R1:0.2329;   R10:0.6445;  R20:0.7871;  mAP:0.2537;  mINP:0.1607
+                       Best_R1: 0.2329;    Best mAP: 0.2537
+=================================================
+Time: 2026-03-24 23:38:32 | phase 1 epoch 5; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.00012179999999999999
+r2r_id_loss: 0.6604413;  i2i_id_loss: 0.46035537;  
+r2r_tri_loss: 0.055332694;  i2i_tri_loss: 0.02854421;  
+
+R1:0.2349;   R10:0.6359;  R20:0.7917;  mAP:0.2491;  mINP:0.1537
+                       Best_R1: 0.2349;    Best mAP: 0.2537
+=================================================
+Time: 2026-03-25 00:23:04 | phase 1 epoch 6; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0001515
+r2r_id_loss: 0.5543052;  i2i_id_loss: 0.37594947;  
+r2r_tri_loss: 0.056166515;  i2i_tri_loss: 0.02978004;  
+
+R1:0.2749;   R10:0.7013;  R20:0.8349;  mAP:0.2875;  mINP:0.1817
+                       Best_R1: 0.2749;    Best mAP: 0.2875
+=================================================
+Time: 2026-03-25 01:07:47 | phase 1 epoch 7; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.00018119999999999999
+r2r_id_loss: 0.49082208;  i2i_id_loss: 0.33931547;  
+r2r_tri_loss: 0.058790896;  i2i_tri_loss: 0.031698965;  
+
+R1:0.2499;   R10:0.6619;  R20:0.8035;  mAP:0.2595;  mINP:0.1562
+                       Best_R1: 0.2749;    Best mAP: 0.2875
+=================================================
+Time: 2026-03-25 01:52:15 | phase 1 epoch 8; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.00021089999999999998
+r2r_id_loss: 0.48407495;  i2i_id_loss: 0.32675365;  
+r2r_tri_loss: 0.061430752;  i2i_tri_loss: 0.032387927;  
+
+R1:0.2824;   R10:0.7009;  R20:0.8293;  mAP:0.2870;  mINP:0.1747
+                       Best_R1: 0.2824;    Best mAP: 0.2875
+=================================================
+Time: 2026-03-25 02:36:58 | phase 1 epoch 9; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0002406
+r2r_id_loss: 0.47788388;  i2i_id_loss: 0.31214604;  
+r2r_tri_loss: 0.066680476;  i2i_tri_loss: 0.036694914;  
+
+R1:0.2646;   R10:0.6747;  R20:0.8180;  mAP:0.2693;  mINP:0.1625
+                       Best_R1: 0.2824;    Best mAP: 0.2875
+=================================================
+Time: 2026-03-25 03:21:41 | phase 1 epoch 10; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.00027029999999999996
+r2r_id_loss: 0.44085926;  i2i_id_loss: 0.30611777;  
+r2r_tri_loss: 0.06771754;  i2i_tri_loss: 0.040405165;  
+
+R1:0.2930;   R10:0.6921;  R20:0.8250;  mAP:0.2877;  mINP:0.1704
+                       Best_R1: 0.2930;    Best mAP: 0.2877
+=================================================
+Time: 2026-03-25 04:06:23 | phase 1 epoch 11; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.45900896;  i2i_id_loss: 0.3023035;  
+r2r_tri_loss: 0.071710184;  i2i_tri_loss: 0.04423274;  
+
+R1:0.2872;   R10:0.6856;  R20:0.8092;  mAP:0.2861;  mINP:0.1722
+                       Best_R1: 0.2930;    Best mAP: 0.2877
+=================================================
+Time: 2026-03-25 04:51:06 | phase 1 epoch 12; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.40205553;  i2i_id_loss: 0.2754668;  
+r2r_tri_loss: 0.07136053;  i2i_tri_loss: 0.042171516;  
+
+R1:0.3148;   R10:0.7332;  R20:0.8541;  mAP:0.3173;  mINP:0.2040
+                       Best_R1: 0.3148;    Best mAP: 0.3173
+=================================================
+Time: 2026-03-25 05:35:50 | phase 1 epoch 13; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.3538501;  i2i_id_loss: 0.22178218;  
+r2r_tri_loss: 0.067530304;  i2i_tri_loss: 0.0392743;  
+
+R1:0.3110;   R10:0.7239;  R20:0.8432;  mAP:0.3090;  mINP:0.1877
+                       Best_R1: 0.3148;    Best mAP: 0.3173
+=================================================
+Time: 2026-03-25 06:20:31 | phase 1 epoch 14; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.33432618;  i2i_id_loss: 0.21097206;  
+r2r_tri_loss: 0.066529416;  i2i_tri_loss: 0.03923117;  
+
+R1:0.3249;   R10:0.7510;  R20:0.8607;  mAP:0.3239;  mINP:0.2016
+                       Best_R1: 0.3249;    Best mAP: 0.3239
+=================================================
+Time: 2026-03-25 07:05:10 | phase 1 epoch 15; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.3096356;  i2i_id_loss: 0.19335145;  
+r2r_tri_loss: 0.06401421;  i2i_tri_loss: 0.03604538;  
+
+R1:0.3489;   R10:0.7458;  R20:0.8587;  mAP:0.3400;  mINP:0.2126
+                       Best_R1: 0.3489;    Best mAP: 0.3400
+=================================================
+Time: 2026-03-25 07:49:39 | phase 1 epoch 16; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.2888649;  i2i_id_loss: 0.1793464;  
+r2r_tri_loss: 0.06263373;  i2i_tri_loss: 0.03611842;  
+
+R1:0.3192;   R10:0.7329;  R20:0.8534;  mAP:0.3167;  mINP:0.1946
+                       Best_R1: 0.3489;    Best mAP: 0.3400
+=================================================
+Time: 2026-03-25 08:34:07 | phase 1 epoch 17; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.27553612;  i2i_id_loss: 0.18218437;  
+r2r_tri_loss: 0.05959449;  i2i_tri_loss: 0.035119973;  
+
+R1:0.3063;   R10:0.6976;  R20:0.8175;  mAP:0.2959;  mINP:0.1743
+                       Best_R1: 0.3489;    Best mAP: 0.3400
+=================================================
+Time: 2026-03-25 09:18:32 | phase 1 epoch 18; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.26233563;  i2i_id_loss: 0.17572267;  
+r2r_tri_loss: 0.057741266;  i2i_tri_loss: 0.03291368;  
+
+R1:0.3546;   R10:0.7744;  R20:0.8809;  mAP:0.3525;  mINP:0.2264
+                       Best_R1: 0.3546;    Best mAP: 0.3525
+=================================================
+Time: 2026-03-25 10:02:21 | phase 1 epoch 19; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.23944987;  i2i_id_loss: 0.1541012;  
+r2r_tri_loss: 0.0548613;  i2i_tri_loss: 0.030623006;  
+
+R1:0.3505;   R10:0.7603;  R20:0.8653;  mAP:0.3436;  mINP:0.2171
+                       Best_R1: 0.3546;    Best mAP: 0.3525
+=================================================
+Time: 2026-03-25 10:46:31 | phase 1 epoch 20; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.4_8
+e_lr: 0.0003
+r2r_id_loss: 0.23590562;  i2i_id_loss: 0.15063152;  
+r2r_tri_loss: 0.05347467;  i2i_tri_loss: 0.030293202;  
+
+R1:0.3507;   R10:0.7586;  R20:0.8653;  mAP:0.3453;  mINP:0.2200
+                       Best_R1: 0.3546;    Best mAP: 0.3525
+=================================================
+Time: 2026-03-25 10:46:32 | start phase2 from epoch 0

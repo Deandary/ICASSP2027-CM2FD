@@ -1,0 +1,3098 @@
+/home/qsdeng/workdir/projects/gpu_l20_2/models/build_clip/clip.py:23: UserWarning: PyTorch version 1.7.1 or higher is recommended
+  warnings.warn("PyTorch version 1.7.1 or higher is recommended")
+make dir ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/log/ successful!
+make dir ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/ successful!
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.9_1', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+building sysu dataset ...
+loading sysu dataset ...
+valid model file not existed!
+from 0 epoch training
+Time: 2026-03-24 10:51:13 | start phase1 from epoch 0
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 0 (quantity priority) - Common: 0, Specific: 27, Remain: 1
+NaN batch count: 0
+Time: 2026-03-24 11:35:29 | phase 1 epoch 1; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-06
+r2r_id_loss: 5.9194617;  i2i_id_loss: 5.887443;  
+r2r_tri_loss: 0.68855315;  i2i_tri_loss: 0.56833386;  
+
+R1:0.0204;   R10:0.1630;  R20:0.2971;  mAP:0.0444;  mINP:0.0242
+                       Best_R1: 0.0204;    Best mAP: 0.0444
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 1 (quantity priority) - Common: 4, Specific: 85, Remain: 144
+NaN batch count: 0
+Time: 2026-03-24 12:22:59 | phase 1 epoch 2; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.27e-05
+r2r_id_loss: 4.374248;  i2i_id_loss: 4.0814524;  
+r2r_tri_loss: 0.35118517;  i2i_tri_loss: 0.24147466;  
+
+R1:0.1270;   R10:0.5103;  R20:0.6882;  mAP:0.1644;  mINP:0.1015
+                       Best_R1: 0.1270;    Best mAP: 0.1644
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 2 (quantity priority) - Common: 28, Specific: 58, Remain: 219
+NaN batch count: 0
+Time: 2026-03-24 13:10:48 | phase 1 epoch 3; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 6.24e-05
+r2r_id_loss: 2.130361;  i2i_id_loss: 1.7482896;  
+r2r_tri_loss: 0.1914363;  i2i_tri_loss: 0.103779174;  
+
+R1:0.1959;   R10:0.6154;  R20:0.7778;  mAP:0.2206;  mINP:0.1332
+                       Best_R1: 0.1959;    Best mAP: 0.2206
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 3 (quantity priority) - Common: 61, Specific: 40, Remain: 255
+NaN batch count: 0
+Time: 2026-03-24 13:58:07 | phase 1 epoch 4; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 9.209999999999999e-05
+r2r_id_loss: 1.0451667;  i2i_id_loss: 0.757534;  
+r2r_tri_loss: 0.13794997;  i2i_tri_loss: 0.070334665;  
+
+R1:0.2301;   R10:0.6342;  R20:0.7788;  mAP:0.2504;  mINP:0.1602
+                       Best_R1: 0.2301;    Best mAP: 0.2504
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 4 (quantity priority) - Common: 88, Specific: 28, Remain: 246
+NaN batch count: 0
+Time: 2026-03-24 14:31:43 | phase 1 epoch 5; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00012179999999999999
+r2r_id_loss: 0.6741354;  i2i_id_loss: 0.46883246;  
+r2r_tri_loss: 0.11767741;  i2i_tri_loss: 0.060377646;  
+
+R1:0.2396;   R10:0.6515;  R20:0.7891;  mAP:0.2574;  mINP:0.1592
+                       Best_R1: 0.2396;    Best mAP: 0.2574
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 5 (quantity priority) - Common: 82, Specific: 21, Remain: 273
+NaN batch count: 0
+Time: 2026-03-24 14:54:45 | phase 1 epoch 6; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0001515
+r2r_id_loss: 0.5526585;  i2i_id_loss: 0.37606275;  
+r2r_tri_loss: 0.11413182;  i2i_tri_loss: 0.059181828;  
+
+R1:0.2699;   R10:0.6903;  R20:0.8313;  mAP:0.2848;  mINP:0.1813
+                       Best_R1: 0.2699;    Best mAP: 0.2848
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 6 (quantity priority) - Common: 102, Specific: 21, Remain: 243
+NaN batch count: 0
+Time: 2026-03-24 15:17:47 | phase 1 epoch 7; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00018119999999999999
+r2r_id_loss: 0.4867477;  i2i_id_loss: 0.34951922;  
+r2r_tri_loss: 0.11752069;  i2i_tri_loss: 0.06373128;  
+
+R1:0.2668;   R10:0.6693;  R20:0.8066;  mAP:0.2728;  mINP:0.1638
+                       Best_R1: 0.2699;    Best mAP: 0.2848
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 7 (quantity priority) - Common: 93, Specific: 24, Remain: 257
+NaN batch count: 0
+Time: 2026-03-24 15:46:40 | phase 1 epoch 8; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00021089999999999998
+r2r_id_loss: 0.47892356;  i2i_id_loss: 0.33343947;  
+r2r_tri_loss: 0.11848492;  i2i_tri_loss: 0.061472576;  
+
+R1:0.3050;   R10:0.7099;  R20:0.8402;  mAP:0.3069;  mINP:0.1921
+                       Best_R1: 0.3050;    Best mAP: 0.3069
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 8 (quantity priority) - Common: 94, Specific: 24, Remain: 247
+NaN batch count: 0
+Time: 2026-03-24 16:33:36 | phase 1 epoch 9; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0002406
+r2r_id_loss: 0.48092744;  i2i_id_loss: 0.32095507;  
+r2r_tri_loss: 0.12719007;  i2i_tri_loss: 0.069182;  
+
+R1:0.2737;   R10:0.6992;  R20:0.8225;  mAP:0.2825;  mINP:0.1715
+                       Best_R1: 0.3050;    Best mAP: 0.3069
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 9 (quantity priority) - Common: 85, Specific: 25, Remain: 271
+NaN batch count: 0
+Time: 2026-03-24 17:20:46 | phase 1 epoch 10; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00027029999999999996
+r2r_id_loss: 0.43828824;  i2i_id_loss: 0.29289973;  
+r2r_tri_loss: 0.12810084;  i2i_tri_loss: 0.07013445;  
+
+R1:0.3189;   R10:0.7502;  R20:0.8640;  mAP:0.3180;  mINP:0.1943
+                       Best_R1: 0.3189;    Best mAP: 0.3180
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 10 (quantity priority) - Common: 106, Specific: 24, Remain: 244
+NaN batch count: 0
+Time: 2026-03-24 18:07:54 | phase 1 epoch 11; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.45697346;  i2i_id_loss: 0.31944463;  
+r2r_tri_loss: 0.13144298;  i2i_tri_loss: 0.07732174;  
+
+R1:0.2930;   R10:0.6807;  R20:0.7974;  mAP:0.2907;  mINP:0.1786
+                       Best_R1: 0.3189;    Best mAP: 0.3180
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 11 (quantity priority) - Common: 86, Specific: 28, Remain: 248
+NaN batch count: 0
+Time: 2026-03-24 18:54:41 | phase 1 epoch 12; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.3971472;  i2i_id_loss: 0.27279168;  
+r2r_tri_loss: 0.12895668;  i2i_tri_loss: 0.069252364;  
+
+R1:0.3286;   R10:0.7179;  R20:0.8377;  mAP:0.3240;  mINP:0.2056
+                       Best_R1: 0.3286;    Best mAP: 0.3240
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 12 (quantity priority) - Common: 126, Specific: 22, Remain: 223
+NaN batch count: 0
+Time: 2026-03-24 19:41:30 | phase 1 epoch 13; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.35986972;  i2i_id_loss: 0.22767077;  
+r2r_tri_loss: 0.121430784;  i2i_tri_loss: 0.063613415;  
+
+R1:0.3390;   R10:0.7645;  R20:0.8704;  mAP:0.3415;  mINP:0.2163
+                       Best_R1: 0.3390;    Best mAP: 0.3415
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 13 (quantity priority) - Common: 130, Specific: 15, Remain: 215
+NaN batch count: 0
+Time: 2026-03-24 20:27:52 | phase 1 epoch 14; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.32700735;  i2i_id_loss: 0.20015696;  
+r2r_tri_loss: 0.116876625;  i2i_tri_loss: 0.062157396;  
+
+R1:0.3208;   R10:0.7482;  R20:0.8651;  mAP:0.3207;  mINP:0.1973
+                       Best_R1: 0.3390;    Best mAP: 0.3415
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 14 (quantity priority) - Common: 118, Specific: 21, Remain: 234
+NaN batch count: 0
+Time: 2026-03-24 21:14:17 | phase 1 epoch 15; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.30510744;  i2i_id_loss: 0.19215213;  
+r2r_tri_loss: 0.11298858;  i2i_tri_loss: 0.057660263;  
+
+R1:0.3360;   R10:0.7567;  R20:0.8653;  mAP:0.3354;  mINP:0.2127
+                       Best_R1: 0.3390;    Best mAP: 0.3415
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 15 (quantity priority) - Common: 145, Specific: 19, Remain: 205
+NaN batch count: 0
+Time: 2026-03-24 22:00:38 | phase 1 epoch 16; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.2901404;  i2i_id_loss: 0.18331416;  
+r2r_tri_loss: 0.110135615;  i2i_tri_loss: 0.061665375;  
+
+R1:0.3388;   R10:0.7494;  R20:0.8637;  mAP:0.3338;  mINP:0.2083
+                       Best_R1: 0.3390;    Best mAP: 0.3415
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 16 (quantity priority) - Common: 126, Specific: 20, Remain: 223
+NaN batch count: 0
+Time: 2026-03-24 22:46:47 | phase 1 epoch 17; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.27586895;  i2i_id_loss: 0.17866163;  
+r2r_tri_loss: 0.104811884;  i2i_tri_loss: 0.059059605;  
+
+R1:0.3249;   R10:0.7126;  R20:0.8273;  mAP:0.3181;  mINP:0.1951
+                       Best_R1: 0.3390;    Best mAP: 0.3415
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 17 (quantity priority) - Common: 136, Specific: 12, Remain: 222
+NaN batch count: 0
+Time: 2026-03-24 23:32:36 | phase 1 epoch 18; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.265583;  i2i_id_loss: 0.17787644;  
+r2r_tri_loss: 0.10248814;  i2i_tri_loss: 0.054691035;  
+
+R1:0.3563;   R10:0.7674;  R20:0.8793;  mAP:0.3526;  mINP:0.2278
+                       Best_R1: 0.3563;    Best mAP: 0.3526
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 18 (quantity priority) - Common: 151, Specific: 12, Remain: 213
+NaN batch count: 0
+Time: 2026-03-25 00:18:16 | phase 1 epoch 19; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.247146;  i2i_id_loss: 0.1583684;  
+r2r_tri_loss: 0.095397286;  i2i_tri_loss: 0.052347887;  
+
+R1:0.3613;   R10:0.7565;  R20:0.8691;  mAP:0.3532;  mINP:0.2282
+                       Best_R1: 0.3613;    Best mAP: 0.3532
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 19 (quantity priority) - Common: 157, Specific: 9, Remain: 211
+NaN batch count: 0
+Time: 2026-03-25 01:03:43 | phase 1 epoch 20; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+r2r_id_loss: 0.23602208;  i2i_id_loss: 0.14986512;  
+r2r_tri_loss: 0.09243529;  i2i_tri_loss: 0.050521877;  
+
+R1:0.3709;   R10:0.7806;  R20:0.8846;  mAP:0.3668;  mINP:0.2387
+                       Best_R1: 0.3709;    Best mAP: 0.3668
+=================================================
+Time: 2026-03-25 01:03:44 | start phase2 from epoch 0
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 0 (quantity priority) - Common: 157, Specific: 15, Remain: 202
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_0.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_0.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_0.pth
+=================================================
+Epoch: 0;Time: 2026-03-25 01:51:35;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-06
+tri_loss_rgb: 0.04964255;  tri_loss_ir: 0.0694215;  
+r2i_cmo_loss: 3.3377354;  i2r_cmo_loss: 3.6564798;  
+r2r_id_loss: 0.20873713;  i2i_id_loss: 0.12512103;  
+rgb_cross_loss: 5.8449492;  ir_cross_loss: 5.8554397;  
+
+R1:0.4062;   R10:0.8107;  R20:0.9050;  mAP:0.4041;  mINP:0.2768
+                               Best_R1: 0.4062(epoch:1);    Best mAP: 0.4041(epoch:1);    Best mINP: 0.2768(epoch:1)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 1 (quantity priority) - Common: 194, Specific: 11, Remain: 174
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_1.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_1.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_1.pth
+=================================================
+Epoch: 1;Time: 2026-03-25 02:39:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.27e-05
+tri_loss_rgb: 0.037971966;  tri_loss_ir: 0.057574417;  
+r2i_cmo_loss: 1.963522;  i2r_cmo_loss: 2.1821544;  
+r2r_id_loss: 0.34442183;  i2i_id_loss: 0.19397067;  
+rgb_cross_loss: 3.6409278;  ir_cross_loss: 4.0695662;  
+
+R1:0.5026;   R10:0.9000;  R20:0.9653;  mAP:0.5222;  mINP:0.4115
+                               Best_R1: 0.5026(epoch:2);    Best mAP: 0.5222(epoch:2);    Best mINP: 0.4115(epoch:2)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 2 (quantity priority) - Common: 257, Specific: 9, Remain: 111
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_2.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_2.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_2.pth
+=================================================
+Epoch: 2;Time: 2026-03-25 03:27:07;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 6.24e-05
+tri_loss_rgb: 0.025996491;  tri_loss_ir: 0.038661677;  
+r2i_cmo_loss: 0.8336629;  i2r_cmo_loss: 0.94901955;  
+r2r_id_loss: 0.514044;  i2i_id_loss: 0.2750342;  
+rgb_cross_loss: 1.1967497;  ir_cross_loss: 1.2353987;  
+
+R1:0.5523;   R10:0.9200;  R20:0.9745;  mAP:0.5614;  mINP:0.4476
+                               Best_R1: 0.5523(epoch:3);    Best mAP: 0.5614(epoch:3);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels (quantity priority)
+Epoch 3 (quantity priority) - Common: 307, Specific: 3, Remain: 74
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_3.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_3.pth
+=================================================
+Epoch: 3;Time: 2026-03-25 04:14:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 9.209999999999999e-05
+tri_loss_rgb: 0.024231931;  tri_loss_ir: 0.031381484;  
+r2i_cmo_loss: 0.59528935;  i2r_cmo_loss: 0.71455556;  
+r2r_id_loss: 0.46807575;  i2i_id_loss: 0.2953434;  
+rgb_cross_loss: 0.47453526;  ir_cross_loss: 0.32135397;  
+
+R1:0.5660;   R10:0.9247;  R20:0.9749;  mAP:0.5677;  mINP:0.4445
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 4 (quality priority, conf_thresh=0.40) - Common: 325, Specific: 2, Remain: 55
+NaN batch count: 0
+=================================================
+Epoch: 4;Time: 2026-03-25 05:01:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00012179999999999999
+tri_loss_rgb: 0.02449355;  tri_loss_ir: 0.030480318;  
+r2i_cmo_loss: 0.53579307;  i2r_cmo_loss: 0.63437253;  
+r2r_id_loss: 0.44471428;  i2i_id_loss: 0.30613032;  
+rgb_cross_loss: 0.27745247;  ir_cross_loss: 0.17293411;  
+
+R1:0.5531;   R10:0.8962;  R20:0.9568;  mAP:0.5429;  mINP:0.4139
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 5 (quality priority, conf_thresh=0.40) - Common: 336, Specific: 3, Remain: 39
+NaN batch count: 0
+=================================================
+Epoch: 5;Time: 2026-03-25 05:49:02;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0001515
+tri_loss_rgb: 0.029560847;  tri_loss_ir: 0.03501639;  
+r2i_cmo_loss: 0.5323187;  i2r_cmo_loss: 0.62603325;  
+r2r_id_loss: 0.49131045;  i2i_id_loss: 0.33598548;  
+rgb_cross_loss: 0.2481101;  ir_cross_loss: 0.14443454;  
+
+R1:0.5476;   R10:0.9064;  R20:0.9648;  mAP:0.5426;  mINP:0.4121
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 6 (quality priority, conf_thresh=0.40) - Common: 348, Specific: 3, Remain: 28
+NaN batch count: 0
+=================================================
+Epoch: 6;Time: 2026-03-25 06:35:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00018119999999999999
+tri_loss_rgb: 0.035568982;  tri_loss_ir: 0.039881118;  
+r2i_cmo_loss: 0.5485017;  i2r_cmo_loss: 0.6294757;  
+r2r_id_loss: 0.5426511;  i2i_id_loss: 0.39144984;  
+rgb_cross_loss: 0.24991545;  ir_cross_loss: 0.15844394;  
+
+R1:0.5374;   R10:0.8989;  R20:0.9559;  mAP:0.5238;  mINP:0.3897
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 7 (quality priority, conf_thresh=0.40) - Common: 345, Specific: 2, Remain: 34
+NaN batch count: 0
+=================================================
+Epoch: 7;Time: 2026-03-25 07:21:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00021089999999999998
+tri_loss_rgb: 0.038502723;  tri_loss_ir: 0.043821625;  
+r2i_cmo_loss: 0.56598425;  i2r_cmo_loss: 0.64130145;  
+r2r_id_loss: 0.5905781;  i2i_id_loss: 0.41866878;  
+rgb_cross_loss: 0.24327116;  ir_cross_loss: 0.1622489;  
+
+R1:0.5212;   R10:0.8927;  R20:0.9527;  mAP:0.5069;  mINP:0.3669
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 8 (quality priority, conf_thresh=0.40) - Common: 350, Specific: 4, Remain: 25
+NaN batch count: 0
+=================================================
+Epoch: 8;Time: 2026-03-25 08:06:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0002406
+tri_loss_rgb: 0.041732445;  tri_loss_ir: 0.04720973;  
+r2i_cmo_loss: 0.5678448;  i2r_cmo_loss: 0.6389861;  
+r2r_id_loss: 0.6037395;  i2i_id_loss: 0.42660975;  
+rgb_cross_loss: 0.24428548;  ir_cross_loss: 0.15187152;  
+
+R1:0.4739;   R10:0.8725;  R20:0.9422;  mAP:0.4706;  mINP:0.3418
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 9 (quality priority, conf_thresh=0.40) - Common: 347, Specific: 2, Remain: 29
+NaN batch count: 0
+=================================================
+Epoch: 9;Time: 2026-03-25 08:50:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.00027029999999999996
+tri_loss_rgb: 0.049141753;  tri_loss_ir: 0.055670768;  
+r2i_cmo_loss: 0.59098315;  i2r_cmo_loss: 0.65471584;  
+r2r_id_loss: 0.652009;  i2i_id_loss: 0.46134168;  
+rgb_cross_loss: 0.27105498;  ir_cross_loss: 0.18011732;  
+
+R1:0.5018;   R10:0.8639;  R20:0.9339;  mAP:0.4838;  mINP:0.3466
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 10 (quality priority, conf_thresh=0.40) - Common: 346, Specific: 8, Remain: 30
+NaN batch count: 0
+=================================================
+Epoch: 10;Time: 2026-03-25 09:35:49;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.05341327;  tri_loss_ir: 0.059766427;  
+r2i_cmo_loss: 0.60400665;  i2r_cmo_loss: 0.66938543;  
+r2r_id_loss: 0.6839327;  i2i_id_loss: 0.4906974;  
+rgb_cross_loss: 0.30471677;  ir_cross_loss: 0.1938093;  
+
+R1:0.4814;   R10:0.8772;  R20:0.9457;  mAP:0.4619;  mINP:0.3173
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 11 (quality priority, conf_thresh=0.40) - Common: 347, Specific: 5, Remain: 34
+NaN batch count: 0
+=================================================
+Epoch: 11;Time: 2026-03-25 10:20:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.048957746;  tri_loss_ir: 0.05465645;  
+r2i_cmo_loss: 0.57141626;  i2r_cmo_loss: 0.63526386;  
+r2r_id_loss: 0.60194016;  i2i_id_loss: 0.44748878;  
+rgb_cross_loss: 0.23447147;  ir_cross_loss: 0.1661;  
+
+R1:0.5084;   R10:0.8747;  R20:0.9417;  mAP:0.4867;  mINP:0.3434
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 12 (quality priority, conf_thresh=0.40) - Common: 355, Specific: 2, Remain: 23
+NaN batch count: 0
+=================================================
+Epoch: 12;Time: 2026-03-25 11:04:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.049003717;  tri_loss_ir: 0.05422552;  
+r2i_cmo_loss: 0.5571985;  i2r_cmo_loss: 0.6187276;  
+r2r_id_loss: 0.5903317;  i2i_id_loss: 0.4177864;  
+rgb_cross_loss: 0.22134134;  ir_cross_loss: 0.14132583;  
+
+R1:0.4815;   R10:0.8505;  R20:0.9287;  mAP:0.4611;  mINP:0.3225
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 13 (quality priority, conf_thresh=0.40) - Common: 361, Specific: 6, Remain: 12
+NaN batch count: 0
+=================================================
+Epoch: 13;Time: 2026-03-25 11:49:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.049723916;  tri_loss_ir: 0.053999502;  
+r2i_cmo_loss: 0.54083896;  i2r_cmo_loss: 0.6012775;  
+r2r_id_loss: 0.5662893;  i2i_id_loss: 0.40643683;  
+rgb_cross_loss: 0.22592758;  ir_cross_loss: 0.13696261;  
+
+R1:0.5098;   R10:0.8795;  R20:0.9380;  mAP:0.4954;  mINP:0.3557
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 14 (quality priority, conf_thresh=0.40) - Common: 359, Specific: 3, Remain: 20
+NaN batch count: 0
+=================================================
+Epoch: 14;Time: 2026-03-25 12:33:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.046299413;  tri_loss_ir: 0.050405007;  
+r2i_cmo_loss: 0.53763145;  i2r_cmo_loss: 0.59531665;  
+r2r_id_loss: 0.5556033;  i2i_id_loss: 0.40372464;  
+rgb_cross_loss: 0.20216617;  ir_cross_loss: 0.13680601;  
+
+R1:0.5120;   R10:0.8936;  R20:0.9540;  mAP:0.4942;  mINP:0.3536
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 15 (quality priority, conf_thresh=0.40) - Common: 359, Specific: 3, Remain: 21
+NaN batch count: 0
+=================================================
+Epoch: 15;Time: 2026-03-25 13:18:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.047951337;  tri_loss_ir: 0.05267182;  
+r2i_cmo_loss: 0.52701485;  i2r_cmo_loss: 0.5860437;  
+r2r_id_loss: 0.5547833;  i2i_id_loss: 0.3962458;  
+rgb_cross_loss: 0.20937653;  ir_cross_loss: 0.13457757;  
+
+R1:0.5467;   R10:0.9039;  R20:0.9576;  mAP:0.5189;  mINP:0.3673
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 16 (quality priority, conf_thresh=0.40) - Common: 361, Specific: 4, Remain: 21
+NaN batch count: 0
+=================================================
+Epoch: 16;Time: 2026-03-25 14:03:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.04941908;  tri_loss_ir: 0.053580634;  
+r2i_cmo_loss: 0.5201453;  i2r_cmo_loss: 0.5828985;  
+r2r_id_loss: 0.54301995;  i2i_id_loss: 0.3928633;  
+rgb_cross_loss: 0.20172091;  ir_cross_loss: 0.12715964;  
+
+R1:0.5137;   R10:0.8825;  R20:0.9457;  mAP:0.4933;  mINP:0.3501
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 17 (quality priority, conf_thresh=0.40) - Common: 365, Specific: 4, Remain: 16
+NaN batch count: 0
+=================================================
+Epoch: 17;Time: 2026-03-25 14:47:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.049127247;  tri_loss_ir: 0.05275947;  
+r2i_cmo_loss: 0.5246422;  i2r_cmo_loss: 0.57971215;  
+r2r_id_loss: 0.52910835;  i2i_id_loss: 0.4017741;  
+rgb_cross_loss: 0.19925942;  ir_cross_loss: 0.1377604;  
+
+R1:0.5069;   R10:0.8759;  R20:0.9477;  mAP:0.4839;  mINP:0.3381
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 18 (quality priority, conf_thresh=0.40) - Common: 370, Specific: 1, Remain: 12
+NaN batch count: 0
+=================================================
+Epoch: 18;Time: 2026-03-25 15:32:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.04508071;  tri_loss_ir: 0.04826566;  
+r2i_cmo_loss: 0.51082796;  i2r_cmo_loss: 0.5685274;  
+r2r_id_loss: 0.5128031;  i2i_id_loss: 0.36751932;  
+rgb_cross_loss: 0.18521248;  ir_cross_loss: 0.12178776;  
+
+R1:0.5358;   R10:0.8810;  R20:0.9452;  mAP:0.5093;  mINP:0.3659
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 19 (quality priority, conf_thresh=0.40) - Common: 371, Specific: 2, Remain: 11
+NaN batch count: 0
+=================================================
+Epoch: 19;Time: 2026-03-25 16:16:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.04677124;  tri_loss_ir: 0.050024338;  
+r2i_cmo_loss: 0.5050058;  i2r_cmo_loss: 0.5679281;  
+r2r_id_loss: 0.51245457;  i2i_id_loss: 0.37571007;  
+rgb_cross_loss: 0.17847805;  ir_cross_loss: 0.12305701;  
+
+R1:0.4952;   R10:0.8799;  R20:0.9479;  mAP:0.4810;  mINP:0.3414
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 20 (quality priority, conf_thresh=0.40) - Common: 366, Specific: 2, Remain: 14
+NaN batch count: 0
+=================================================
+Epoch: 20;Time: 2026-03-25 17:01:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.045124777;  tri_loss_ir: 0.048770618;  
+r2i_cmo_loss: 0.50550205;  i2r_cmo_loss: 0.56414336;  
+r2r_id_loss: 0.5182939;  i2i_id_loss: 0.3699041;  
+rgb_cross_loss: 0.18343148;  ir_cross_loss: 0.12053242;  
+
+R1:0.5259;   R10:0.9000;  R20:0.9606;  mAP:0.5003;  mINP:0.3470
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 21 (quality priority, conf_thresh=0.40) - Common: 375, Specific: 1, Remain: 8
+NaN batch count: 0
+=================================================
+Epoch: 21;Time: 2026-03-25 17:45:33;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.044929914;  tri_loss_ir: 0.04755799;  
+r2i_cmo_loss: 0.49982008;  i2r_cmo_loss: 0.5594835;  
+r2r_id_loss: 0.5000623;  i2i_id_loss: 0.37341374;  
+rgb_cross_loss: 0.18478584;  ir_cross_loss: 0.12710336;  
+
+R1:0.5116;   R10:0.8890;  R20:0.9549;  mAP:0.4909;  mINP:0.3479
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 22 (quality priority, conf_thresh=0.40) - Common: 373, Specific: 1, Remain: 10
+NaN batch count: 0
+=================================================
+Epoch: 22;Time: 2026-03-25 18:29:43;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.046503123;  tri_loss_ir: 0.049007;  
+r2i_cmo_loss: 0.48778844;  i2r_cmo_loss: 0.5538125;  
+r2r_id_loss: 0.5009486;  i2i_id_loss: 0.35639808;  
+rgb_cross_loss: 0.17499287;  ir_cross_loss: 0.11083257;  
+
+R1:0.5241;   R10:0.8943;  R20:0.9597;  mAP:0.5075;  mINP:0.3688
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 23 (quality priority, conf_thresh=0.40) - Common: 374, Specific: 2, Remain: 7
+NaN batch count: 0
+=================================================
+Epoch: 23;Time: 2026-03-25 19:13:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.045169838;  tri_loss_ir: 0.047356687;  
+r2i_cmo_loss: 0.49135453;  i2r_cmo_loss: 0.55218494;  
+r2r_id_loss: 0.49115694;  i2i_id_loss: 0.35110593;  
+rgb_cross_loss: 0.18157662;  ir_cross_loss: 0.11455882;  
+
+R1:0.5163;   R10:0.8845;  R20:0.9455;  mAP:0.4962;  mINP:0.3527
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 24 (quality priority, conf_thresh=0.40) - Common: 375, Specific: 1, Remain: 5
+NaN batch count: 0
+=================================================
+Epoch: 24;Time: 2026-03-25 19:58:32;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.04378899;  tri_loss_ir: 0.046100907;  
+r2i_cmo_loss: 0.4862461;  i2r_cmo_loss: 0.54207164;  
+r2r_id_loss: 0.47619238;  i2i_id_loss: 0.3533775;  
+rgb_cross_loss: 0.16555545;  ir_cross_loss: 0.107669055;  
+
+R1:0.5333;   R10:0.8854;  R20:0.9443;  mAP:0.5064;  mINP:0.3583
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 25 (quality priority, conf_thresh=0.40) - Common: 372, Specific: 0, Remain: 11
+NaN batch count: 0
+=================================================
+Epoch: 25;Time: 2026-03-25 20:42:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.04408198;  tri_loss_ir: 0.04645412;  
+r2i_cmo_loss: 0.4852155;  i2r_cmo_loss: 0.54656327;  
+r2r_id_loss: 0.48347515;  i2i_id_loss: 0.35677987;  
+rgb_cross_loss: 0.16480474;  ir_cross_loss: 0.11937612;  
+
+R1:0.5204;   R10:0.8870;  R20:0.9534;  mAP:0.5018;  mINP:0.3626
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 26 (quality priority, conf_thresh=0.40) - Common: 369, Specific: 2, Remain: 13
+NaN batch count: 0
+=================================================
+Epoch: 26;Time: 2026-03-25 21:27:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.043083917;  tri_loss_ir: 0.04622061;  
+r2i_cmo_loss: 0.4829534;  i2r_cmo_loss: 0.5443443;  
+r2r_id_loss: 0.477383;  i2i_id_loss: 0.34235752;  
+rgb_cross_loss: 0.16665143;  ir_cross_loss: 0.109468706;  
+
+R1:0.5514;   R10:0.9013;  R20:0.9564;  mAP:0.5263;  mINP:0.3808
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 27 (quality priority, conf_thresh=0.40) - Common: 374, Specific: 3, Remain: 7
+NaN batch count: 0
+=================================================
+Epoch: 27;Time: 2026-03-25 22:11:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.042096395;  tri_loss_ir: 0.04464324;  
+r2i_cmo_loss: 0.47184417;  i2r_cmo_loss: 0.53607637;  
+r2r_id_loss: 0.46400312;  i2i_id_loss: 0.33692923;  
+rgb_cross_loss: 0.16670668;  ir_cross_loss: 0.10334649;  
+
+R1:0.5431;   R10:0.8893;  R20:0.9521;  mAP:0.5181;  mINP:0.3765
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 28 (quality priority, conf_thresh=0.40) - Common: 374, Specific: 4, Remain: 6
+NaN batch count: 0
+=================================================
+Epoch: 28;Time: 2026-03-25 22:56:01;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.042476647;  tri_loss_ir: 0.045102347;  
+r2i_cmo_loss: 0.47850794;  i2r_cmo_loss: 0.535131;  
+r2r_id_loss: 0.4660458;  i2i_id_loss: 0.33484182;  
+rgb_cross_loss: 0.17308305;  ir_cross_loss: 0.098667175;  
+
+R1:0.5341;   R10:0.8830;  R20:0.9500;  mAP:0.5028;  mINP:0.3519
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 29 (quality priority, conf_thresh=0.40) - Common: 375, Specific: 4, Remain: 5
+NaN batch count: 0
+=================================================
+Epoch: 29;Time: 2026-03-25 23:40:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 0.0003
+tri_loss_rgb: 0.044858426;  tri_loss_ir: 0.04679566;  
+r2i_cmo_loss: 0.4800277;  i2r_cmo_loss: 0.5406216;  
+r2r_id_loss: 0.4691596;  i2i_id_loss: 0.34666854;  
+rgb_cross_loss: 0.16657692;  ir_cross_loss: 0.11030258;  
+
+R1:0.5464;   R10:0.8961;  R20:0.9586;  mAP:0.5210;  mINP:0.3753
+                               Best_R1: 0.5660(epoch:4);    Best mAP: 0.5677(epoch:4);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 30 (quality priority, conf_thresh=0.40) - Common: 373, Specific: 4, Remain: 8
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_30.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_30.pth
+=================================================
+Epoch: 30;Time: 2026-03-26 00:24:43;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.032855306;  tri_loss_ir: 0.034846336;  
+r2i_cmo_loss: 0.44334176;  i2r_cmo_loss: 0.49601164;  
+r2r_id_loss: 0.30047712;  i2i_id_loss: 0.2146925;  
+rgb_cross_loss: 0.09854971;  ir_cross_loss: 0.059391037;  
+weak_r2c_loss: 0.019226884;  
+R1:0.5975;   R10:0.9209;  R20:0.9705;  mAP:0.5712;  mINP:0.4300
+                               Best_R1: 0.5975(epoch:31);    Best mAP: 0.5712(epoch:31);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 31 (quality priority, conf_thresh=0.40) - Common: 378, Specific: 2, Remain: 5
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_31.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_31.pth
+=================================================
+Epoch: 31;Time: 2026-03-26 01:09:29;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.027766116;  tri_loss_ir: 0.029152043;  
+r2i_cmo_loss: 0.39032057;  i2r_cmo_loss: 0.44461313;  
+r2r_id_loss: 0.23845586;  i2i_id_loss: 0.17042977;  
+rgb_cross_loss: 0.061227553;  ir_cross_loss: 0.037588503;  
+weak_r2c_loss: 0.01910233;  
+R1:0.6069;   R10:0.9227;  R20:0.9704;  mAP:0.5825;  mINP:0.4432
+                               Best_R1: 0.6069(epoch:32);    Best mAP: 0.5825(epoch:32);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 32 (quality priority, conf_thresh=0.41) - Common: 379, Specific: 2, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_32.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_32.pth
+=================================================
+Epoch: 32;Time: 2026-03-26 01:53:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.0253417;  tri_loss_ir: 0.026407335;  
+r2i_cmo_loss: 0.3587004;  i2r_cmo_loss: 0.412596;  
+r2r_id_loss: 0.23376428;  i2i_id_loss: 0.16956213;  
+rgb_cross_loss: 0.05300973;  ir_cross_loss: 0.030885952;  
+weak_r2c_loss: 0.024212638;  
+R1:0.6177;   R10:0.9215;  R20:0.9702;  mAP:0.5876;  mINP:0.4461
+                               Best_R1: 0.6177(epoch:33);    Best mAP: 0.5876(epoch:33);    Best mINP: 0.4476(epoch:3)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 33 (quality priority, conf_thresh=0.41) - Common: 380, Specific: 2, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_33.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_33.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_33.pth
+=================================================
+Epoch: 33;Time: 2026-03-26 02:38:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.023452494;  tri_loss_ir: 0.02431397;  
+r2i_cmo_loss: 0.33746424;  i2r_cmo_loss: 0.38986355;  
+r2r_id_loss: 0.23308273;  i2i_id_loss: 0.17210458;  
+rgb_cross_loss: 0.049427856;  ir_cross_loss: 0.028578207;  
+weak_r2c_loss: 0.02476745;  
+R1:0.6197;   R10:0.9235;  R20:0.9702;  mAP:0.5909;  mINP:0.4506
+                               Best_R1: 0.6197(epoch:34);    Best mAP: 0.5909(epoch:34);    Best mINP: 0.4506(epoch:34)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 34 (quality priority, conf_thresh=0.42) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+=================================================
+Epoch: 34;Time: 2026-03-26 03:22:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.020975782;  tri_loss_ir: 0.02198391;  
+r2i_cmo_loss: 0.32313198;  i2r_cmo_loss: 0.37680358;  
+r2r_id_loss: 0.2278287;  i2i_id_loss: 0.16873892;  
+rgb_cross_loss: 0.043292753;  ir_cross_loss: 0.027579252;  
+weak_r2c_loss: 0.019330142;  
+R1:0.6174;   R10:0.9271;  R20:0.9732;  mAP:0.5897;  mINP:0.4494
+                               Best_R1: 0.6197(epoch:34);    Best mAP: 0.5909(epoch:34);    Best mINP: 0.4506(epoch:34)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 35 (quality priority, conf_thresh=0.42) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_35.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_35.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_35.pth
+=================================================
+Epoch: 35;Time: 2026-03-26 04:07:18;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.021163855;  tri_loss_ir: 0.02228895;  
+r2i_cmo_loss: 0.31323528;  i2r_cmo_loss: 0.36590713;  
+r2r_id_loss: 0.23583093;  i2i_id_loss: 0.17209089;  
+rgb_cross_loss: 0.04648217;  ir_cross_loss: 0.028265715;  
+weak_r2c_loss: 0.043941446;  
+R1:0.6238;   R10:0.9296;  R20:0.9730;  mAP:0.5980;  mINP:0.4587
+                               Best_R1: 0.6238(epoch:36);    Best mAP: 0.5980(epoch:36);    Best mINP: 0.4587(epoch:36)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 36 (quality priority, conf_thresh=0.43) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_36.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_36.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_36.pth
+=================================================
+Epoch: 36;Time: 2026-03-26 04:52:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.020090522;  tri_loss_ir: 0.020875895;  
+r2i_cmo_loss: 0.30552515;  i2r_cmo_loss: 0.360505;  
+r2r_id_loss: 0.22488625;  i2i_id_loss: 0.17002016;  
+rgb_cross_loss: 0.042736135;  ir_cross_loss: 0.027822653;  
+weak_r2c_loss: 0.01597174;  
+R1:0.6413;   R10:0.9283;  R20:0.9724;  mAP:0.6121;  mINP:0.4742
+                               Best_R1: 0.6413(epoch:37);    Best mAP: 0.6121(epoch:37);    Best mINP: 0.4742(epoch:37)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 37 (quality priority, conf_thresh=0.43) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_37.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_37.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_37.pth
+=================================================
+Epoch: 37;Time: 2026-03-26 05:36:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.018994255;  tri_loss_ir: 0.02010746;  
+r2i_cmo_loss: 0.29953483;  i2r_cmo_loss: 0.3541244;  
+r2r_id_loss: 0.22078614;  i2i_id_loss: 0.17128544;  
+rgb_cross_loss: 0.041264955;  ir_cross_loss: 0.02983913;  
+weak_r2c_loss: 0.031825475;  
+R1:0.6429;   R10:0.9303;  R20:0.9719;  mAP:0.6136;  mINP:0.4767
+                               Best_R1: 0.6429(epoch:38);    Best mAP: 0.6136(epoch:38);    Best mINP: 0.4767(epoch:38)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 38 (quality priority, conf_thresh=0.43) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_38.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_38.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_38.pth
+=================================================
+Epoch: 38;Time: 2026-03-26 06:20:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01860633;  tri_loss_ir: 0.01937252;  
+r2i_cmo_loss: 0.29599553;  i2r_cmo_loss: 0.3482581;  
+r2r_id_loss: 0.21978714;  i2i_id_loss: 0.17016377;  
+rgb_cross_loss: 0.041825783;  ir_cross_loss: 0.029968923;  
+weak_r2c_loss: 0.01977073;  
+R1:0.6509;   R10:0.9316;  R20:0.9738;  mAP:0.6228;  mINP:0.4878
+                               Best_R1: 0.6509(epoch:39);    Best mAP: 0.6228(epoch:39);    Best mINP: 0.4878(epoch:39)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 39 (quality priority, conf_thresh=0.44) - Common: 380, Specific: 2, Remain: 1
+NaN batch count: 0
+=================================================
+Epoch: 39;Time: 2026-03-26 07:05:02;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.017493809;  tri_loss_ir: 0.01875854;  
+r2i_cmo_loss: 0.29332957;  i2r_cmo_loss: 0.3436633;  
+r2r_id_loss: 0.21471371;  i2i_id_loss: 0.16328165;  
+rgb_cross_loss: 0.041;  ir_cross_loss: 0.028555254;  
+weak_r2c_loss: 0.020794028;  
+R1:0.6502;   R10:0.9307;  R20:0.9728;  mAP:0.6198;  mINP:0.4830
+                               Best_R1: 0.6509(epoch:39);    Best mAP: 0.6228(epoch:39);    Best mINP: 0.4878(epoch:39)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 40 (quality priority, conf_thresh=0.44) - Common: 381, Specific: 1, Remain: 0
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_40.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_40.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_40.pth
+=================================================
+Epoch: 40;Time: 2026-03-26 07:49:14;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.017252054;  tri_loss_ir: 0.017757881;  
+r2i_cmo_loss: 0.2892083;  i2r_cmo_loss: 0.33835;  
+r2r_id_loss: 0.21038471;  i2i_id_loss: 0.15911855;  
+rgb_cross_loss: 0.03979602;  ir_cross_loss: 0.028404623;  
+
+R1:0.6573;   R10:0.9300;  R20:0.9728;  mAP:0.6287;  mINP:0.4952
+                               Best_R1: 0.6573(epoch:41);    Best mAP: 0.6287(epoch:41);    Best mINP: 0.4952(epoch:41)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 41 (quality priority, conf_thresh=0.45) - Common: 381, Specific: 1, Remain: 1
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_41.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_41.pth
+=================================================
+Epoch: 41;Time: 2026-03-26 08:33:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01784859;  tri_loss_ir: 0.018803358;  
+r2i_cmo_loss: 0.2884544;  i2r_cmo_loss: 0.3377974;  
+r2r_id_loss: 0.21162637;  i2i_id_loss: 0.15946092;  
+rgb_cross_loss: 0.041911904;  ir_cross_loss: 0.027467316;  
+weak_r2c_loss: 0.0353108;  
+R1:0.6557;   R10:0.9310;  R20:0.9742;  mAP:0.6302;  mINP:0.4997
+                               Best_R1: 0.6573(epoch:41);    Best mAP: 0.6302(epoch:42);    Best mINP: 0.4997(epoch:42)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 42 (quality priority, conf_thresh=0.45) - Common: 380, Specific: 1, Remain: 3
+NaN batch count: 0
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_42.pth
+=================================================
+Epoch: 42;Time: 2026-03-26 09:18:37;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.016758362;  tri_loss_ir: 0.017286165;  
+r2i_cmo_loss: 0.2850619;  i2r_cmo_loss: 0.33373702;  
+r2r_id_loss: 0.21139899;  i2i_id_loss: 0.16231431;  
+rgb_cross_loss: 0.042234764;  ir_cross_loss: 0.030899066;  
+weak_r2c_loss: 0.0137984855;  
+R1:0.6547;   R10:0.9335;  R20:0.9741;  mAP:0.6296;  mINP:0.5001
+                               Best_R1: 0.6573(epoch:41);    Best mAP: 0.6302(epoch:42);    Best mINP: 0.5001(epoch:43)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 43 (quality priority, conf_thresh=0.46) - Common: 381, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_43.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_43.pth
+=================================================
+Epoch: 43;Time: 2026-03-26 10:02:47;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015684424;  tri_loss_ir: 0.016283687;  
+r2i_cmo_loss: 0.28280127;  i2r_cmo_loss: 0.33155155;  
+r2r_id_loss: 0.20363045;  i2i_id_loss: 0.15815844;  
+rgb_cross_loss: 0.04066324;  ir_cross_loss: 0.030067863;  
+weak_r2c_loss: 0.010972027;  
+R1:0.6553;   R10:0.9358;  R20:0.9769;  mAP:0.6326;  mINP:0.5043
+                               Best_R1: 0.6573(epoch:41);    Best mAP: 0.6326(epoch:44);    Best mINP: 0.5043(epoch:44)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 44 (quality priority, conf_thresh=0.46) - Common: 381, Specific: 1, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 44;Time: 2026-03-26 10:46:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.016088145;  tri_loss_ir: 0.016655715;  
+r2i_cmo_loss: 0.28139386;  i2r_cmo_loss: 0.32790232;  
+r2r_id_loss: 0.20349966;  i2i_id_loss: 0.1566147;  
+rgb_cross_loss: 0.04352395;  ir_cross_loss: 0.029544322;  
+weak_r2c_loss: 0.013572567;  
+R1:0.6552;   R10:0.9399;  R20:0.9788;  mAP:0.6325;  mINP:0.5029
+                               Best_R1: 0.6573(epoch:41);    Best mAP: 0.6326(epoch:44);    Best mINP: 0.5043(epoch:44)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 45 (quality priority, conf_thresh=0.46) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_45.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_45.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_45.pth
+=================================================
+Epoch: 45;Time: 2026-03-26 11:19:24;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01579759;  tri_loss_ir: 0.016442679;  
+r2i_cmo_loss: 0.2797894;  i2r_cmo_loss: 0.32552654;  
+r2r_id_loss: 0.20261729;  i2i_id_loss: 0.15341589;  
+rgb_cross_loss: 0.041939817;  ir_cross_loss: 0.028772116;  
+weak_r2c_loss: 0.008483684;  
+R1:0.6639;   R10:0.9414;  R20:0.9795;  mAP:0.6399;  mINP:0.5111
+                               Best_R1: 0.6639(epoch:46);    Best mAP: 0.6399(epoch:46);    Best mINP: 0.5111(epoch:46)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 46 (quality priority, conf_thresh=0.47) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_46.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_46.pth
+=================================================
+Epoch: 46;Time: 2026-03-26 11:40:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.016026195;  tri_loss_ir: 0.016616764;  
+r2i_cmo_loss: 0.27677754;  i2r_cmo_loss: 0.32329762;  
+r2r_id_loss: 0.19864197;  i2i_id_loss: 0.15309125;  
+rgb_cross_loss: 0.040976733;  ir_cross_loss: 0.0284927;  
+weak_r2c_loss: 0.011319031;  
+R1:0.6579;   R10:0.9379;  R20:0.9791;  mAP:0.6411;  mINP:0.5180
+                               Best_R1: 0.6639(epoch:46);    Best mAP: 0.6411(epoch:47);    Best mINP: 0.5180(epoch:47)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 47 (quality priority, conf_thresh=0.47) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_47.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_47.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_47.pth
+=================================================
+Epoch: 47;Time: 2026-03-26 12:02:32;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015314401;  tri_loss_ir: 0.015728539;  
+r2i_cmo_loss: 0.27558163;  i2r_cmo_loss: 0.31982422;  
+r2r_id_loss: 0.19525184;  i2i_id_loss: 0.15347388;  
+rgb_cross_loss: 0.038863257;  ir_cross_loss: 0.030096037;  
+weak_r2c_loss: 0.0071338606;  
+R1:0.6694;   R10:0.9424;  R20:0.9794;  mAP:0.6476;  mINP:0.5213
+                               Best_R1: 0.6694(epoch:48);    Best mAP: 0.6476(epoch:48);    Best mINP: 0.5213(epoch:48)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 48 (quality priority, conf_thresh=0.48) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 48;Time: 2026-03-26 12:24:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.014819682;  tri_loss_ir: 0.015250456;  
+r2i_cmo_loss: 0.2739178;  i2r_cmo_loss: 0.31661567;  
+r2r_id_loss: 0.19532108;  i2i_id_loss: 0.1492926;  
+rgb_cross_loss: 0.040300515;  ir_cross_loss: 0.029013695;  
+weak_r2c_loss: 0.0052963016;  
+R1:0.6660;   R10:0.9401;  R20:0.9778;  mAP:0.6426;  mINP:0.5133
+                               Best_R1: 0.6694(epoch:48);    Best mAP: 0.6476(epoch:48);    Best mINP: 0.5213(epoch:48)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 49 (quality priority, conf_thresh=0.48) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_49.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_49.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_49.pth
+=================================================
+Epoch: 49;Time: 2026-03-26 12:45:36;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.014389758;  tri_loss_ir: 0.014910005;  
+r2i_cmo_loss: 0.27285746;  i2r_cmo_loss: 0.3162916;  
+r2r_id_loss: 0.19496113;  i2i_id_loss: 0.15042494;  
+rgb_cross_loss: 0.040386155;  ir_cross_loss: 0.028684372;  
+weak_r2c_loss: 0.006533237;  
+R1:0.6709;   R10:0.9443;  R20:0.9813;  mAP:0.6514;  mINP:0.5258
+                               Best_R1: 0.6709(epoch:50);    Best mAP: 0.6514(epoch:50);    Best mINP: 0.5258(epoch:50)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 50 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 50;Time: 2026-03-26 13:07:06;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015071166;  tri_loss_ir: 0.015569015;  
+r2i_cmo_loss: 0.27129477;  i2r_cmo_loss: 0.3148621;  
+r2r_id_loss: 0.19175678;  i2i_id_loss: 0.15293916;  
+rgb_cross_loss: 0.03940726;  ir_cross_loss: 0.03061457;  
+weak_r2c_loss: 0.011554024;  
+R1:0.6691;   R10:0.9430;  R20:0.9796;  mAP:0.6488;  mINP:0.5228
+                               Best_R1: 0.6709(epoch:50);    Best mAP: 0.6514(epoch:50);    Best mINP: 0.5258(epoch:50)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 51 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_51.pth
+=================================================
+Epoch: 51;Time: 2026-03-26 13:28:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013591158;  tri_loss_ir: 0.013987942;  
+r2i_cmo_loss: 0.27003253;  i2r_cmo_loss: 0.31285608;  
+r2r_id_loss: 0.18827644;  i2i_id_loss: 0.14658228;  
+rgb_cross_loss: 0.03773415;  ir_cross_loss: 0.028015846;  
+weak_r2c_loss: 0.0069923024;  
+R1:0.6682;   R10:0.9445;  R20:0.9800;  mAP:0.6501;  mINP:0.5269
+                               Best_R1: 0.6709(epoch:50);    Best mAP: 0.6514(epoch:50);    Best mINP: 0.5269(epoch:52)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 52 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 52;Time: 2026-03-26 13:50:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.014008517;  tri_loss_ir: 0.014675827;  
+r2i_cmo_loss: 0.26714903;  i2r_cmo_loss: 0.31040183;  
+r2r_id_loss: 0.18719704;  i2i_id_loss: 0.14879005;  
+rgb_cross_loss: 0.037078436;  ir_cross_loss: 0.029513627;  
+weak_r2c_loss: 0.005401104;  
+R1:0.6651;   R10:0.9453;  R20:0.9821;  mAP:0.6464;  mINP:0.5214
+                               Best_R1: 0.6709(epoch:50);    Best mAP: 0.6514(epoch:50);    Best mINP: 0.5269(epoch:52)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 53 (quality priority, conf_thresh=0.50) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_53.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_53.pth
+=================================================
+Epoch: 53;Time: 2026-03-26 14:11:47;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013170982;  tri_loss_ir: 0.013653585;  
+r2i_cmo_loss: 0.26647654;  i2r_cmo_loss: 0.30564642;  
+r2r_id_loss: 0.18818122;  i2i_id_loss: 0.14267889;  
+rgb_cross_loss: 0.038733635;  ir_cross_loss: 0.027577832;  
+weak_r2c_loss: 0.005719268;  
+R1:0.6752;   R10:0.9460;  R20:0.9816;  mAP:0.6523;  mINP:0.5258
+                               Best_R1: 0.6752(epoch:54);    Best mAP: 0.6523(epoch:54);    Best mINP: 0.5269(epoch:52)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 54 (quality priority, conf_thresh=0.50) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 54;Time: 2026-03-26 14:33:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012323279;  tri_loss_ir: 0.012878122;  
+r2i_cmo_loss: 0.26510695;  i2r_cmo_loss: 0.30619016;  
+r2r_id_loss: 0.18494505;  i2i_id_loss: 0.14386429;  
+rgb_cross_loss: 0.03752362;  ir_cross_loss: 0.02773168;  
+weak_r2c_loss: 0.007285164;  
+R1:0.6713;   R10:0.9431;  R20:0.9790;  mAP:0.6493;  mINP:0.5230
+                               Best_R1: 0.6752(epoch:54);    Best mAP: 0.6523(epoch:54);    Best mINP: 0.5269(epoch:52)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 55 (quality priority, conf_thresh=0.51) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 55;Time: 2026-03-26 14:54:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.0131252585;  tri_loss_ir: 0.013605858;  
+r2i_cmo_loss: 0.26203316;  i2r_cmo_loss: 0.3055948;  
+r2r_id_loss: 0.1809725;  i2i_id_loss: 0.14036228;  
+rgb_cross_loss: 0.035917755;  ir_cross_loss: 0.026910836;  
+weak_r2c_loss: 0.008812851;  
+R1:0.6662;   R10:0.9446;  R20:0.9812;  mAP:0.6456;  mINP:0.5192
+                               Best_R1: 0.6752(epoch:54);    Best mAP: 0.6523(epoch:54);    Best mINP: 0.5269(epoch:52)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 56 (quality priority, conf_thresh=0.51) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_56.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_56.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_56.pth
+=================================================
+Epoch: 56;Time: 2026-03-26 15:16:29;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012825256;  tri_loss_ir: 0.013291385;  
+r2i_cmo_loss: 0.26129174;  i2r_cmo_loss: 0.30107003;  
+weak_r2c_loss: 0.0070353537;  r2r_id_loss: 0.18168059;  
+i2i_id_loss: 0.14068922;  rgb_cross_loss: 0.035183687;  
+ir_cross_loss: 0.026685461;  
+R1:0.6787;   R10:0.9462;  R20:0.9810;  mAP:0.6581;  mINP:0.5348
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 57 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 57;Time: 2026-03-26 15:38:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012888074;  tri_loss_ir: 0.013309193;  
+r2i_cmo_loss: 0.26041627;  i2r_cmo_loss: 0.29928905;  
+r2r_id_loss: 0.18082418;  i2i_id_loss: 0.14140315;  
+rgb_cross_loss: 0.037080996;  ir_cross_loss: 0.027823834;  
+weak_r2c_loss: 0.008758793;  
+R1:0.6691;   R10:0.9456;  R20:0.9813;  mAP:0.6490;  mINP:0.5251
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 58 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 58;Time: 2026-03-26 15:59:32;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012381253;  tri_loss_ir: 0.012976531;  
+r2i_cmo_loss: 0.25948492;  i2r_cmo_loss: 0.29749933;  
+r2r_id_loss: 0.18183221;  i2i_id_loss: 0.13853899;  
+rgb_cross_loss: 0.03786532;  ir_cross_loss: 0.025840646;  
+weak_r2c_loss: 0.0053301174;  
+R1:0.6733;   R10:0.9466;  R20:0.9805;  mAP:0.6542;  mINP:0.5296
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 59 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 59;Time: 2026-03-26 16:21:05;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012665381;  tri_loss_ir: 0.013163779;  
+r2i_cmo_loss: 0.25902656;  i2r_cmo_loss: 0.29748037;  
+r2r_id_loss: 0.1783017;  i2i_id_loss: 0.14057156;  
+rgb_cross_loss: 0.03638846;  ir_cross_loss: 0.02743165;  
+weak_r2c_loss: 0.004859879;  
+R1:0.6763;   R10:0.9426;  R20:0.9777;  mAP:0.6544;  mINP:0.5301
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 60 (quality priority, conf_thresh=0.53) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 60;Time: 2026-03-26 16:42:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011258165;  tri_loss_ir: 0.0116258785;  
+r2i_cmo_loss: 0.25643164;  i2r_cmo_loss: 0.29428357;  
+r2r_id_loss: 0.17238171;  i2i_id_loss: 0.13630384;  
+rgb_cross_loss: 0.035226274;  ir_cross_loss: 0.025237976;  
+weak_r2c_loss: 0.008115614;  
+R1:0.6697;   R10:0.9457;  R20:0.9812;  mAP:0.6519;  mINP:0.5284
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 61 (quality priority, conf_thresh=0.53) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 61;Time: 2026-03-26 17:04:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012067679;  tri_loss_ir: 0.01270621;  
+r2i_cmo_loss: 0.2554596;  i2r_cmo_loss: 0.2929178;  
+r2r_id_loss: 0.17729864;  i2i_id_loss: 0.13765565;  
+rgb_cross_loss: 0.036247537;  ir_cross_loss: 0.027068265;  
+weak_r2c_loss: 0.004081644;  
+R1:0.6725;   R10:0.9493;  R20:0.9819;  mAP:0.6529;  mINP:0.5283
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 62 (quality priority, conf_thresh=0.54) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 62;Time: 2026-03-26 17:25:44;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011734278;  tri_loss_ir: 0.012268609;  
+r2i_cmo_loss: 0.25555244;  i2r_cmo_loss: 0.29119208;  
+r2r_id_loss: 0.17542028;  i2i_id_loss: 0.13870053;  
+rgb_cross_loss: 0.035543542;  ir_cross_loss: 0.02683313;  
+weak_r2c_loss: 0.0043822615;  
+R1:0.6698;   R10:0.9472;  R20:0.9821;  mAP:0.6525;  mINP:0.5299
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6581(epoch:57);    Best mINP: 0.5348(epoch:57)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 63 (quality priority, conf_thresh=0.54) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_63.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_63.pth
+=================================================
+Epoch: 63;Time: 2026-03-26 17:47:18;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011453106;  tri_loss_ir: 0.011928466;  
+r2i_cmo_loss: 0.25398782;  i2r_cmo_loss: 0.29008466;  
+r2r_id_loss: 0.16971146;  i2i_id_loss: 0.13195123;  
+rgb_cross_loss: 0.034058537;  ir_cross_loss: 0.024082119;  
+weak_r2c_loss: 0.004843255;  
+R1:0.6763;   R10:0.9521;  R20:0.9845;  mAP:0.6600;  mINP:0.5368
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 64 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 64;Time: 2026-03-26 18:08:49;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011762281;  tri_loss_ir: 0.012184074;  
+r2i_cmo_loss: 0.25318792;  i2r_cmo_loss: 0.28741476;  
+r2r_id_loss: 0.1742964;  i2i_id_loss: 0.13700564;  
+rgb_cross_loss: 0.0362283;  ir_cross_loss: 0.02655203;  
+weak_r2c_loss: 0.006249119;  
+R1:0.6695;   R10:0.9459;  R20:0.9819;  mAP:0.6498;  mINP:0.5258
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 65 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 65;Time: 2026-03-26 18:30:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011051171;  tri_loss_ir: 0.011506042;  
+r2i_cmo_loss: 0.2513643;  i2r_cmo_loss: 0.28583434;  
+r2r_id_loss: 0.17011301;  i2i_id_loss: 0.1338313;  
+rgb_cross_loss: 0.034942847;  ir_cross_loss: 0.025823245;  
+weak_r2c_loss: 0.0038941554;  
+R1:0.6720;   R10:0.9463;  R20:0.9819;  mAP:0.6553;  mINP:0.5353
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 66 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 66;Time: 2026-03-26 18:51:51;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010838546;  tri_loss_ir: 0.0114101125;  
+r2i_cmo_loss: 0.24956813;  i2r_cmo_loss: 0.2882032;  
+weak_r2c_loss: 0.0072395187;  r2r_id_loss: 0.17126624;  
+i2i_id_loss: 0.13559805;  rgb_cross_loss: 0.036177043;  
+ir_cross_loss: 0.026476972;  
+R1:0.6700;   R10:0.9452;  R20:0.9801;  mAP:0.6510;  mINP:0.5285
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 67 (quality priority, conf_thresh=0.56) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 67;Time: 2026-03-26 19:13:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010726401;  tri_loss_ir: 0.011137004;  
+r2i_cmo_loss: 0.24947648;  i2r_cmo_loss: 0.28393978;  
+r2r_id_loss: 0.16545452;  i2i_id_loss: 0.1314951;  
+rgb_cross_loss: 0.032523673;  ir_cross_loss: 0.024907574;  
+weak_r2c_loss: 0.002897398;  
+R1:0.6745;   R10:0.9451;  R20:0.9814;  mAP:0.6556;  mINP:0.5352
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 68 (quality priority, conf_thresh=0.56) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 68;Time: 2026-03-26 19:34:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010457279;  tri_loss_ir: 0.01083507;  
+r2i_cmo_loss: 0.24820642;  i2r_cmo_loss: 0.2828286;  
+r2r_id_loss: 0.16954866;  i2i_id_loss: 0.13217577;  
+rgb_cross_loss: 0.034614816;  ir_cross_loss: 0.02622777;  
+weak_r2c_loss: 0.0038988562;  
+R1:0.6729;   R10:0.9483;  R20:0.9830;  mAP:0.6539;  mINP:0.5300
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 69 (quality priority, conf_thresh=0.57) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 69;Time: 2026-03-26 19:56:30;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010492491;  tri_loss_ir: 0.010922354;  
+r2i_cmo_loss: 0.24702251;  i2r_cmo_loss: 0.28401798;  
+r2r_id_loss: 0.16458482;  i2i_id_loss: 0.13283914;  
+rgb_cross_loss: 0.032866217;  ir_cross_loss: 0.026720418;  
+weak_r2c_loss: 0.0076402915;  
+R1:0.6748;   R10:0.9485;  R20:0.9825;  mAP:0.6552;  mINP:0.5323
+                               Best_R1: 0.6787(epoch:57);    Best mAP: 0.6600(epoch:64);    Best mINP: 0.5368(epoch:64)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 70 (quality priority, conf_thresh=0.40) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_70.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_70.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_70.pth
+=================================================
+Epoch: 70;Time: 2026-03-26 20:18:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.009638529;  tri_loss_ir: 0.009948661;  
+r2i_cmo_loss: 0.24442568;  i2r_cmo_loss: 0.27989632;  
+r2r_id_loss: 0.15712631;  i2i_id_loss: 0.12450912;  
+rgb_cross_loss: 0.031103037;  ir_cross_loss: 0.023282837;  
+weak_r2c_loss: 0.0056172526;  
+R1:0.6855;   R10:0.9493;  R20:0.9834;  mAP:0.6641;  mINP:0.5409
+                               Best_R1: 0.6855(epoch:71);    Best mAP: 0.6641(epoch:71);    Best mINP: 0.5409(epoch:71)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 71 (quality priority, conf_thresh=0.40) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_71.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_71.pth
+=================================================
+Epoch: 71;Time: 2026-03-26 20:39:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00983823;  tri_loss_ir: 0.010235957;  
+r2i_cmo_loss: 0.24308296;  i2r_cmo_loss: 0.27754653;  
+r2r_id_loss: 0.14841792;  i2i_id_loss: 0.117646284;  
+rgb_cross_loss: 0.027535113;  ir_cross_loss: 0.021815412;  
+weak_r2c_loss: 0.004452904;  
+R1:0.6846;   R10:0.9490;  R20:0.9829;  mAP:0.6653;  mINP:0.5451
+                               Best_R1: 0.6855(epoch:71);    Best mAP: 0.6653(epoch:72);    Best mINP: 0.5451(epoch:72)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 72 (quality priority, conf_thresh=0.41) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_72.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_72.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_72.pth
+=================================================
+Epoch: 72;Time: 2026-03-26 21:00:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.009643206;  tri_loss_ir: 0.010137432;  
+r2i_cmo_loss: 0.2404539;  i2r_cmo_loss: 0.27459034;  
+r2r_id_loss: 0.14344469;  i2i_id_loss: 0.11490332;  
+rgb_cross_loss: 0.02647352;  ir_cross_loss: 0.020749921;  
+weak_r2c_loss: 0.0071461163;  
+R1:0.6869;   R10:0.9507;  R20:0.9844;  mAP:0.6675;  mINP:0.5475
+                               Best_R1: 0.6869(epoch:73);    Best mAP: 0.6675(epoch:73);    Best mINP: 0.5475(epoch:73)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 73 (quality priority, conf_thresh=0.41) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_73.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_73.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_73.pth
+=================================================
+Epoch: 73;Time: 2026-03-26 21:22:26;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00969596;  tri_loss_ir: 0.009977868;  
+r2i_cmo_loss: 0.23996547;  i2r_cmo_loss: 0.27323934;  
+r2r_id_loss: 0.14253016;  i2i_id_loss: 0.11432455;  
+rgb_cross_loss: 0.025896229;  ir_cross_loss: 0.020120164;  
+weak_r2c_loss: 0.0042757345;  
+R1:0.6901;   R10:0.9515;  R20:0.9841;  mAP:0.6706;  mINP:0.5512
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6706(epoch:74);    Best mINP: 0.5512(epoch:74)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 74 (quality priority, conf_thresh=0.42) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 74;Time: 2026-03-26 21:43:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008960634;  tri_loss_ir: 0.009407214;  
+r2i_cmo_loss: 0.23874803;  i2r_cmo_loss: 0.26801568;  
+r2r_id_loss: 0.14378804;  i2i_id_loss: 0.11063474;  
+rgb_cross_loss: 0.025591936;  ir_cross_loss: 0.019517107;  
+weak_r2c_loss: 0.0027809145;  
+R1:0.6834;   R10:0.9491;  R20:0.9835;  mAP:0.6665;  mINP:0.5483
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6706(epoch:74);    Best mINP: 0.5512(epoch:74)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 75 (quality priority, conf_thresh=0.42) - Common: 382, Specific: 0, Remain: 4
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_75.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_75.pth
+=================================================
+Epoch: 75;Time: 2026-03-26 22:05:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008977296;  tri_loss_ir: 0.009297286;  
+r2i_cmo_loss: 0.23637126;  i2r_cmo_loss: 0.26991904;  
+r2r_id_loss: 0.1410818;  i2i_id_loss: 0.111367434;  
+rgb_cross_loss: 0.025095658;  ir_cross_loss: 0.019302193;  
+weak_r2c_loss: 0.008497025;  
+R1:0.6899;   R10:0.9522;  R20:0.9844;  mAP:0.6714;  mINP:0.5528
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 76 (quality priority, conf_thresh=0.42) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 76;Time: 2026-03-26 22:26:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.009002078;  tri_loss_ir: 0.00942118;  
+r2i_cmo_loss: 0.23541178;  i2r_cmo_loss: 0.26716578;  
+r2r_id_loss: 0.1394935;  i2i_id_loss: 0.114690356;  
+rgb_cross_loss: 0.024766864;  ir_cross_loss: 0.019886933;  
+weak_r2c_loss: 0.0033426979;  
+R1:0.6856;   R10:0.9501;  R20:0.9830;  mAP:0.6689;  mINP:0.5512
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 77 (quality priority, conf_thresh=0.43) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 77;Time: 2026-03-26 22:48:09;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008931088;  tri_loss_ir: 0.0092279045;  
+r2i_cmo_loss: 0.2339887;  i2r_cmo_loss: 0.26617917;  
+r2r_id_loss: 0.14071016;  i2i_id_loss: 0.11459503;  
+rgb_cross_loss: 0.025103403;  ir_cross_loss: 0.019784633;  
+weak_r2c_loss: 0.0046599843;  
+R1:0.6865;   R10:0.9501;  R20:0.9831;  mAP:0.6685;  mINP:0.5497
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 78 (quality priority, conf_thresh=0.43) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 78;Time: 2026-03-26 23:09:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.009228767;  tri_loss_ir: 0.009597943;  
+r2i_cmo_loss: 0.23338903;  i2r_cmo_loss: 0.26579916;  
+r2r_id_loss: 0.14459848;  i2i_id_loss: 0.114615485;  
+rgb_cross_loss: 0.025304712;  ir_cross_loss: 0.019388072;  
+weak_r2c_loss: 0.0034281872;  
+R1:0.6822;   R10:0.9487;  R20:0.9823;  mAP:0.6656;  mINP:0.5480
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 79 (quality priority, conf_thresh=0.43) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 79;Time: 2026-03-26 23:30:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.009073634;  tri_loss_ir: 0.0093108555;  
+r2i_cmo_loss: 0.2319625;  i2r_cmo_loss: 0.26452973;  
+r2r_id_loss: 0.14312433;  i2i_id_loss: 0.11279867;  
+rgb_cross_loss: 0.025019372;  ir_cross_loss: 0.019452415;  
+weak_r2c_loss: 0.0027765955;  
+R1:0.6837;   R10:0.9501;  R20:0.9827;  mAP:0.6659;  mINP:0.5474
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 80 (quality priority, conf_thresh=0.44) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 80;Time: 2026-03-26 23:52:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008374394;  tri_loss_ir: 0.008710914;  
+r2i_cmo_loss: 0.23174462;  i2r_cmo_loss: 0.2618947;  
+r2r_id_loss: 0.13936457;  i2i_id_loss: 0.11336995;  
+rgb_cross_loss: 0.023711013;  ir_cross_loss: 0.018890021;  
+weak_r2c_loss: 0.0041928007;  
+R1:0.6845;   R10:0.9462;  R20:0.9821;  mAP:0.6659;  mINP:0.5477
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 81 (quality priority, conf_thresh=0.44) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 81;Time: 2026-03-27 00:13:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008354472;  tri_loss_ir: 0.008692018;  
+r2i_cmo_loss: 0.22829343;  i2r_cmo_loss: 0.26338378;  
+r2r_id_loss: 0.1382974;  i2i_id_loss: 0.11523167;  
+rgb_cross_loss: 0.023636356;  ir_cross_loss: 0.019763816;  
+weak_r2c_loss: 0.003494499;  
+R1:0.6875;   R10:0.9484;  R20:0.9824;  mAP:0.6693;  mINP:0.5513
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 82 (quality priority, conf_thresh=0.45) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 82;Time: 2026-03-27 00:35:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008366583;  tri_loss_ir: 0.008726818;  
+r2i_cmo_loss: 0.22922565;  i2r_cmo_loss: 0.26086533;  
+weak_r2c_loss: 0.0026130863;  r2r_id_loss: 0.1400542;  
+i2i_id_loss: 0.11346608;  rgb_cross_loss: 0.02471406;  
+ir_cross_loss: 0.019071665;  
+R1:0.6853;   R10:0.9490;  R20:0.9828;  mAP:0.6677;  mINP:0.5495
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 83 (quality priority, conf_thresh=0.45) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 83;Time: 2026-03-27 00:56:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008976871;  tri_loss_ir: 0.009313102;  
+r2i_cmo_loss: 0.22835998;  i2r_cmo_loss: 0.26216322;  
+r2r_id_loss: 0.1411948;  i2i_id_loss: 0.115585975;  
+rgb_cross_loss: 0.024893235;  ir_cross_loss: 0.019866351;  
+weak_r2c_loss: 0.002317583;  
+R1:0.6864;   R10:0.9495;  R20:0.9819;  mAP:0.6679;  mINP:0.5499
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 84 (quality priority, conf_thresh=0.45) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 84;Time: 2026-03-27 01:18:18;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008503926;  tri_loss_ir: 0.008916255;  
+r2i_cmo_loss: 0.22801732;  i2r_cmo_loss: 0.25896433;  
+r2r_id_loss: 0.14198174;  i2i_id_loss: 0.11277477;  
+rgb_cross_loss: 0.025087496;  ir_cross_loss: 0.01916655;  
+weak_r2c_loss: 0.0045265798;  
+R1:0.6822;   R10:0.9510;  R20:0.9833;  mAP:0.6663;  mINP:0.5494
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 85 (quality priority, conf_thresh=0.46) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 85;Time: 2026-03-27 01:39:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008427824;  tri_loss_ir: 0.008722228;  
+r2i_cmo_loss: 0.22726604;  i2r_cmo_loss: 0.2582304;  
+r2r_id_loss: 0.14147739;  i2i_id_loss: 0.11262967;  
+rgb_cross_loss: 0.024054028;  ir_cross_loss: 0.018445855;  
+weak_r2c_loss: 0.013133538;  
+R1:0.6854;   R10:0.9491;  R20:0.9828;  mAP:0.6668;  mINP:0.5484
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 86 (quality priority, conf_thresh=0.46) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 86;Time: 2026-03-27 02:01:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008280569;  tri_loss_ir: 0.008450615;  
+r2i_cmo_loss: 0.22551233;  i2r_cmo_loss: 0.25849548;  
+r2r_id_loss: 0.13932443;  i2i_id_loss: 0.1136697;  
+rgb_cross_loss: 0.023681391;  ir_cross_loss: 0.01852428;  
+weak_r2c_loss: 0.0032328032;  
+R1:0.6845;   R10:0.9487;  R20:0.9828;  mAP:0.6672;  mINP:0.5489
+                               Best_R1: 0.6901(epoch:74);    Best mAP: 0.6714(epoch:76);    Best mINP: 0.5528(epoch:76)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 87 (quality priority, conf_thresh=0.46) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_87.pth
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_87.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_87.pth
+=================================================
+Epoch: 87;Time: 2026-03-27 02:22:49;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008133974;  tri_loss_ir: 0.008513671;  
+r2i_cmo_loss: 0.22700815;  i2r_cmo_loss: 0.25612766;  
+r2r_id_loss: 0.1386606;  i2i_id_loss: 0.11352104;  
+rgb_cross_loss: 0.023851776;  ir_cross_loss: 0.018882027;  
+weak_r2c_loss: 0.0042096237;  
+R1:0.6917;   R10:0.9525;  R20:0.9842;  mAP:0.6742;  mINP:0.5562
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5562(epoch:88)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 88 (quality priority, conf_thresh=0.47) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 88;Time: 2026-03-27 02:44:19;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0087025175;  tri_loss_ir: 0.0087120375;  
+r2i_cmo_loss: 0.22577628;  i2r_cmo_loss: 0.25536242;  
+r2r_id_loss: 0.14186485;  i2i_id_loss: 0.11271445;  
+rgb_cross_loss: 0.02491759;  ir_cross_loss: 0.018976463;  
+weak_r2c_loss: 0.002635045;  
+R1:0.6845;   R10:0.9496;  R20:0.9824;  mAP:0.6688;  mINP:0.5507
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5562(epoch:88)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 89 (quality priority, conf_thresh=0.47) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 89;Time: 2026-03-27 03:05:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008218498;  tri_loss_ir: 0.008552528;  
+r2i_cmo_loss: 0.22558679;  i2r_cmo_loss: 0.25528267;  
+r2r_id_loss: 0.14084965;  i2i_id_loss: 0.114466175;  
+rgb_cross_loss: 0.023601;  ir_cross_loss: 0.020020528;  
+weak_r2c_loss: 0.0028006805;  
+R1:0.6900;   R10:0.9515;  R20:0.9836;  mAP:0.6712;  mINP:0.5523
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5562(epoch:88)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 90 (quality priority, conf_thresh=0.48) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_90.pth
+=================================================
+Epoch: 90;Time: 2026-03-27 03:27:22;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008215421;  tri_loss_ir: 0.008488036;  
+r2i_cmo_loss: 0.22329989;  i2r_cmo_loss: 0.25483808;  
+r2r_id_loss: 0.14133584;  i2i_id_loss: 0.11306916;  
+rgb_cross_loss: 0.024969935;  ir_cross_loss: 0.018951692;  
+weak_r2c_loss: 0.0034540577;  
+R1:0.6884;   R10:0.9502;  R20:0.9828;  mAP:0.6728;  mINP:0.5566
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 91 (quality priority, conf_thresh=0.48) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 91;Time: 2026-03-27 03:48:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007610334;  tri_loss_ir: 0.00790937;  
+r2i_cmo_loss: 0.22311004;  i2r_cmo_loss: 0.25476044;  
+r2r_id_loss: 0.1396649;  i2i_id_loss: 0.11449523;  
+rgb_cross_loss: 0.02408696;  ir_cross_loss: 0.020068778;  
+weak_r2c_loss: 0.0035241141;  
+R1:0.6824;   R10:0.9488;  R20:0.9821;  mAP:0.6678;  mINP:0.5525
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 92 (quality priority, conf_thresh=0.48) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 92;Time: 2026-03-27 04:10:22;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0082490705;  tri_loss_ir: 0.0085516935;  
+r2i_cmo_loss: 0.22435783;  i2r_cmo_loss: 0.25343826;  
+r2r_id_loss: 0.14091633;  i2i_id_loss: 0.11384601;  
+rgb_cross_loss: 0.024121579;  ir_cross_loss: 0.019327654;  
+weak_r2c_loss: 0.0032728482;  
+R1:0.6917;   R10:0.9535;  R20:0.9834;  mAP:0.6736;  mINP:0.5554
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 93 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 93;Time: 2026-03-27 04:31:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008180695;  tri_loss_ir: 0.008537301;  
+r2i_cmo_loss: 0.22436664;  i2r_cmo_loss: 0.25176576;  
+r2r_id_loss: 0.1411938;  i2i_id_loss: 0.11339718;  
+rgb_cross_loss: 0.025095984;  ir_cross_loss: 0.019132452;  
+weak_r2c_loss: 0.00260111;  
+R1:0.6894;   R10:0.9521;  R20:0.9837;  mAP:0.6720;  mINP:0.5547
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 94 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 94;Time: 2026-03-27 04:53:19;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007979827;  tri_loss_ir: 0.008301692;  
+r2i_cmo_loss: 0.22240575;  i2r_cmo_loss: 0.25178942;  
+r2r_id_loss: 0.14006095;  i2i_id_loss: 0.11220982;  
+rgb_cross_loss: 0.0244436;  ir_cross_loss: 0.01899989;  
+weak_r2c_loss: 0.003628102;  
+R1:0.6887;   R10:0.9509;  R20:0.9832;  mAP:0.6705;  mINP:0.5526
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 95 (quality priority, conf_thresh=0.49) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 95;Time: 2026-03-27 05:14:49;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008119307;  tri_loss_ir: 0.0084762545;  
+r2i_cmo_loss: 0.22143365;  i2r_cmo_loss: 0.25250506;  
+r2r_id_loss: 0.139013;  i2i_id_loss: 0.11192299;  
+rgb_cross_loss: 0.023668932;  ir_cross_loss: 0.01835498;  
+weak_r2c_loss: 0.0033249524;  
+R1:0.6887;   R10:0.9507;  R20:0.9826;  mAP:0.6722;  mINP:0.5560
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 96 (quality priority, conf_thresh=0.50) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 96;Time: 2026-03-27 05:36:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008209594;  tri_loss_ir: 0.008518031;  
+r2i_cmo_loss: 0.22189122;  i2r_cmo_loss: 0.2519684;  
+r2r_id_loss: 0.13871342;  i2i_id_loss: 0.11330412;  
+rgb_cross_loss: 0.023996215;  ir_cross_loss: 0.019714516;  
+weak_r2c_loss: 0.005271657;  
+R1:0.6898;   R10:0.9508;  R20:0.9835;  mAP:0.6729;  mINP:0.5566
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6742(epoch:88);    Best mINP: 0.5566(epoch:91)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 97 (quality priority, conf_thresh=0.50) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_97.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_97.pth
+=================================================
+Epoch: 97;Time: 2026-03-27 05:57:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008251586;  tri_loss_ir: 0.008533997;  
+r2i_cmo_loss: 0.22080131;  i2r_cmo_loss: 0.25060263;  
+r2r_id_loss: 0.14013052;  i2i_id_loss: 0.11266452;  
+rgb_cross_loss: 0.0243199;  ir_cross_loss: 0.01882121;  
+weak_r2c_loss: 0.0025669895;  
+R1:0.6894;   R10:0.9526;  R20:0.9838;  mAP:0.6743;  mINP:0.5582
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 98 (quality priority, conf_thresh=0.51) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 98;Time: 2026-03-27 06:19:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007877888;  tri_loss_ir: 0.008335862;  
+r2i_cmo_loss: 0.22176234;  i2r_cmo_loss: 0.24961746;  
+r2r_id_loss: 0.13918848;  i2i_id_loss: 0.11272241;  
+rgb_cross_loss: 0.02356724;  ir_cross_loss: 0.019710433;  
+weak_r2c_loss: 0.0023864415;  
+R1:0.6872;   R10:0.9531;  R20:0.9836;  mAP:0.6712;  mINP:0.5535
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 99 (quality priority, conf_thresh=0.51) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 99;Time: 2026-03-27 06:40:45;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007264478;  tri_loss_ir: 0.0075472076;  
+r2i_cmo_loss: 0.22010471;  i2r_cmo_loss: 0.24948338;  
+r2r_id_loss: 0.13762395;  i2i_id_loss: 0.111987345;  
+rgb_cross_loss: 0.024295246;  ir_cross_loss: 0.018980544;  
+weak_r2c_loss: 0.0025839263;  
+R1:0.6902;   R10:0.9536;  R20:0.9842;  mAP:0.6736;  mINP:0.5561
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 100 (quality priority, conf_thresh=0.51) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 100;Time: 2026-03-27 07:02:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007803066;  tri_loss_ir: 0.008000214;  
+r2i_cmo_loss: 0.22016591;  i2r_cmo_loss: 0.24946493;  
+r2r_id_loss: 0.13953957;  i2i_id_loss: 0.11367328;  
+rgb_cross_loss: 0.0249406;  ir_cross_loss: 0.02010316;  
+weak_r2c_loss: 0.0031573072;  
+R1:0.6895;   R10:0.9521;  R20:0.9836;  mAP:0.6716;  mINP:0.5528
+                               Best_R1: 0.6917(epoch:88);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 101 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_101.pth
+=================================================
+Epoch: 101;Time: 2026-03-27 07:23:43;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0076450054;  tri_loss_ir: 0.007943909;  
+r2i_cmo_loss: 0.22083667;  i2r_cmo_loss: 0.24683067;  
+r2r_id_loss: 0.13858281;  i2i_id_loss: 0.11096217;  
+rgb_cross_loss: 0.023950938;  ir_cross_loss: 0.019157743;  
+weak_r2c_loss: 0.0028026195;  
+R1:0.6923;   R10:0.9523;  R20:0.9832;  mAP:0.6739;  mINP:0.5563
+                               Best_R1: 0.6923(epoch:102);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 102 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 102;Time: 2026-03-27 07:45:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008208857;  tri_loss_ir: 0.008399508;  
+r2i_cmo_loss: 0.21943682;  i2r_cmo_loss: 0.24860747;  
+r2r_id_loss: 0.13887945;  i2i_id_loss: 0.112910755;  
+rgb_cross_loss: 0.023925923;  ir_cross_loss: 0.01976715;  
+weak_r2c_loss: 0.0027455601;  
+R1:0.6904;   R10:0.9536;  R20:0.9837;  mAP:0.6738;  mINP:0.5575
+                               Best_R1: 0.6923(epoch:102);    Best mAP: 0.6743(epoch:98);    Best mINP: 0.5582(epoch:98)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 103 (quality priority, conf_thresh=0.52) - Common: 382, Specific: 0, Remain: 4
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_103.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_103.pth
+=================================================
+Epoch: 103;Time: 2026-03-27 08:06:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00758849;  tri_loss_ir: 0.007906397;  
+r2i_cmo_loss: 0.21845257;  i2r_cmo_loss: 0.24850646;  
+r2r_id_loss: 0.13746817;  i2i_id_loss: 0.11222056;  
+rgb_cross_loss: 0.023318943;  ir_cross_loss: 0.019161932;  
+weak_r2c_loss: 0.012887233;  
+R1:0.6918;   R10:0.9522;  R20:0.9840;  mAP:0.6769;  mINP:0.5619
+                               Best_R1: 0.6923(epoch:102);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 104 (quality priority, conf_thresh=0.53) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_104.pth
+=================================================
+Epoch: 104;Time: 2026-03-27 08:28:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0076237707;  tri_loss_ir: 0.007932604;  
+r2i_cmo_loss: 0.21923104;  i2r_cmo_loss: 0.24707717;  
+r2r_id_loss: 0.1376841;  i2i_id_loss: 0.11148187;  
+rgb_cross_loss: 0.02378326;  ir_cross_loss: 0.019329634;  
+weak_r2c_loss: 0.011559189;  
+R1:0.6928;   R10:0.9524;  R20:0.9841;  mAP:0.6769;  mINP:0.5611
+                               Best_R1: 0.6928(epoch:105);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 105 (quality priority, conf_thresh=0.53) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 105;Time: 2026-03-27 08:49:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007655647;  tri_loss_ir: 0.008059171;  
+r2i_cmo_loss: 0.2182346;  i2r_cmo_loss: 0.24646826;  
+r2r_id_loss: 0.13631204;  i2i_id_loss: 0.11372712;  
+rgb_cross_loss: 0.023602089;  ir_cross_loss: 0.019978032;  
+weak_r2c_loss: 0.0025523638;  
+R1:0.6912;   R10:0.9529;  R20:0.9826;  mAP:0.6744;  mINP:0.5575
+                               Best_R1: 0.6928(epoch:105);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 106 (quality priority, conf_thresh=0.54) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 106;Time: 2026-03-27 09:11:10;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007522312;  tri_loss_ir: 0.0079728225;  
+r2i_cmo_loss: 0.21852955;  i2r_cmo_loss: 0.24609818;  
+r2r_id_loss: 0.1382652;  i2i_id_loss: 0.109895445;  
+rgb_cross_loss: 0.023636747;  ir_cross_loss: 0.01878022;  
+weak_r2c_loss: 0.0050194077;  
+R1:0.6879;   R10:0.9530;  R20:0.9840;  mAP:0.6733;  mINP:0.5568
+                               Best_R1: 0.6928(epoch:105);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 107 (quality priority, conf_thresh=0.54) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 107;Time: 2026-03-27 09:32:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007739515;  tri_loss_ir: 0.008092744;  
+r2i_cmo_loss: 0.21844265;  i2r_cmo_loss: 0.24536453;  
+r2r_id_loss: 0.13690026;  i2i_id_loss: 0.11141511;  
+rgb_cross_loss: 0.024371836;  ir_cross_loss: 0.019361572;  
+weak_r2c_loss: 0.0031488657;  
+R1:0.6862;   R10:0.9518;  R20:0.9832;  mAP:0.6706;  mINP:0.5534
+                               Best_R1: 0.6928(epoch:105);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 108 (quality priority, conf_thresh=0.54) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 108;Time: 2026-03-27 09:54:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007829464;  tri_loss_ir: 0.0080752075;  
+r2i_cmo_loss: 0.21663125;  i2r_cmo_loss: 0.24665661;  
+r2r_id_loss: 0.13627242;  i2i_id_loss: 0.109318934;  
+rgb_cross_loss: 0.023500314;  ir_cross_loss: 0.018554075;  
+weak_r2c_loss: 0.010872929;  
+R1:0.6927;   R10:0.9502;  R20:0.9826;  mAP:0.6765;  mINP:0.5608
+                               Best_R1: 0.6928(epoch:105);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 109 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_109.pth
+=================================================
+Epoch: 109;Time: 2026-03-27 10:15:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007684421;  tri_loss_ir: 0.008106899;  
+r2i_cmo_loss: 0.2185187;  i2r_cmo_loss: 0.24398316;  
+r2r_id_loss: 0.14028965;  i2i_id_loss: 0.10808258;  
+rgb_cross_loss: 0.025632512;  ir_cross_loss: 0.01782445;  
+weak_r2c_loss: 0.0033014584;  
+R1:0.6935;   R10:0.9519;  R20:0.9831;  mAP:0.6764;  mINP:0.5600
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 110 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 110;Time: 2026-03-27 10:37:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006943716;  tri_loss_ir: 0.0072985534;  
+r2i_cmo_loss: 0.21708848;  i2r_cmo_loss: 0.24488448;  
+r2r_id_loss: 0.13651526;  i2i_id_loss: 0.11041745;  
+rgb_cross_loss: 0.024235686;  ir_cross_loss: 0.019268496;  
+weak_r2c_loss: 0.0053214557;  
+R1:0.6910;   R10:0.9509;  R20:0.9833;  mAP:0.6740;  mINP:0.5577
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 111 (quality priority, conf_thresh=0.55) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 111;Time: 2026-03-27 10:58:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0074456003;  tri_loss_ir: 0.0077322638;  
+r2i_cmo_loss: 0.21796227;  i2r_cmo_loss: 0.24481489;  
+r2r_id_loss: 0.13681781;  i2i_id_loss: 0.11004194;  
+rgb_cross_loss: 0.023914732;  ir_cross_loss: 0.0185629;  
+weak_r2c_loss: 0.0020964972;  
+R1:0.6895;   R10:0.9529;  R20:0.9837;  mAP:0.6729;  mINP:0.5558
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 112 (quality priority, conf_thresh=0.56) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 112;Time: 2026-03-27 11:20:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0072041433;  tri_loss_ir: 0.0074913204;  
+r2i_cmo_loss: 0.21689144;  i2r_cmo_loss: 0.24546345;  
+r2r_id_loss: 0.13365948;  i2i_id_loss: 0.11120243;  
+rgb_cross_loss: 0.022814363;  ir_cross_loss: 0.019465007;  
+weak_r2c_loss: 0.002532365;  
+R1:0.6901;   R10:0.9507;  R20:0.9833;  mAP:0.6725;  mINP:0.5553
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 113 (quality priority, conf_thresh=0.56) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 113;Time: 2026-03-27 11:41:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007368152;  tri_loss_ir: 0.007738367;  
+r2i_cmo_loss: 0.21671419;  i2r_cmo_loss: 0.24513824;  
+r2r_id_loss: 0.13389301;  i2i_id_loss: 0.111421205;  
+rgb_cross_loss: 0.02235456;  ir_cross_loss: 0.019321524;  
+weak_r2c_loss: 0.0027495057;  
+R1:0.6872;   R10:0.9508;  R20:0.9820;  mAP:0.6729;  mINP:0.5573
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 114 (quality priority, conf_thresh=0.56) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 114;Time: 2026-03-27 12:03:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006991468;  tri_loss_ir: 0.0073843845;  
+r2i_cmo_loss: 0.21698804;  i2r_cmo_loss: 0.24330603;  
+r2r_id_loss: 0.13619219;  i2i_id_loss: 0.10970853;  
+rgb_cross_loss: 0.023139292;  ir_cross_loss: 0.018439375;  
+weak_r2c_loss: 0.0044747796;  
+R1:0.6895;   R10:0.9515;  R20:0.9823;  mAP:0.6738;  mINP:0.5579
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 115 (quality priority, conf_thresh=0.57) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 115;Time: 2026-03-27 12:24:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007474699;  tri_loss_ir: 0.007837152;  
+r2i_cmo_loss: 0.21580552;  i2r_cmo_loss: 0.24311309;  
+r2r_id_loss: 0.13604188;  i2i_id_loss: 0.109380156;  
+rgb_cross_loss: 0.023851633;  ir_cross_loss: 0.019239621;  
+weak_r2c_loss: 0.0032965816;  
+R1:0.6889;   R10:0.9514;  R20:0.9835;  mAP:0.6723;  mINP:0.5554
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 116 (quality priority, conf_thresh=0.57) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 116;Time: 2026-03-27 12:46:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0071450947;  tri_loss_ir: 0.0075477757;  
+r2i_cmo_loss: 0.21775892;  i2r_cmo_loss: 0.24355991;  
+r2r_id_loss: 0.13697289;  i2i_id_loss: 0.11035065;  
+rgb_cross_loss: 0.024364965;  ir_cross_loss: 0.019074429;  
+weak_r2c_loss: 0.002335404;  
+R1:0.6896;   R10:0.9509;  R20:0.9833;  mAP:0.6725;  mINP:0.5560
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 117 (quality priority, conf_thresh=0.58) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 117;Time: 2026-03-27 13:07:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007319451;  tri_loss_ir: 0.0075990018;  
+r2i_cmo_loss: 0.2161461;  i2r_cmo_loss: 0.24225391;  
+r2r_id_loss: 0.13724005;  i2i_id_loss: 0.1087867;  
+rgb_cross_loss: 0.024211984;  ir_cross_loss: 0.018821165;  
+weak_r2c_loss: 0.014206094;  
+R1:0.6886;   R10:0.9516;  R20:0.9835;  mAP:0.6731;  mINP:0.5581
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 118 (quality priority, conf_thresh=0.58) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 118;Time: 2026-03-27 13:29:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0070923213;  tri_loss_ir: 0.007405228;  
+r2i_cmo_loss: 0.21593094;  i2r_cmo_loss: 0.242093;  
+r2r_id_loss: 0.13796477;  i2i_id_loss: 0.107360885;  
+rgb_cross_loss: 0.025137411;  ir_cross_loss: 0.01794485;  
+weak_r2c_loss: 0.0022404736;  
+R1:0.6875;   R10:0.9515;  R20:0.9828;  mAP:0.6709;  mINP:0.5541
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 119 (quality priority, conf_thresh=0.58) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 119;Time: 2026-03-27 13:50:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0068678553;  tri_loss_ir: 0.00732599;  
+r2i_cmo_loss: 0.21463963;  i2r_cmo_loss: 0.24260825;  
+r2r_id_loss: 0.13570447;  i2i_id_loss: 0.110454895;  
+rgb_cross_loss: 0.024299612;  ir_cross_loss: 0.019092016;  
+weak_r2c_loss: 0.011790989;  
+R1:0.6887;   R10:0.9520;  R20:0.9822;  mAP:0.6723;  mINP:0.5557
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 120 (quality priority, conf_thresh=0.59) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 120;Time: 2026-03-27 14:12:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0072074267;  tri_loss_ir: 0.007526736;  
+r2i_cmo_loss: 0.21490385;  i2r_cmo_loss: 0.24135958;  
+r2r_id_loss: 0.13416517;  i2i_id_loss: 0.10844227;  
+rgb_cross_loss: 0.023552174;  ir_cross_loss: 0.01877331;  
+weak_r2c_loss: 0.0035531695;  
+R1:0.6881;   R10:0.9500;  R20:0.9820;  mAP:0.6721;  mINP:0.5561
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 121 (quality priority, conf_thresh=0.59) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 121;Time: 2026-03-27 14:33:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0070560407;  tri_loss_ir: 0.0073922845;  
+r2i_cmo_loss: 0.21409096;  i2r_cmo_loss: 0.24134082;  
+r2r_id_loss: 0.13359803;  i2i_id_loss: 0.1085046;  
+rgb_cross_loss: 0.023212811;  ir_cross_loss: 0.018581185;  
+weak_r2c_loss: 0.009928897;  
+R1:0.6903;   R10:0.9507;  R20:0.9826;  mAP:0.6736;  mINP:0.5569
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 122 (quality priority, conf_thresh=0.59) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 122;Time: 2026-03-27 14:55:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007138668;  tri_loss_ir: 0.007358244;  
+r2i_cmo_loss: 0.21412376;  i2r_cmo_loss: 0.24178267;  
+r2r_id_loss: 0.13517356;  i2i_id_loss: 0.10948772;  
+rgb_cross_loss: 0.023564812;  ir_cross_loss: 0.019212918;  
+weak_r2c_loss: 0.006463521;  
+R1:0.6871;   R10:0.9514;  R20:0.9836;  mAP:0.6717;  mINP:0.5560
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 123 (quality priority, conf_thresh=0.60) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 123;Time: 2026-03-27 15:16:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0071484447;  tri_loss_ir: 0.0075068115;  
+r2i_cmo_loss: 0.21477358;  i2r_cmo_loss: 0.24169232;  
+r2r_id_loss: 0.13387081;  i2i_id_loss: 0.10926226;  
+rgb_cross_loss: 0.02356116;  ir_cross_loss: 0.019484576;  
+weak_r2c_loss: 0.0018907818;  
+R1:0.6846;   R10:0.9498;  R20:0.9830;  mAP:0.6684;  mINP:0.5519
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 124 (quality priority, conf_thresh=0.60) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 124;Time: 2026-03-27 15:38:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0072127893;  tri_loss_ir: 0.007520371;  
+r2i_cmo_loss: 0.21279995;  i2r_cmo_loss: 0.24146831;  
+r2r_id_loss: 0.13205495;  i2i_id_loss: 0.11105002;  
+rgb_cross_loss: 0.022939561;  ir_cross_loss: 0.019345805;  
+weak_r2c_loss: 0.0019485165;  
+R1:0.6842;   R10:0.9477;  R20:0.9812;  mAP:0.6679;  mINP:0.5506
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 125 (quality priority, conf_thresh=0.61) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 125;Time: 2026-03-27 15:59:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0070617306;  tri_loss_ir: 0.0074714147;  
+r2i_cmo_loss: 0.21472102;  i2r_cmo_loss: 0.24143258;  
+r2r_id_loss: 0.13434258;  i2i_id_loss: 0.10973372;  
+rgb_cross_loss: 0.023507753;  ir_cross_loss: 0.019321773;  
+weak_r2c_loss: 0.0024570685;  
+R1:0.6900;   R10:0.9479;  R20:0.9801;  mAP:0.6713;  mINP:0.5539
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 126 (quality priority, conf_thresh=0.61) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 126;Time: 2026-03-27 16:21:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0070628887;  tri_loss_ir: 0.007374113;  
+r2i_cmo_loss: 0.21334472;  i2r_cmo_loss: 0.2400697;  
+r2r_id_loss: 0.1327955;  i2i_id_loss: 0.10800259;  
+rgb_cross_loss: 0.024011087;  ir_cross_loss: 0.019588873;  
+weak_r2c_loss: 0.0029139149;  
+R1:0.6887;   R10:0.9494;  R20:0.9815;  mAP:0.6724;  mINP:0.5560
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 127 (quality priority, conf_thresh=0.61) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 127;Time: 2026-03-27 16:42:36;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007093082;  tri_loss_ir: 0.0073281117;  
+r2i_cmo_loss: 0.21343298;  i2r_cmo_loss: 0.240047;  
+r2r_id_loss: 0.1348267;  i2i_id_loss: 0.10906213;  
+rgb_cross_loss: 0.024297772;  ir_cross_loss: 0.019364357;  
+weak_r2c_loss: 0.0028326397;  
+R1:0.6897;   R10:0.9511;  R20:0.9824;  mAP:0.6717;  mINP:0.5545
+                               Best_R1: 0.6935(epoch:110);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 128 (quality priority, conf_thresh=0.62) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_128.pth
+=================================================
+Epoch: 128;Time: 2026-03-27 17:04:04;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0067861755;  tri_loss_ir: 0.0071104476;  
+r2i_cmo_loss: 0.21265826;  i2r_cmo_loss: 0.23984103;  
+weak_r2c_loss: 0.003064094;  r2r_id_loss: 0.13486208;  
+i2i_id_loss: 0.10810161;  rgb_cross_loss: 0.023502784;  
+ir_cross_loss: 0.018794645;  
+R1:0.6940;   R10:0.9497;  R20:0.9813;  mAP:0.6753;  mINP:0.5584
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 129 (quality priority, conf_thresh=0.62) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 129;Time: 2026-03-27 17:25:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007518986;  tri_loss_ir: 0.007823865;  
+r2i_cmo_loss: 0.21258676;  i2r_cmo_loss: 0.23959137;  
+r2r_id_loss: 0.13309777;  i2i_id_loss: 0.10846256;  
+rgb_cross_loss: 0.023527628;  ir_cross_loss: 0.018646738;  
+weak_r2c_loss: 0.0020467988;  
+R1:0.6888;   R10:0.9491;  R20:0.9818;  mAP:0.6727;  mINP:0.5575
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 130 (quality priority, conf_thresh=0.62) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 130;Time: 2026-03-27 17:46:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0071001397;  tri_loss_ir: 0.007269693;  
+r2i_cmo_loss: 0.212761;  i2r_cmo_loss: 0.23927107;  
+r2r_id_loss: 0.1319893;  i2i_id_loss: 0.107641526;  
+rgb_cross_loss: 0.023290856;  ir_cross_loss: 0.018638957;  
+weak_r2c_loss: 0.002368489;  
+R1:0.6890;   R10:0.9481;  R20:0.9808;  mAP:0.6727;  mINP:0.5568
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 131 (quality priority, conf_thresh=0.63) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 131;Time: 2026-03-27 18:08:28;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0067668483;  tri_loss_ir: 0.0071407817;  
+r2i_cmo_loss: 0.21326959;  i2r_cmo_loss: 0.23904656;  
+r2r_id_loss: 0.13210297;  i2i_id_loss: 0.10755814;  
+rgb_cross_loss: 0.023088379;  ir_cross_loss: 0.018522246;  
+weak_r2c_loss: 0.007231348;  
+R1:0.6900;   R10:0.9492;  R20:0.9809;  mAP:0.6742;  mINP:0.5589
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 132 (quality priority, conf_thresh=0.63) - Common: 382, Specific: 0, Remain: 3
+NaN batch count: 0
+=================================================
+Epoch: 132;Time: 2026-03-27 18:29:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006840648;  tri_loss_ir: 0.0071575763;  
+r2i_cmo_loss: 0.21261871;  i2r_cmo_loss: 0.23922549;  
+r2r_id_loss: 0.13173392;  i2i_id_loss: 0.109943725;  
+rgb_cross_loss: 0.023549238;  ir_cross_loss: 0.02011645;  
+weak_r2c_loss: 0.0054860073;  
+R1:0.6907;   R10:0.9499;  R20:0.9818;  mAP:0.6731;  mINP:0.5557
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 133 (quality priority, conf_thresh=0.64) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 133;Time: 2026-03-27 18:51:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0068405666;  tri_loss_ir: 0.007154237;  
+r2i_cmo_loss: 0.211578;  i2r_cmo_loss: 0.23910508;  
+r2r_id_loss: 0.13235241;  i2i_id_loss: 0.10831631;  
+rgb_cross_loss: 0.023074694;  ir_cross_loss: 0.019601347;  
+weak_r2c_loss: 0.003244228;  
+R1:0.6833;   R10:0.9492;  R20:0.9818;  mAP:0.6696;  mINP:0.5548
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 134 (quality priority, conf_thresh=0.64) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 134;Time: 2026-03-27 19:12:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006853826;  tri_loss_ir: 0.0071255504;  
+r2i_cmo_loss: 0.21188782;  i2r_cmo_loss: 0.23703504;  
+r2r_id_loss: 0.13326114;  i2i_id_loss: 0.10571911;  
+rgb_cross_loss: 0.023402577;  ir_cross_loss: 0.01822628;  
+weak_r2c_loss: 0.0033591823;  
+R1:0.6835;   R10:0.9501;  R20:0.9822;  mAP:0.6683;  mINP:0.5519
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 135 (quality priority, conf_thresh=0.64) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 135;Time: 2026-03-27 19:34:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0063887597;  tri_loss_ir: 0.0066284165;  
+r2i_cmo_loss: 0.21181296;  i2r_cmo_loss: 0.2363732;  
+r2r_id_loss: 0.13202287;  i2i_id_loss: 0.108747326;  
+rgb_cross_loss: 0.02271693;  ir_cross_loss: 0.019424556;  
+weak_r2c_loss: 0.001477849;  
+R1:0.6890;   R10:0.9514;  R20:0.9829;  mAP:0.6725;  mINP:0.5558
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 136 (quality priority, conf_thresh=0.65) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 136;Time: 2026-03-27 19:55:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0072196494;  tri_loss_ir: 0.007504076;  
+r2i_cmo_loss: 0.21227816;  i2r_cmo_loss: 0.23678784;  
+r2r_id_loss: 0.13314728;  i2i_id_loss: 0.106958896;  
+rgb_cross_loss: 0.023870954;  ir_cross_loss: 0.018914035;  
+weak_r2c_loss: 0.003419373;  
+R1:0.6884;   R10:0.9509;  R20:0.9834;  mAP:0.6721;  mINP:0.5550
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 137 (quality priority, conf_thresh=0.65) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 137;Time: 2026-03-27 20:17:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006708577;  tri_loss_ir: 0.006983324;  
+r2i_cmo_loss: 0.21136175;  i2r_cmo_loss: 0.23683862;  
+r2r_id_loss: 0.13177368;  i2i_id_loss: 0.105979204;  
+rgb_cross_loss: 0.022654958;  ir_cross_loss: 0.018392866;  
+weak_r2c_loss: 0.0018127454;  
+R1:0.6886;   R10:0.9503;  R20:0.9820;  mAP:0.6729;  mINP:0.5570
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 138 (quality priority, conf_thresh=0.66) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 138;Time: 2026-03-27 20:38:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0070853056;  tri_loss_ir: 0.007372404;  
+r2i_cmo_loss: 0.21137172;  i2r_cmo_loss: 0.23621765;  
+r2r_id_loss: 0.13039912;  i2i_id_loss: 0.10716282;  
+rgb_cross_loss: 0.023038562;  ir_cross_loss: 0.018980352;  
+weak_r2c_loss: 0.002462686;  
+R1:0.6891;   R10:0.9509;  R20:0.9826;  mAP:0.6728;  mINP:0.5565
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 139 (quality priority, conf_thresh=0.66) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 139;Time: 2026-03-27 21:00:22;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006432054;  tri_loss_ir: 0.0067827348;  
+r2i_cmo_loss: 0.211569;  i2r_cmo_loss: 0.2358913;  
+r2r_id_loss: 0.13141622;  i2i_id_loss: 0.10677294;  
+rgb_cross_loss: 0.023127241;  ir_cross_loss: 0.018464891;  
+weak_r2c_loss: 0.0018251174;  
+R1:0.6849;   R10:0.9517;  R20:0.9840;  mAP:0.6709;  mINP:0.5552
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 140 (quality priority, conf_thresh=0.66) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 140;Time: 2026-03-27 21:21:51;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006640843;  tri_loss_ir: 0.0069572176;  
+r2i_cmo_loss: 0.21081297;  i2r_cmo_loss: 0.23643638;  
+r2r_id_loss: 0.13020255;  i2i_id_loss: 0.106023744;  
+rgb_cross_loss: 0.022517096;  ir_cross_loss: 0.018741416;  
+weak_r2c_loss: 0.0026539895;  
+R1:0.6884;   R10:0.9487;  R20:0.9801;  mAP:0.6725;  mINP:0.5565
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 141 (quality priority, conf_thresh=0.67) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 141;Time: 2026-03-27 21:43:22;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0065368046;  tri_loss_ir: 0.0069460506;  
+r2i_cmo_loss: 0.21099932;  i2r_cmo_loss: 0.23467661;  
+r2r_id_loss: 0.12813261;  i2i_id_loss: 0.10547474;  
+rgb_cross_loss: 0.021901708;  ir_cross_loss: 0.017893696;  
+weak_r2c_loss: 0.0020991445;  
+R1:0.6908;   R10:0.9507;  R20:0.9834;  mAP:0.6756;  mINP:0.5605
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 142 (quality priority, conf_thresh=0.67) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 142;Time: 2026-03-27 22:04:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0071711643;  tri_loss_ir: 0.007371023;  
+r2i_cmo_loss: 0.21030766;  i2r_cmo_loss: 0.23527212;  
+r2r_id_loss: 0.13177983;  i2i_id_loss: 0.10624406;  
+rgb_cross_loss: 0.024004158;  ir_cross_loss: 0.018007902;  
+weak_r2c_loss: 0.0026378143;  
+R1:0.6818;   R10:0.9479;  R20:0.9818;  mAP:0.6685;  mINP:0.5545
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 143 (quality priority, conf_thresh=0.67) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 143;Time: 2026-03-27 22:26:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0061105397;  tri_loss_ir: 0.0063460707;  
+r2i_cmo_loss: 0.20969851;  i2r_cmo_loss: 0.23490706;  
+r2r_id_loss: 0.12927598;  i2i_id_loss: 0.10577226;  
+rgb_cross_loss: 0.023026668;  ir_cross_loss: 0.018361524;  
+weak_r2c_loss: 0.0033045015;  
+R1:0.6877;   R10:0.9505;  R20:0.9822;  mAP:0.6732;  mINP:0.5590
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 144 (quality priority, conf_thresh=0.68) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 144;Time: 2026-03-27 22:47:51;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0068511954;  tri_loss_ir: 0.007136826;  
+r2i_cmo_loss: 0.2096573;  i2r_cmo_loss: 0.23372826;  
+r2r_id_loss: 0.12786768;  i2i_id_loss: 0.106869966;  
+rgb_cross_loss: 0.022332104;  ir_cross_loss: 0.018827308;  
+weak_r2c_loss: 0.0021009773;  
+R1:0.6908;   R10:0.9506;  R20:0.9827;  mAP:0.6752;  mINP:0.5605
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6769(epoch:104);    Best mINP: 0.5619(epoch:104)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 145 (quality priority, conf_thresh=0.68) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best mAP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mAP_epoch_145.pth
+Successfully saved best mINP model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_mINP_epoch_145.pth
+=================================================
+Epoch: 145;Time: 2026-03-27 23:09:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0065476103;  tri_loss_ir: 0.00686609;  
+r2i_cmo_loss: 0.20983067;  i2r_cmo_loss: 0.23503938;  
+r2r_id_loss: 0.12855206;  i2i_id_loss: 0.10557243;  
+rgb_cross_loss: 0.022693684;  ir_cross_loss: 0.01838737;  
+weak_r2c_loss: 0.0034132623;  
+R1:0.6940;   R10:0.9499;  R20:0.9814;  mAP:0.6779;  mINP:0.5634
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6779(epoch:146);    Best mINP: 0.5634(epoch:146)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 146 (quality priority, conf_thresh=0.69) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 146;Time: 2026-03-27 23:30:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0064797443;  tri_loss_ir: 0.006683727;  
+r2i_cmo_loss: 0.20971698;  i2r_cmo_loss: 0.23222044;  
+r2r_id_loss: 0.12811624;  i2i_id_loss: 0.10404783;  
+rgb_cross_loss: 0.023343906;  ir_cross_loss: 0.017823571;  
+weak_r2c_loss: 0.0023932606;  
+R1:0.6890;   R10:0.9499;  R20:0.9824;  mAP:0.6728;  mINP:0.5569
+                               Best_R1: 0.6940(epoch:129);    Best mAP: 0.6779(epoch:146);    Best mINP: 0.5634(epoch:146)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 147 (quality priority, conf_thresh=0.69) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+Successfully saved best rank1 model to ./log/saved_sysu_cssp/sysu_agw_324_0.9_1/models/model_best_rank1_epoch_147.pth
+=================================================
+Epoch: 147;Time: 2026-03-27 23:52:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0064283363;  tri_loss_ir: 0.006685808;  
+r2i_cmo_loss: 0.20987378;  i2r_cmo_loss: 0.23192164;  
+r2r_id_loss: 0.12791441;  i2i_id_loss: 0.1045859;  
+rgb_cross_loss: 0.022292327;  ir_cross_loss: 0.018194657;  
+weak_r2c_loss: 0.00229068;  
+R1:0.6942;   R10:0.9516;  R20:0.9833;  mAP:0.6771;  mINP:0.5611
+                               Best_R1: 0.6942(epoch:148);    Best mAP: 0.6779(epoch:146);    Best mINP: 0.5634(epoch:146)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 148 (quality priority, conf_thresh=0.69) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 148;Time: 2026-03-28 00:13:51;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006543932;  tri_loss_ir: 0.007044994;  
+r2i_cmo_loss: 0.20919318;  i2r_cmo_loss: 0.23323955;  
+r2r_id_loss: 0.12921128;  i2i_id_loss: 0.10319944;  
+rgb_cross_loss: 0.023118088;  ir_cross_loss: 0.01768982;  
+weak_r2c_loss: 0.0026091866;  
+R1:0.6891;   R10:0.9503;  R20:0.9810;  mAP:0.6749;  mINP:0.5605
+                               Best_R1: 0.6942(epoch:148);    Best mAP: 0.6779(epoch:146);    Best mINP: 0.5634(epoch:146)
+=================================================
+Extracting rgb features with denoising...
+Extracted rgb features shape: torch.Size([22258, 2048])
+Extracting ir features with denoising...
+Extracted ir features shape: torch.Size([11909, 2048])
+get match labels with confidence filter (quality priority)
+Epoch 149 (quality priority, conf_thresh=0.70) - Common: 382, Specific: 0, Remain: 2
+NaN batch count: 0
+=================================================
+Epoch: 149;Time: 2026-03-28 00:35:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.9_1
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0065971925;  tri_loss_ir: 0.0068999003;  
+r2i_cmo_loss: 0.20816675;  i2r_cmo_loss: 0.23184033;  
+r2r_id_loss: 0.12831847;  i2i_id_loss: 0.10381229;  
+rgb_cross_loss: 0.02283276;  ir_cross_loss: 0.017797075;  
+weak_r2c_loss: 0.002081419;  
+R1:0.6821;   R10:0.9469;  R20:0.9808;  mAP:0.6677;  mINP:0.5528
+                               Best_R1: 0.6942(epoch:148);    Best mAP: 0.6779(epoch:146);    Best mINP: 0.5634(epoch:146)
+=================================================

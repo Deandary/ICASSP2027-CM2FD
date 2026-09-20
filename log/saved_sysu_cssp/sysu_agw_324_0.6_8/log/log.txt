@@ -1,0 +1,2179 @@
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-24 15:38:14 | start phase1 from epoch 0
+Time: 2026-03-24 16:24:04 | phase 1 epoch 1; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-06
+r2r_id_loss: 5.914242;  i2i_id_loss: 5.878983;  
+r2r_tri_loss: 0.45972237;  i2i_tri_loss: 0.37920827;  
+
+R1:0.0202;   R10:0.1638;  R20:0.2961;  mAP:0.0446;  mINP:0.0247
+                       Best_R1: 0.0202;    Best mAP: 0.0446
+=================================================
+Time: 2026-03-24 17:09:41 | phase 1 epoch 2; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.27e-05
+r2r_id_loss: 4.3090024;  i2i_id_loss: 4.02513;  
+r2r_tri_loss: 0.22964683;  i2i_tri_loss: 0.15646556;  
+
+R1:0.1353;   R10:0.5226;  R20:0.6896;  mAP:0.1715;  mINP:0.1069
+                       Best_R1: 0.1353;    Best mAP: 0.1715
+=================================================
+Time: 2026-03-24 17:54:36 | phase 1 epoch 3; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 6.24e-05
+r2r_id_loss: 2.0740545;  i2i_id_loss: 1.7027667;  
+r2r_tri_loss: 0.12433107;  i2i_tri_loss: 0.06626868;  
+
+R1:0.2053;   R10:0.6222;  R20:0.7791;  mAP:0.2278;  mINP:0.1379
+                       Best_R1: 0.2053;    Best mAP: 0.2278
+=================================================
+Time: 2026-03-24 18:40:09 | phase 1 epoch 4; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 9.209999999999999e-05
+r2r_id_loss: 1.0212708;  i2i_id_loss: 0.7399682;  
+r2r_tri_loss: 0.091962375;  i2i_tri_loss: 0.046537194;  
+
+R1:0.2320;   R10:0.6377;  R20:0.7833;  mAP:0.2523;  mINP:0.1624
+                       Best_R1: 0.2320;    Best mAP: 0.2523
+=================================================
+Time: 2026-03-24 19:25:27 | phase 1 epoch 5; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00012179999999999999
+r2r_id_loss: 0.66580784;  i2i_id_loss: 0.46121562;  
+r2r_tri_loss: 0.07982804;  i2i_tri_loss: 0.041158844;  
+
+R1:0.2398;   R10:0.6422;  R20:0.7846;  mAP:0.2568;  mINP:0.1593
+                       Best_R1: 0.2398;    Best mAP: 0.2568
+=================================================
+Time: 2026-03-24 20:10:40 | phase 1 epoch 6; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0001515
+r2r_id_loss: 0.5548939;  i2i_id_loss: 0.3796526;  
+r2r_tri_loss: 0.07999544;  i2i_tri_loss: 0.04231385;  
+
+R1:0.2682;   R10:0.6947;  R20:0.8287;  mAP:0.2836;  mINP:0.1807
+                       Best_R1: 0.2682;    Best mAP: 0.2836
+=================================================
+Time: 2026-03-24 20:55:35 | phase 1 epoch 7; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00018119999999999999
+r2r_id_loss: 0.4863283;  i2i_id_loss: 0.33561602;  
+r2r_tri_loss: 0.08242068;  i2i_tri_loss: 0.044425853;  
+
+R1:0.2729;   R10:0.6806;  R20:0.8174;  mAP:0.2819;  mINP:0.1758
+                       Best_R1: 0.2729;    Best mAP: 0.2836
+=================================================
+Time: 2026-03-24 21:40:31 | phase 1 epoch 8; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00021089999999999998
+r2r_id_loss: 0.48565835;  i2i_id_loss: 0.3346151;  
+r2r_tri_loss: 0.08571641;  i2i_tri_loss: 0.04526941;  
+
+R1:0.3074;   R10:0.7208;  R20:0.8448;  mAP:0.3072;  mINP:0.1880
+                       Best_R1: 0.3074;    Best mAP: 0.3072
+=================================================
+Time: 2026-03-24 22:25:46 | phase 1 epoch 9; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0002406
+r2r_id_loss: 0.4796828;  i2i_id_loss: 0.30902773;  
+r2r_tri_loss: 0.0911625;  i2i_tri_loss: 0.05029317;  
+
+R1:0.2525;   R10:0.6595;  R20:0.8004;  mAP:0.2585;  mINP:0.1510
+                       Best_R1: 0.3074;    Best mAP: 0.3072
+=================================================
+Time: 2026-03-24 23:10:59 | phase 1 epoch 10; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00027029999999999996
+r2r_id_loss: 0.44265783;  i2i_id_loss: 0.30760866;  
+r2r_tri_loss: 0.09268654;  i2i_tri_loss: 0.053048737;  
+
+R1:0.2907;   R10:0.6955;  R20:0.8184;  mAP:0.2894;  mINP:0.1735
+                       Best_R1: 0.3074;    Best mAP: 0.3072
+=================================================
+Time: 2026-03-24 23:55:08 | phase 1 epoch 11; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.46051103;  i2i_id_loss: 0.3094156;  
+r2r_tri_loss: 0.0965537;  i2i_tri_loss: 0.05750122;  
+
+R1:0.2916;   R10:0.6996;  R20:0.8208;  mAP:0.2928;  mINP:0.1785
+                       Best_R1: 0.3074;    Best mAP: 0.3072
+=================================================
+Time: 2026-03-25 00:38:55 | phase 1 epoch 12; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.40005466;  i2i_id_loss: 0.2694433;  
+r2r_tri_loss: 0.09573144;  i2i_tri_loss: 0.05377884;  
+
+R1:0.3441;   R10:0.7561;  R20:0.8694;  mAP:0.3325;  mINP:0.2034
+                       Best_R1: 0.3441;    Best mAP: 0.3325
+=================================================
+Time: 2026-03-25 01:22:26 | phase 1 epoch 13; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.35375664;  i2i_id_loss: 0.23319946;  
+r2r_tri_loss: 0.09037541;  i2i_tri_loss: 0.05044623;  
+
+R1:0.3190;   R10:0.7388;  R20:0.8577;  mAP:0.3160;  mINP:0.1903
+                       Best_R1: 0.3441;    Best mAP: 0.3325
+=================================================
+Time: 2026-03-25 02:05:37 | phase 1 epoch 14; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.33127666;  i2i_id_loss: 0.20000696;  
+r2r_tri_loss: 0.08777506;  i2i_tri_loss: 0.04833538;  
+
+R1:0.3271;   R10:0.7386;  R20:0.8529;  mAP:0.3201;  mINP:0.1962
+                       Best_R1: 0.3441;    Best mAP: 0.3325
+=================================================
+Time: 2026-03-25 02:48:54 | phase 1 epoch 15; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.31183836;  i2i_id_loss: 0.1912967;  
+r2r_tri_loss: 0.08500113;  i2i_tri_loss: 0.044985767;  
+
+R1:0.3442;   R10:0.7408;  R20:0.8506;  mAP:0.3390;  mINP:0.2132
+                       Best_R1: 0.3442;    Best mAP: 0.3390
+=================================================
+Time: 2026-03-25 03:32:10 | phase 1 epoch 16; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.2922774;  i2i_id_loss: 0.18268067;  
+r2r_tri_loss: 0.08264247;  i2i_tri_loss: 0.04667317;  
+
+R1:0.3253;   R10:0.7397;  R20:0.8641;  mAP:0.3234;  mINP:0.2028
+                       Best_R1: 0.3442;    Best mAP: 0.3390
+=================================================
+Time: 2026-03-25 04:15:13 | phase 1 epoch 17; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.2694058;  i2i_id_loss: 0.18553455;  
+r2r_tri_loss: 0.07853035;  i2i_tri_loss: 0.04544306;  
+
+R1:0.3318;   R10:0.7252;  R20:0.8365;  mAP:0.3172;  mINP:0.1854
+                       Best_R1: 0.3442;    Best mAP: 0.3390
+=================================================
+Time: 2026-03-25 04:58:02 | phase 1 epoch 18; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.26538393;  i2i_id_loss: 0.17621242;  
+r2r_tri_loss: 0.07734343;  i2i_tri_loss: 0.041505545;  
+
+R1:0.3355;   R10:0.7498;  R20:0.8684;  mAP:0.3345;  mINP:0.2148
+                       Best_R1: 0.3442;    Best mAP: 0.3390
+=================================================
+Time: 2026-03-25 05:40:42 | phase 1 epoch 19; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.2452433;  i2i_id_loss: 0.16044681;  
+r2r_tri_loss: 0.07363715;  i2i_tri_loss: 0.040257566;  
+
+R1:0.3573;   R10:0.7562;  R20:0.8661;  mAP:0.3519;  mINP:0.2264
+                       Best_R1: 0.3573;    Best mAP: 0.3519
+=================================================
+Time: 2026-03-25 06:23:14 | phase 1 epoch 20; Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+r2r_id_loss: 0.2345742;  i2i_id_loss: 0.15188013;  
+r2r_tri_loss: 0.0697395;  i2i_tri_loss: 0.03923696;  
+
+R1:0.3649;   R10:0.7861;  R20:0.8900;  mAP:0.3590;  mINP:0.2268
+                       Best_R1: 0.3649;    Best mAP: 0.3590
+=================================================
+Time: 2026-03-25 06:23:15 | start phase2 from epoch 0
+=================================================
+Epoch: 0;Time: 2026-03-25 07:07:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-06
+tri_loss_rgb: 0.03927724;  tri_loss_ir: 0.053082928;  
+r2i_cmo_loss: 3.3909717;  i2r_cmo_loss: 3.6501555;  
+r2r_id_loss: 0.21583642;  i2i_id_loss: 0.13650511;  
+rgb_cross_loss: 5.8424597;  ir_cross_loss: 5.8562493;  
+
+R1:0.4083;   R10:0.8276;  R20:0.9153;  mAP:0.4095;  mINP:0.2805
+                               Best_R1: 0.4083(epoch:1);    Best mAP: 0.4095(epoch:1);    Best mINP: 0.2805(epoch:1)
+=================================================
+=================================================
+Epoch: 1;Time: 2026-03-25 07:52:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.27e-05
+tri_loss_rgb: 0.028155917;  tri_loss_ir: 0.04627811;  
+r2i_cmo_loss: 1.9775566;  i2r_cmo_loss: 2.1701472;  
+r2r_id_loss: 0.4173742;  i2i_id_loss: 0.20961073;  
+rgb_cross_loss: 3.4696147;  ir_cross_loss: 4.076638;  
+
+R1:0.4948;   R10:0.9058;  R20:0.9693;  mAP:0.5148;  mINP:0.4032
+                               Best_R1: 0.4948(epoch:2);    Best mAP: 0.5148(epoch:2);    Best mINP: 0.4032(epoch:2)
+=================================================
+=================================================
+Epoch: 2;Time: 2026-03-25 08:36:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 6.24e-05
+tri_loss_rgb: 0.01985473;  tri_loss_ir: 0.031590044;  
+r2i_cmo_loss: 0.8427071;  i2r_cmo_loss: 0.9804475;  
+r2r_id_loss: 0.55688435;  i2i_id_loss: 0.2784773;  
+rgb_cross_loss: 1.1898854;  ir_cross_loss: 1.2820427;  
+
+R1:0.5486;   R10:0.9229;  R20:0.9776;  mAP:0.5561;  mINP:0.4393
+                               Best_R1: 0.5486(epoch:3);    Best mAP: 0.5561(epoch:3);    Best mINP: 0.4393(epoch:3)
+=================================================
+=================================================
+Epoch: 3;Time: 2026-03-25 09:21:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 9.209999999999999e-05
+tri_loss_rgb: 0.019580426;  tri_loss_ir: 0.025623618;  
+r2i_cmo_loss: 0.6112146;  i2r_cmo_loss: 0.7515004;  
+r2r_id_loss: 0.48636857;  i2i_id_loss: 0.3023058;  
+rgb_cross_loss: 0.5326817;  ir_cross_loss: 0.34127596;  
+
+R1:0.5642;   R10:0.9254;  R20:0.9742;  mAP:0.5667;  mINP:0.4470
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 4;Time: 2026-03-25 10:05:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00012179999999999999
+tri_loss_rgb: 0.019675866;  tri_loss_ir: 0.023752086;  
+r2i_cmo_loss: 0.5442849;  i2r_cmo_loss: 0.65671325;  
+r2r_id_loss: 0.45382744;  i2i_id_loss: 0.3047233;  
+rgb_cross_loss: 0.30443037;  ir_cross_loss: 0.17505608;  
+
+R1:0.5530;   R10:0.9080;  R20:0.9625;  mAP:0.5474;  mINP:0.4206
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 5;Time: 2026-03-25 10:50:36;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0001515
+tri_loss_rgb: 0.023606697;  tri_loss_ir: 0.02709898;  
+r2i_cmo_loss: 0.5379434;  i2r_cmo_loss: 0.63651335;  
+r2r_id_loss: 0.4927607;  i2i_id_loss: 0.33447674;  
+rgb_cross_loss: 0.26944456;  ir_cross_loss: 0.14473638;  
+
+R1:0.5605;   R10:0.9121;  R20:0.9665;  mAP:0.5458;  mINP:0.4089
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 6;Time: 2026-03-25 11:34:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00018119999999999999
+tri_loss_rgb: 0.02709533;  tri_loss_ir: 0.029991334;  
+r2i_cmo_loss: 0.54755914;  i2r_cmo_loss: 0.6329612;  
+r2r_id_loss: 0.5389647;  i2i_id_loss: 0.3830558;  
+rgb_cross_loss: 0.24216339;  ir_cross_loss: 0.14837423;  
+
+R1:0.5455;   R10:0.9028;  R20:0.9600;  mAP:0.5307;  mINP:0.3926
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 7;Time: 2026-03-25 12:19:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00021089999999999998
+tri_loss_rgb: 0.030433578;  tri_loss_ir: 0.034098998;  
+r2i_cmo_loss: 0.5706105;  i2r_cmo_loss: 0.6502441;  
+r2r_id_loss: 0.5988707;  i2i_id_loss: 0.41564152;  
+rgb_cross_loss: 0.26994255;  ir_cross_loss: 0.1585109;  
+
+R1:0.5088;   R10:0.8807;  R20:0.9483;  mAP:0.4949;  mINP:0.3586
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 8;Time: 2026-03-25 13:03:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0002406
+tri_loss_rgb: 0.032850266;  tri_loss_ir: 0.0362289;  
+r2i_cmo_loss: 0.575921;  i2r_cmo_loss: 0.653806;  
+r2r_id_loss: 0.6096542;  i2i_id_loss: 0.43515664;  
+rgb_cross_loss: 0.25504985;  ir_cross_loss: 0.1592;  
+
+R1:0.5197;   R10:0.8914;  R20:0.9548;  mAP:0.5049;  mINP:0.3675
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+=================================================
+Epoch: 9;Time: 2026-03-25 13:47:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00027029999999999996
+tri_loss_rgb: 0.037047766;  tri_loss_ir: 0.04113764;  
+r2i_cmo_loss: 0.5919974;  i2r_cmo_loss: 0.6604104;  
+r2r_id_loss: 0.64702106;  i2i_id_loss: 0.45955446;  
+rgb_cross_loss: 0.27259976;  ir_cross_loss: 0.1730838;  
+
+R1:0.4941;   R10:0.8777;  R20:0.9444;  mAP:0.4789;  mINP:0.3369
+                               Best_R1: 0.5642(epoch:4);    Best mAP: 0.5667(epoch:4);    Best mINP: 0.4470(epoch:4)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-25 14:17:55 | start phase2 from epoch 3
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+=================================================
+Epoch: 3;Time: 2026-03-25 15:05:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 9.209999999999999e-05
+tri_loss_rgb: 0.018755961;  tri_loss_ir: 0.0228463;  
+r2i_cmo_loss: 0.4389492;  i2r_cmo_loss: 0.5331384;  
+r2r_id_loss: 0.6175275;  i2i_id_loss: 0.4127033;  
+rgb_cross_loss: 0.3547561;  ir_cross_loss: 0.19102392;  
+
+R1:0.6158;   R10:0.9329;  R20:0.9762;  mAP:0.5989;  mINP:0.4706
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 4;Time: 2026-03-25 15:52:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00012179999999999999
+tri_loss_rgb: 0.021379322;  tri_loss_ir: 0.024690002;  
+r2i_cmo_loss: 0.49576533;  i2r_cmo_loss: 0.59343004;  
+r2r_id_loss: 0.44033203;  i2i_id_loss: 0.30078945;  
+rgb_cross_loss: 0.22849707;  ir_cross_loss: 0.12523925;  
+
+R1:0.5579;   R10:0.9040;  R20:0.9604;  mAP:0.5498;  mINP:0.4222
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 5;Time: 2026-03-25 16:38:32;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0001515
+tri_loss_rgb: 0.024275638;  tri_loss_ir: 0.02742969;  
+r2i_cmo_loss: 0.512038;  i2r_cmo_loss: 0.60248965;  
+r2r_id_loss: 0.48236462;  i2i_id_loss: 0.34645757;  
+rgb_cross_loss: 0.21043763;  ir_cross_loss: 0.12655553;  
+
+R1:0.5189;   R10:0.8914;  R20:0.9525;  mAP:0.5077;  mINP:0.3694
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 6;Time: 2026-03-25 17:25:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00018119999999999999
+tri_loss_rgb: 0.029695522;  tri_loss_ir: 0.03220198;  
+r2i_cmo_loss: 0.5410897;  i2r_cmo_loss: 0.62028563;  
+r2r_id_loss: 0.55014986;  i2i_id_loss: 0.38933316;  
+rgb_cross_loss: 0.25201935;  ir_cross_loss: 0.14727339;  
+
+R1:0.5196;   R10:0.8694;  R20:0.9412;  mAP:0.4946;  mINP:0.3533
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 7;Time: 2026-03-25 18:11:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00021089999999999998
+tri_loss_rgb: 0.032459475;  tri_loss_ir: 0.035334498;  
+r2i_cmo_loss: 0.5530681;  i2r_cmo_loss: 0.62765706;  
+r2r_id_loss: 0.56570077;  i2i_id_loss: 0.40937802;  
+rgb_cross_loss: 0.24382928;  ir_cross_loss: 0.1514071;  
+
+R1:0.5111;   R10:0.8862;  R20:0.9518;  mAP:0.4932;  mINP:0.3514
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 8;Time: 2026-03-25 18:58:47;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0002406
+tri_loss_rgb: 0.03422213;  tri_loss_ir: 0.036685966;  
+r2i_cmo_loss: 0.56481963;  i2r_cmo_loss: 0.63094974;  
+r2r_id_loss: 0.5869803;  i2i_id_loss: 0.43078375;  
+rgb_cross_loss: 0.25041807;  ir_cross_loss: 0.16265611;  
+
+R1:0.5004;   R10:0.8754;  R20:0.9454;  mAP:0.4861;  mINP:0.3481
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 9;Time: 2026-03-25 19:45:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.00027029999999999996
+tri_loss_rgb: 0.03760521;  tri_loss_ir: 0.040372536;  
+r2i_cmo_loss: 0.5736878;  i2r_cmo_loss: 0.6401645;  
+r2r_id_loss: 0.60826176;  i2i_id_loss: 0.44630533;  
+rgb_cross_loss: 0.24561238;  ir_cross_loss: 0.16090907;  
+
+R1:0.4714;   R10:0.8620;  R20:0.9370;  mAP:0.4557;  mINP:0.3131
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 10;Time: 2026-03-25 20:32:30;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03893736;  tri_loss_ir: 0.04138857;  
+r2i_cmo_loss: 0.5891917;  i2r_cmo_loss: 0.6537648;  
+r2r_id_loss: 0.6427818;  i2i_id_loss: 0.472238;  
+rgb_cross_loss: 0.27975476;  ir_cross_loss: 0.1796839;  
+
+R1:0.4969;   R10:0.8761;  R20:0.9444;  mAP:0.4768;  mINP:0.3330
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 11;Time: 2026-03-25 21:19:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03954397;  tri_loss_ir: 0.042402573;  
+r2i_cmo_loss: 0.5701223;  i2r_cmo_loss: 0.63212055;  
+r2r_id_loss: 0.6019515;  i2i_id_loss: 0.4283131;  
+rgb_cross_loss: 0.23326464;  ir_cross_loss: 0.15051492;  
+
+R1:0.5176;   R10:0.8843;  R20:0.9491;  mAP:0.4956;  mINP:0.3495
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 12;Time: 2026-03-25 22:06:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.0380363;  tri_loss_ir: 0.040756896;  
+r2i_cmo_loss: 0.5478675;  i2r_cmo_loss: 0.60866606;  
+r2r_id_loss: 0.5641436;  i2i_id_loss: 0.40723634;  
+rgb_cross_loss: 0.20900112;  ir_cross_loss: 0.13913803;  
+
+R1:0.4701;   R10:0.8663;  R20:0.9380;  mAP:0.4555;  mINP:0.3143
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 13;Time: 2026-03-25 22:53:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03727351;  tri_loss_ir: 0.039331626;  
+r2i_cmo_loss: 0.53662467;  i2r_cmo_loss: 0.5992182;  
+r2r_id_loss: 0.5473315;  i2i_id_loss: 0.3962736;  
+rgb_cross_loss: 0.20432256;  ir_cross_loss: 0.12775506;  
+
+R1:0.4957;   R10:0.8754;  R20:0.9340;  mAP:0.4728;  mINP:0.3217
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 14;Time: 2026-03-25 23:39:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.038265005;  tri_loss_ir: 0.040692396;  
+r2i_cmo_loss: 0.53703153;  i2r_cmo_loss: 0.59950393;  
+r2r_id_loss: 0.55612504;  i2i_id_loss: 0.41464078;  
+rgb_cross_loss: 0.20849694;  ir_cross_loss: 0.14366275;  
+
+R1:0.5134;   R10:0.8809;  R20:0.9436;  mAP:0.4917;  mINP:0.3455
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 15;Time: 2026-03-26 00:26:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.036821622;  tri_loss_ir: 0.03843896;  
+r2i_cmo_loss: 0.5240807;  i2r_cmo_loss: 0.59101444;  
+r2r_id_loss: 0.5294397;  i2i_id_loss: 0.38494104;  
+rgb_cross_loss: 0.19085252;  ir_cross_loss: 0.12576579;  
+
+R1:0.5076;   R10:0.8884;  R20:0.9536;  mAP:0.4857;  mINP:0.3379
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 16;Time: 2026-03-26 01:13:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.036030613;  tri_loss_ir: 0.038092878;  
+r2i_cmo_loss: 0.5142191;  i2r_cmo_loss: 0.5785403;  
+r2r_id_loss: 0.5237005;  i2i_id_loss: 0.3750375;  
+rgb_cross_loss: 0.19301009;  ir_cross_loss: 0.11735238;  
+
+R1:0.5000;   R10:0.8785;  R20:0.9440;  mAP:0.4799;  mINP:0.3338
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 17;Time: 2026-03-26 01:59:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03504615;  tri_loss_ir: 0.037303198;  
+r2i_cmo_loss: 0.5115857;  i2r_cmo_loss: 0.5759389;  
+r2r_id_loss: 0.51949;  i2i_id_loss: 0.36653695;  
+rgb_cross_loss: 0.1916348;  ir_cross_loss: 0.11519221;  
+
+R1:0.5214;   R10:0.8672;  R20:0.9351;  mAP:0.4950;  mINP:0.3477
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 18;Time: 2026-03-26 02:46:19;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03592058;  tri_loss_ir: 0.037491735;  
+r2i_cmo_loss: 0.50629324;  i2r_cmo_loss: 0.57228315;  
+r2r_id_loss: 0.50882936;  i2i_id_loss: 0.37112936;  
+rgb_cross_loss: 0.18230706;  ir_cross_loss: 0.11684464;  
+
+R1:0.4982;   R10:0.8764;  R20:0.9484;  mAP:0.4765;  mINP:0.3305
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 19;Time: 2026-03-26 03:32:47;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03609322;  tri_loss_ir: 0.037817873;  
+r2i_cmo_loss: 0.50971407;  i2r_cmo_loss: 0.5690737;  
+r2r_id_loss: 0.50211686;  i2i_id_loss: 0.37055984;  
+rgb_cross_loss: 0.17606714;  ir_cross_loss: 0.120683625;  
+
+R1:0.4735;   R10:0.8636;  R20:0.9357;  mAP:0.4549;  mINP:0.3105
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 20;Time: 2026-03-26 04:19:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.034866534;  tri_loss_ir: 0.036753915;  
+r2i_cmo_loss: 0.50592065;  i2r_cmo_loss: 0.5669393;  
+r2r_id_loss: 0.49817544;  i2i_id_loss: 0.37089387;  
+rgb_cross_loss: 0.17104134;  ir_cross_loss: 0.11828401;  
+
+R1:0.4977;   R10:0.8774;  R20:0.9450;  mAP:0.4819;  mINP:0.3393
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 21;Time: 2026-03-26 05:06:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.034110826;  tri_loss_ir: 0.03588999;  
+r2i_cmo_loss: 0.49572495;  i2r_cmo_loss: 0.5587472;  
+r2r_id_loss: 0.48497152;  i2i_id_loss: 0.35956472;  
+rgb_cross_loss: 0.16140261;  ir_cross_loss: 0.114332624;  
+
+R1:0.5247;   R10:0.8882;  R20:0.9488;  mAP:0.4996;  mINP:0.3517
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 22;Time: 2026-03-26 05:53:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.034034442;  tri_loss_ir: 0.035899755;  
+r2i_cmo_loss: 0.48892835;  i2r_cmo_loss: 0.556887;  
+r2r_id_loss: 0.47963288;  i2i_id_loss: 0.3454357;  
+rgb_cross_loss: 0.16588752;  ir_cross_loss: 0.1046045;  
+
+R1:0.5232;   R10:0.8903;  R20:0.9536;  mAP:0.5014;  mINP:0.3522
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 23;Time: 2026-03-26 06:39:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.034677405;  tri_loss_ir: 0.036477383;  
+r2i_cmo_loss: 0.49191362;  i2r_cmo_loss: 0.55864555;  
+r2r_id_loss: 0.49532998;  i2i_id_loss: 0.35717866;  
+rgb_cross_loss: 0.1683212;  ir_cross_loss: 0.112217166;  
+
+R1:0.5247;   R10:0.8897;  R20:0.9499;  mAP:0.4968;  mINP:0.3456
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 24;Time: 2026-03-26 07:26:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.037533436;  tri_loss_ir: 0.039040957;  
+r2i_cmo_loss: 0.49671355;  i2r_cmo_loss: 0.562501;  
+r2r_id_loss: 0.5008024;  i2i_id_loss: 0.36966088;  
+rgb_cross_loss: 0.17666483;  ir_cross_loss: 0.12402797;  
+
+R1:0.5205;   R10:0.8770;  R20:0.9456;  mAP:0.4939;  mINP:0.3485
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 25;Time: 2026-03-26 08:13:26;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.034610014;  tri_loss_ir: 0.036473684;  
+r2i_cmo_loss: 0.48510373;  i2r_cmo_loss: 0.556773;  
+r2r_id_loss: 0.4800197;  i2i_id_loss: 0.34579697;  
+rgb_cross_loss: 0.16412745;  ir_cross_loss: 0.108911864;  
+
+R1:0.5273;   R10:0.8792;  R20:0.9431;  mAP:0.5031;  mINP:0.3578
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 26;Time: 2026-03-26 09:00:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.035396695;  tri_loss_ir: 0.036781233;  
+r2i_cmo_loss: 0.48589572;  i2r_cmo_loss: 0.54987913;  
+r2r_id_loss: 0.48008823;  i2i_id_loss: 0.34881064;  
+rgb_cross_loss: 0.16975917;  ir_cross_loss: 0.10724001;  
+
+R1:0.5184;   R10:0.8717;  R20:0.9398;  mAP:0.4948;  mINP:0.3504
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 27;Time: 2026-03-26 09:47:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.032907195;  tri_loss_ir: 0.034351267;  
+r2i_cmo_loss: 0.48499838;  i2r_cmo_loss: 0.5470625;  
+r2r_id_loss: 0.46867284;  i2i_id_loss: 0.3389092;  
+rgb_cross_loss: 0.16397968;  ir_cross_loss: 0.10371418;  
+
+R1:0.5260;   R10:0.9034;  R20:0.9600;  mAP:0.5049;  mINP:0.3581
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 28;Time: 2026-03-26 10:33:44;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03328127;  tri_loss_ir: 0.034867443;  
+r2i_cmo_loss: 0.4760412;  i2r_cmo_loss: 0.5422945;  
+r2r_id_loss: 0.46603364;  i2i_id_loss: 0.32562575;  
+rgb_cross_loss: 0.16253293;  ir_cross_loss: 0.09506798;  
+
+R1:0.5431;   R10:0.9035;  R20:0.9586;  mAP:0.5171;  mINP:0.3647
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 29;Time: 2026-03-26 11:19:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 0.0003
+tri_loss_rgb: 0.03462947;  tri_loss_ir: 0.036050983;  
+r2i_cmo_loss: 0.48143435;  i2r_cmo_loss: 0.5460328;  
+r2r_id_loss: 0.46791556;  i2i_id_loss: 0.35139766;  
+rgb_cross_loss: 0.1648473;  ir_cross_loss: 0.11134056;  
+
+R1:0.5420;   R10:0.8893;  R20:0.9440;  mAP:0.5159;  mINP:0.3659
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 30;Time: 2026-03-26 12:06:35;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.025153495;  tri_loss_ir: 0.026190339;  
+r2i_cmo_loss: 0.44810808;  i2r_cmo_loss: 0.5049278;  
+r2r_id_loss: 0.30731997;  i2i_id_loss: 0.2086202;  
+rgb_cross_loss: 0.08867448;  ir_cross_loss: 0.05550091;  
+weak_r2c_loss: 0.02837635;  
+R1:0.6014;   R10:0.9196;  R20:0.9670;  mAP:0.5735;  mINP:0.4294
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 31;Time: 2026-03-26 12:53:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.021237751;  tri_loss_ir: 0.022301685;  
+r2i_cmo_loss: 0.39636362;  i2r_cmo_loss: 0.45231143;  
+r2r_id_loss: 0.24992812;  i2i_id_loss: 0.16824293;  
+rgb_cross_loss: 0.06471065;  ir_cross_loss: 0.035710897;  
+weak_r2c_loss: 0.019896867;  
+R1:0.6029;   R10:0.9242;  R20:0.9711;  mAP:0.5777;  mINP:0.4346
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 32;Time: 2026-03-26 13:39:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.020262372;  tri_loss_ir: 0.021245362;  
+r2i_cmo_loss: 0.363505;  i2r_cmo_loss: 0.42281455;  
+r2r_id_loss: 0.24304159;  i2i_id_loss: 0.17332008;  
+rgb_cross_loss: 0.049699824;  ir_cross_loss: 0.032738518;  
+weak_r2c_loss: 0.016713971;  
+R1:0.6115;   R10:0.9263;  R20:0.9735;  mAP:0.5872;  mINP:0.4475
+                               Best_R1: 0.6158(epoch:4);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 33;Time: 2026-03-26 14:26:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.018948426;  tri_loss_ir: 0.019824443;  
+r2i_cmo_loss: 0.3415792;  i2r_cmo_loss: 0.39763618;  
+r2r_id_loss: 0.23589472;  i2i_id_loss: 0.17302044;  
+rgb_cross_loss: 0.046182003;  ir_cross_loss: 0.029934464;  
+weak_r2c_loss: 0.00987874;  
+R1:0.6178;   R10:0.9266;  R20:0.9731;  mAP:0.5925;  mINP:0.4531
+                               Best_R1: 0.6178(epoch:34);    Best mAP: 0.5989(epoch:4);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 34;Time: 2026-03-26 15:13:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.017965658;  tri_loss_ir: 0.018661404;  
+r2i_cmo_loss: 0.32648626;  i2r_cmo_loss: 0.38381535;  
+weak_r2c_loss: 0.0059181214;  r2r_id_loss: 0.23218492;  
+i2i_id_loss: 0.17728251;  rgb_cross_loss: 0.046960544;  
+ir_cross_loss: 0.028845923;  
+R1:0.6278;   R10:0.9305;  R20:0.9738;  mAP:0.6025;  mINP:0.4629
+                               Best_R1: 0.6278(epoch:35);    Best mAP: 0.6025(epoch:35);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 35;Time: 2026-03-26 16:00:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01716327;  tri_loss_ir: 0.017981337;  
+r2i_cmo_loss: 0.31739488;  i2r_cmo_loss: 0.37425318;  
+r2r_id_loss: 0.23369077;  i2i_id_loss: 0.17416675;  
+rgb_cross_loss: 0.042342257;  ir_cross_loss: 0.027839944;  
+weak_r2c_loss: 0.009459644;  
+R1:0.6301;   R10:0.9316;  R20:0.9719;  mAP:0.6051;  mINP:0.4657
+                               Best_R1: 0.6301(epoch:36);    Best mAP: 0.6051(epoch:36);    Best mINP: 0.4706(epoch:4)
+=================================================
+=================================================
+Epoch: 36;Time: 2026-03-26 16:47:46;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01724443;  tri_loss_ir: 0.017904451;  
+r2i_cmo_loss: 0.31098214;  i2r_cmo_loss: 0.36673883;  
+r2r_id_loss: 0.23122312;  i2i_id_loss: 0.17189048;  
+rgb_cross_loss: 0.04306165;  ir_cross_loss: 0.027933799;  
+weak_r2c_loss: 0.005665639;  
+R1:0.6378;   R10:0.9312;  R20:0.9734;  mAP:0.6121;  mINP:0.4739
+                               Best_R1: 0.6378(epoch:37);    Best mAP: 0.6121(epoch:37);    Best mINP: 0.4739(epoch:37)
+=================================================
+=================================================
+Epoch: 37;Time: 2026-03-26 17:34:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015613915;  tri_loss_ir: 0.016246444;  
+r2i_cmo_loss: 0.30711922;  i2r_cmo_loss: 0.35977668;  
+r2r_id_loss: 0.22359113;  i2i_id_loss: 0.17032142;  
+rgb_cross_loss: 0.041097663;  ir_cross_loss: 0.02859924;  
+weak_r2c_loss: 0.010855271;  
+R1:0.6299;   R10:0.9326;  R20:0.9737;  mAP:0.6087;  mINP:0.4731
+                               Best_R1: 0.6378(epoch:37);    Best mAP: 0.6121(epoch:37);    Best mINP: 0.4739(epoch:37)
+=================================================
+=================================================
+Epoch: 38;Time: 2026-03-26 18:21:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015702434;  tri_loss_ir: 0.016494539;  
+r2i_cmo_loss: 0.30241135;  i2r_cmo_loss: 0.3542627;  
+r2r_id_loss: 0.22414994;  i2i_id_loss: 0.16937762;  
+rgb_cross_loss: 0.042421583;  ir_cross_loss: 0.028613616;  
+weak_r2c_loss: 0.011011753;  
+R1:0.6449;   R10:0.9385;  R20:0.9780;  mAP:0.6217;  mINP:0.4866
+                               Best_R1: 0.6449(epoch:39);    Best mAP: 0.6217(epoch:39);    Best mINP: 0.4866(epoch:39)
+=================================================
+=================================================
+Epoch: 39;Time: 2026-03-26 19:08:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.015881859;  tri_loss_ir: 0.016429368;  
+r2i_cmo_loss: 0.29808888;  i2r_cmo_loss: 0.35127693;  
+r2r_id_loss: 0.22213271;  i2i_id_loss: 0.16830373;  
+rgb_cross_loss: 0.04153657;  ir_cross_loss: 0.030782873;  
+weak_r2c_loss: 0.0061236597;  
+R1:0.6529;   R10:0.9389;  R20:0.9780;  mAP:0.6281;  mINP:0.4931
+                               Best_R1: 0.6529(epoch:40);    Best mAP: 0.6281(epoch:40);    Best mINP: 0.4931(epoch:40)
+=================================================
+=================================================
+Epoch: 40;Time: 2026-03-26 19:55:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01501282;  tri_loss_ir: 0.015801946;  
+r2i_cmo_loss: 0.29596663;  i2r_cmo_loss: 0.34777007;  
+weak_r2c_loss: 0.003880598;  r2r_id_loss: 0.21668051;  
+i2i_id_loss: 0.1662866;  rgb_cross_loss: 0.040228408;  
+ir_cross_loss: 0.029869363;  
+R1:0.6485;   R10:0.9396;  R20:0.9776;  mAP:0.6258;  mINP:0.4922
+                               Best_R1: 0.6529(epoch:40);    Best mAP: 0.6281(epoch:40);    Best mINP: 0.4931(epoch:40)
+=================================================
+=================================================
+Epoch: 41;Time: 2026-03-26 20:41:54;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013555359;  tri_loss_ir: 0.014224194;  
+r2i_cmo_loss: 0.29127547;  i2r_cmo_loss: 0.34149453;  
+r2r_id_loss: 0.20987843;  i2i_id_loss: 0.1586422;  
+rgb_cross_loss: 0.03997282;  ir_cross_loss: 0.027967814;  
+weak_r2c_loss: 0.0051007704;  
+R1:0.6524;   R10:0.9393;  R20:0.9779;  mAP:0.6296;  mINP:0.4967
+                               Best_R1: 0.6529(epoch:40);    Best mAP: 0.6296(epoch:42);    Best mINP: 0.4967(epoch:42)
+=================================================
+=================================================
+Epoch: 42;Time: 2026-03-26 21:28:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013884435;  tri_loss_ir: 0.014594867;  
+r2i_cmo_loss: 0.28872588;  i2r_cmo_loss: 0.34009585;  
+r2r_id_loss: 0.21157819;  i2i_id_loss: 0.16004443;  
+rgb_cross_loss: 0.038597517;  ir_cross_loss: 0.028500607;  
+weak_r2c_loss: 0.007867143;  
+R1:0.6609;   R10:0.9377;  R20:0.9753;  mAP:0.6359;  mINP:0.5030
+                               Best_R1: 0.6609(epoch:43);    Best mAP: 0.6359(epoch:43);    Best mINP: 0.5030(epoch:43)
+=================================================
+=================================================
+Epoch: 43;Time: 2026-03-26 22:15:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013219308;  tri_loss_ir: 0.013832658;  
+r2i_cmo_loss: 0.28741282;  i2r_cmo_loss: 0.33627605;  
+r2r_id_loss: 0.20764416;  i2i_id_loss: 0.15916994;  
+rgb_cross_loss: 0.039319932;  ir_cross_loss: 0.02933529;  
+weak_r2c_loss: 0.006515378;  
+R1:0.6603;   R10:0.9412;  R20:0.9793;  mAP:0.6356;  mINP:0.5026
+                               Best_R1: 0.6609(epoch:43);    Best mAP: 0.6359(epoch:43);    Best mINP: 0.5030(epoch:43)
+=================================================
+=================================================
+Epoch: 44;Time: 2026-03-26 23:02:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.013233254;  tri_loss_ir: 0.013764306;  
+r2i_cmo_loss: 0.28480345;  i2r_cmo_loss: 0.33376136;  
+r2r_id_loss: 0.2115006;  i2i_id_loss: 0.15934964;  
+rgb_cross_loss: 0.041504275;  ir_cross_loss: 0.031162577;  
+weak_r2c_loss: 0.0042963387;  
+R1:0.6542;   R10:0.9430;  R20:0.9815;  mAP:0.6322;  mINP:0.4997
+                               Best_R1: 0.6609(epoch:43);    Best mAP: 0.6359(epoch:43);    Best mINP: 0.5030(epoch:43)
+=================================================
+=================================================
+Epoch: 45;Time: 2026-03-26 23:48:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.01285224;  tri_loss_ir: 0.013540527;  
+r2i_cmo_loss: 0.28308225;  i2r_cmo_loss: 0.33212784;  
+weak_r2c_loss: 0.0043428675;  r2r_id_loss: 0.20799369;  
+i2i_id_loss: 0.15650493;  rgb_cross_loss: 0.03930723;  
+ir_cross_loss: 0.028847437;  
+R1:0.6685;   R10:0.9403;  R20:0.9791;  mAP:0.6443;  mINP:0.5139
+                               Best_R1: 0.6685(epoch:46);    Best mAP: 0.6443(epoch:46);    Best mINP: 0.5139(epoch:46)
+=================================================
+=================================================
+Epoch: 46;Time: 2026-03-27 00:35:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012268803;  tri_loss_ir: 0.012876948;  
+r2i_cmo_loss: 0.28103647;  i2r_cmo_loss: 0.3290091;  
+r2r_id_loss: 0.20136334;  i2i_id_loss: 0.1506573;  
+rgb_cross_loss: 0.03928057;  ir_cross_loss: 0.028150037;  
+weak_r2c_loss: 0.003784067;  
+R1:0.6697;   R10:0.9376;  R20:0.9750;  mAP:0.6433;  mINP:0.5107
+                               Best_R1: 0.6697(epoch:47);    Best mAP: 0.6443(epoch:46);    Best mINP: 0.5139(epoch:46)
+=================================================
+=================================================
+Epoch: 47;Time: 2026-03-27 01:22:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012180404;  tri_loss_ir: 0.012710719;  
+r2i_cmo_loss: 0.2779633;  i2r_cmo_loss: 0.32530248;  
+r2r_id_loss: 0.19864245;  i2i_id_loss: 0.15305492;  
+rgb_cross_loss: 0.03883574;  ir_cross_loss: 0.02783587;  
+weak_r2c_loss: 0.0034312361;  
+R1:0.6666;   R10:0.9428;  R20:0.9790;  mAP:0.6434;  mINP:0.5117
+                               Best_R1: 0.6697(epoch:47);    Best mAP: 0.6443(epoch:46);    Best mINP: 0.5139(epoch:46)
+=================================================
+=================================================
+Epoch: 48;Time: 2026-03-27 02:09:32;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.012322571;  tri_loss_ir: 0.012854284;  
+r2i_cmo_loss: 0.27685735;  i2r_cmo_loss: 0.3244753;  
+r2r_id_loss: 0.19892304;  i2i_id_loss: 0.15164873;  
+rgb_cross_loss: 0.038624667;  ir_cross_loss: 0.028225334;  
+weak_r2c_loss: 0.0051081907;  
+R1:0.6628;   R10:0.9433;  R20:0.9777;  mAP:0.6436;  mINP:0.5168
+                               Best_R1: 0.6697(epoch:47);    Best mAP: 0.6443(epoch:46);    Best mINP: 0.5168(epoch:49)
+=================================================
+=================================================
+Epoch: 49;Time: 2026-03-27 02:56:28;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011410149;  tri_loss_ir: 0.012087197;  
+r2i_cmo_loss: 0.27477047;  i2r_cmo_loss: 0.32275686;  
+r2r_id_loss: 0.19584824;  i2i_id_loss: 0.1500758;  
+rgb_cross_loss: 0.03716639;  ir_cross_loss: 0.028588546;  
+weak_r2c_loss: 0.003604489;  
+R1:0.6748;   R10:0.9458;  R20:0.9817;  mAP:0.6509;  mINP:0.5210
+                               Best_R1: 0.6748(epoch:50);    Best mAP: 0.6509(epoch:50);    Best mINP: 0.5210(epoch:50)
+=================================================
+=================================================
+Epoch: 50;Time: 2026-03-27 03:43:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011325299;  tri_loss_ir: 0.011839525;  
+r2i_cmo_loss: 0.27212265;  i2r_cmo_loss: 0.3179432;  
+r2r_id_loss: 0.19437681;  i2i_id_loss: 0.14866531;  
+rgb_cross_loss: 0.03885064;  ir_cross_loss: 0.029173123;  
+weak_r2c_loss: 0.0048665646;  
+R1:0.6708;   R10:0.9387;  R20:0.9764;  mAP:0.6480;  mINP:0.5188
+                               Best_R1: 0.6748(epoch:50);    Best mAP: 0.6509(epoch:50);    Best mINP: 0.5210(epoch:50)
+=================================================
+=================================================
+Epoch: 51;Time: 2026-03-27 04:29:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011538031;  tri_loss_ir: 0.012139275;  
+r2i_cmo_loss: 0.2708813;  i2r_cmo_loss: 0.31524223;  
+r2r_id_loss: 0.19202867;  i2i_id_loss: 0.14975181;  
+rgb_cross_loss: 0.037257664;  ir_cross_loss: 0.028541952;  
+weak_r2c_loss: 0.0052007777;  
+R1:0.6664;   R10:0.9415;  R20:0.9782;  mAP:0.6452;  mINP:0.5170
+                               Best_R1: 0.6748(epoch:50);    Best mAP: 0.6509(epoch:50);    Best mINP: 0.5210(epoch:50)
+=================================================
+=================================================
+Epoch: 52;Time: 2026-03-27 05:16:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.0109219905;  tri_loss_ir: 0.011404946;  
+r2i_cmo_loss: 0.27054638;  i2r_cmo_loss: 0.3147486;  
+weak_r2c_loss: 0.0034919803;  r2r_id_loss: 0.19043703;  
+i2i_id_loss: 0.1437421;  rgb_cross_loss: 0.036958594;  
+ir_cross_loss: 0.027336372;  
+R1:0.6776;   R10:0.9434;  R20:0.9798;  mAP:0.6563;  mINP:0.5288
+                               Best_R1: 0.6776(epoch:53);    Best mAP: 0.6563(epoch:53);    Best mINP: 0.5288(epoch:53)
+=================================================
+=================================================
+Epoch: 53;Time: 2026-03-27 06:03:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011082829;  tri_loss_ir: 0.011788485;  
+r2i_cmo_loss: 0.2696522;  i2r_cmo_loss: 0.31343746;  
+r2r_id_loss: 0.19299363;  i2i_id_loss: 0.14519261;  
+rgb_cross_loss: 0.038771234;  ir_cross_loss: 0.028140305;  
+weak_r2c_loss: 0.004727784;  
+R1:0.6705;   R10:0.9398;  R20:0.9764;  mAP:0.6476;  mINP:0.5194
+                               Best_R1: 0.6776(epoch:53);    Best mAP: 0.6563(epoch:53);    Best mINP: 0.5288(epoch:53)
+=================================================
+=================================================
+Epoch: 54;Time: 2026-03-27 06:49:58;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.011103104;  tri_loss_ir: 0.011712312;  
+r2i_cmo_loss: 0.26548752;  i2r_cmo_loss: 0.31134796;  
+r2r_id_loss: 0.18630016;  i2i_id_loss: 0.14471072;  
+rgb_cross_loss: 0.03622614;  ir_cross_loss: 0.027486807;  
+weak_r2c_loss: 0.003053653;  
+R1:0.6742;   R10:0.9460;  R20:0.9821;  mAP:0.6512;  mINP:0.5240
+                               Best_R1: 0.6776(epoch:53);    Best mAP: 0.6563(epoch:53);    Best mINP: 0.5288(epoch:53)
+=================================================
+=================================================
+Epoch: 55;Time: 2026-03-27 07:36:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010975483;  tri_loss_ir: 0.011496493;  
+r2i_cmo_loss: 0.26536053;  i2r_cmo_loss: 0.30870634;  
+r2r_id_loss: 0.18507169;  i2i_id_loss: 0.14132005;  
+rgb_cross_loss: 0.03544432;  ir_cross_loss: 0.026445562;  
+weak_r2c_loss: 0.0033364247;  
+R1:0.6793;   R10:0.9453;  R20:0.9804;  mAP:0.6591;  mINP:0.5333
+                               Best_R1: 0.6793(epoch:56);    Best mAP: 0.6591(epoch:56);    Best mINP: 0.5333(epoch:56)
+=================================================
+=================================================
+Epoch: 56;Time: 2026-03-27 08:23:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010268777;  tri_loss_ir: 0.010676963;  
+r2i_cmo_loss: 0.26421624;  i2r_cmo_loss: 0.3073744;  
+r2r_id_loss: 0.18466417;  i2i_id_loss: 0.14307652;  
+rgb_cross_loss: 0.035681143;  ir_cross_loss: 0.027509991;  
+weak_r2c_loss: 0.0016689402;  
+R1:0.6777;   R10:0.9465;  R20:0.9813;  mAP:0.6579;  mINP:0.5330
+                               Best_R1: 0.6793(epoch:56);    Best mAP: 0.6591(epoch:56);    Best mINP: 0.5333(epoch:56)
+=================================================
+=================================================
+Epoch: 57;Time: 2026-03-27 09:10:07;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009804571;  tri_loss_ir: 0.010259728;  
+r2i_cmo_loss: 0.26243705;  i2r_cmo_loss: 0.3044553;  
+r2r_id_loss: 0.18234287;  i2i_id_loss: 0.1381882;  
+rgb_cross_loss: 0.035348505;  ir_cross_loss: 0.02551601;  
+weak_r2c_loss: 0.0015230986;  
+R1:0.6696;   R10:0.9444;  R20:0.9799;  mAP:0.6505;  mINP:0.5237
+                               Best_R1: 0.6793(epoch:56);    Best mAP: 0.6591(epoch:56);    Best mINP: 0.5333(epoch:56)
+=================================================
+=================================================
+Epoch: 58;Time: 2026-03-27 09:57:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010623563;  tri_loss_ir: 0.01116456;  
+r2i_cmo_loss: 0.26154175;  i2r_cmo_loss: 0.30243558;  
+r2r_id_loss: 0.18780568;  i2i_id_loss: 0.14030062;  
+rgb_cross_loss: 0.03704275;  ir_cross_loss: 0.02679858;  
+weak_r2c_loss: 0.0025940116;  
+R1:0.6776;   R10:0.9461;  R20:0.9815;  mAP:0.6581;  mINP:0.5310
+                               Best_R1: 0.6793(epoch:56);    Best mAP: 0.6591(epoch:56);    Best mINP: 0.5333(epoch:56)
+=================================================
+=================================================
+Epoch: 59;Time: 2026-03-27 10:43:58;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.010126219;  tri_loss_ir: 0.0105067305;  
+r2i_cmo_loss: 0.25888374;  i2r_cmo_loss: 0.3025376;  
+r2r_id_loss: 0.18077324;  i2i_id_loss: 0.1406277;  
+rgb_cross_loss: 0.035196684;  ir_cross_loss: 0.027364308;  
+weak_r2c_loss: 0.0016477385;  
+R1:0.6847;   R10:0.9490;  R20:0.9814;  mAP:0.6641;  mINP:0.5367
+                               Best_R1: 0.6847(epoch:60);    Best mAP: 0.6641(epoch:60);    Best mINP: 0.5367(epoch:60)
+=================================================
+=================================================
+Epoch: 60;Time: 2026-03-27 11:30:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009853335;  tri_loss_ir: 0.010320309;  
+r2i_cmo_loss: 0.25780654;  i2r_cmo_loss: 0.3001911;  
+r2r_id_loss: 0.17811532;  i2i_id_loss: 0.14189537;  
+rgb_cross_loss: 0.03412126;  ir_cross_loss: 0.02750816;  
+weak_r2c_loss: 0.0068568657;  
+R1:0.6774;   R10:0.9475;  R20:0.9803;  mAP:0.6580;  mINP:0.5307
+                               Best_R1: 0.6847(epoch:60);    Best mAP: 0.6641(epoch:60);    Best mINP: 0.5367(epoch:60)
+=================================================
+=================================================
+Epoch: 61;Time: 2026-03-27 12:17:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009583532;  tri_loss_ir: 0.010093803;  
+r2i_cmo_loss: 0.25780863;  i2r_cmo_loss: 0.30017686;  
+r2r_id_loss: 0.177516;  i2i_id_loss: 0.14035907;  
+rgb_cross_loss: 0.034339607;  ir_cross_loss: 0.027165473;  
+weak_r2c_loss: 0.0036120792;  
+R1:0.6859;   R10:0.9452;  R20:0.9790;  mAP:0.6634;  mINP:0.5375
+                               Best_R1: 0.6859(epoch:62);    Best mAP: 0.6641(epoch:60);    Best mINP: 0.5375(epoch:62)
+=================================================
+=================================================
+Epoch: 62;Time: 2026-03-27 13:04:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009367275;  tri_loss_ir: 0.009815594;  
+r2i_cmo_loss: 0.25648856;  i2r_cmo_loss: 0.29668283;  
+r2r_id_loss: 0.17641872;  i2i_id_loss: 0.135344;  
+rgb_cross_loss: 0.03454953;  ir_cross_loss: 0.026197817;  
+weak_r2c_loss: 0.0021579051;  
+R1:0.6804;   R10:0.9466;  R20:0.9788;  mAP:0.6561;  mINP:0.5254
+                               Best_R1: 0.6859(epoch:62);    Best mAP: 0.6641(epoch:60);    Best mINP: 0.5375(epoch:62)
+=================================================
+=================================================
+Epoch: 63;Time: 2026-03-27 13:51:29;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009062284;  tri_loss_ir: 0.009665368;  
+r2i_cmo_loss: 0.2558451;  i2r_cmo_loss: 0.29304942;  
+r2r_id_loss: 0.17649245;  i2i_id_loss: 0.1325758;  
+rgb_cross_loss: 0.03379488;  ir_cross_loss: 0.02469332;  
+weak_r2c_loss: 0.0025025518;  
+R1:0.6886;   R10:0.9500;  R20:0.9812;  mAP:0.6638;  mINP:0.5345
+                               Best_R1: 0.6886(epoch:64);    Best mAP: 0.6641(epoch:60);    Best mINP: 0.5375(epoch:62)
+=================================================
+=================================================
+Epoch: 64;Time: 2026-03-27 14:38:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009583816;  tri_loss_ir: 0.010047887;  
+r2i_cmo_loss: 0.25568396;  i2r_cmo_loss: 0.2941219;  
+r2r_id_loss: 0.17398198;  i2i_id_loss: 0.13435853;  
+rgb_cross_loss: 0.033685092;  ir_cross_loss: 0.024688618;  
+weak_r2c_loss: 0.003186219;  
+R1:0.6847;   R10:0.9434;  R20:0.9785;  mAP:0.6642;  mINP:0.5398
+                               Best_R1: 0.6886(epoch:64);    Best mAP: 0.6642(epoch:65);    Best mINP: 0.5398(epoch:65)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-27 16:46:20 | start phase2 from epoch 64
+=================================================
+Epoch: 64;Time: 2026-03-27 17:33:26;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009005998;  tri_loss_ir: 0.009474962;  
+r2i_cmo_loss: 0.22803788;  i2r_cmo_loss: 0.26485404;  
+r2r_id_loss: 0.22100182;  i2i_id_loss: 0.17005767;  
+rgb_cross_loss: 0.038375318;  ir_cross_loss: 0.02941189;  
+weak_r2c_loss: 0.0029511964;  
+R1:0.6777;   R10:0.9482;  R20:0.9834;  mAP:0.6608;  mINP:0.5368
+                               Best_R1: 0.6777(epoch:65);    Best mAP: 0.6608(epoch:65);    Best mINP: 0.5368(epoch:65)
+=================================================
+=================================================
+Epoch: 65;Time: 2026-03-27 18:20:19;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.009169185;  tri_loss_ir: 0.009697136;  
+r2i_cmo_loss: 0.23873998;  i2r_cmo_loss: 0.27605343;  
+r2r_id_loss: 0.19282824;  i2i_id_loss: 0.1458441;  
+rgb_cross_loss: 0.03529334;  ir_cross_loss: 0.02710783;  
+weak_r2c_loss: 0.002708306;  
+R1:0.6718;   R10:0.9400;  R20:0.9762;  mAP:0.6508;  mINP:0.5252
+                               Best_R1: 0.6777(epoch:65);    Best mAP: 0.6608(epoch:65);    Best mINP: 0.5368(epoch:65)
+=================================================
+=================================================
+Epoch: 66;Time: 2026-03-27 19:07:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.00908163;  tri_loss_ir: 0.009611168;  
+r2i_cmo_loss: 0.2461317;  i2r_cmo_loss: 0.28270355;  
+r2r_id_loss: 0.18006869;  i2i_id_loss: 0.1358546;  
+rgb_cross_loss: 0.035741042;  ir_cross_loss: 0.025695167;  
+weak_r2c_loss: 0.0022810015;  
+R1:0.6791;   R10:0.9476;  R20:0.9794;  mAP:0.6578;  mINP:0.5318
+                               Best_R1: 0.6791(epoch:67);    Best mAP: 0.6608(epoch:65);    Best mINP: 0.5368(epoch:65)
+=================================================
+=================================================
+Epoch: 67;Time: 2026-03-27 19:54:04;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.008790506;  tri_loss_ir: 0.009200413;  
+r2i_cmo_loss: 0.24807318;  i2r_cmo_loss: 0.28546336;  
+r2r_id_loss: 0.17393437;  i2i_id_loss: 0.1341756;  
+rgb_cross_loss: 0.033968154;  ir_cross_loss: 0.025463022;  
+weak_r2c_loss: 0.0043286807;  
+R1:0.6775;   R10:0.9457;  R20:0.9794;  mAP:0.6606;  mINP:0.5385
+                               Best_R1: 0.6791(epoch:67);    Best mAP: 0.6608(epoch:65);    Best mINP: 0.5385(epoch:68)
+=================================================
+=================================================
+Epoch: 68;Time: 2026-03-27 20:41:00;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.008544641;  tri_loss_ir: 0.0092001585;  
+r2i_cmo_loss: 0.24684617;  i2r_cmo_loss: 0.28522196;  
+r2r_id_loss: 0.16729905;  i2i_id_loss: 0.13110413;  
+rgb_cross_loss: 0.031957515;  ir_cross_loss: 0.025059825;  
+weak_r2c_loss: 0.0040018605;  
+R1:0.6762;   R10:0.9447;  R20:0.9805;  mAP:0.6612;  mINP:0.5404
+                               Best_R1: 0.6791(epoch:67);    Best mAP: 0.6612(epoch:69);    Best mINP: 0.5404(epoch:69)
+=================================================
+=================================================
+Epoch: 69;Time: 2026-03-27 21:27:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 2.9999999999999997e-05
+tri_loss_rgb: 0.008025908;  tri_loss_ir: 0.008405449;  
+r2i_cmo_loss: 0.24631773;  i2r_cmo_loss: 0.2846631;  
+r2r_id_loss: 0.16842054;  i2i_id_loss: 0.1317131;  
+rgb_cross_loss: 0.033701815;  ir_cross_loss: 0.025939351;  
+
+R1:0.6866;   R10:0.9533;  R20:0.9825;  mAP:0.6669;  mINP:0.5421
+                               Best_R1: 0.6866(epoch:70);    Best mAP: 0.6669(epoch:70);    Best mINP: 0.5421(epoch:70)
+=================================================
+=================================================
+Epoch: 70;Time: 2026-03-27 22:14:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.008057956;  tri_loss_ir: 0.008614307;  
+r2i_cmo_loss: 0.246279;  i2r_cmo_loss: 0.28091675;  
+r2r_id_loss: 0.1565198;  i2i_id_loss: 0.119010724;  
+rgb_cross_loss: 0.02956339;  ir_cross_loss: 0.022221817;  
+weak_r2c_loss: 0.029385976;  
+R1:0.6887;   R10:0.9498;  R20:0.9811;  mAP:0.6697;  mINP:0.5478
+                               Best_R1: 0.6887(epoch:71);    Best mAP: 0.6697(epoch:71);    Best mINP: 0.5478(epoch:71)
+=================================================
+=================================================
+Epoch: 71;Time: 2026-03-27 23:02:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.007284205;  tri_loss_ir: 0.0077461097;  
+r2i_cmo_loss: 0.24318555;  i2r_cmo_loss: 0.27753982;  
+r2r_id_loss: 0.14815547;  i2i_id_loss: 0.11325266;  
+rgb_cross_loss: 0.026692012;  ir_cross_loss: 0.020598957;  
+weak_r2c_loss: 0.019142821;  
+R1:0.6931;   R10:0.9524;  R20:0.9820;  mAP:0.6729;  mINP:0.5494
+                               Best_R1: 0.6931(epoch:72);    Best mAP: 0.6729(epoch:72);    Best mINP: 0.5494(epoch:72)
+=================================================
+=================================================
+Epoch: 72;Time: 2026-03-27 23:48:42;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00785171;  tri_loss_ir: 0.008256081;  
+r2i_cmo_loss: 0.24243002;  i2r_cmo_loss: 0.27663618;  
+r2r_id_loss: 0.14687909;  i2i_id_loss: 0.11338222;  
+rgb_cross_loss: 0.025970867;  ir_cross_loss: 0.020276926;  
+weak_r2c_loss: 0.0035731986;  
+R1:0.6912;   R10:0.9519;  R20:0.9822;  mAP:0.6722;  mINP:0.5501
+                               Best_R1: 0.6931(epoch:72);    Best mAP: 0.6729(epoch:72);    Best mINP: 0.5501(epoch:73)
+=================================================
+=================================================
+Epoch: 73;Time: 2026-03-28 00:35:40;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0076366155;  tri_loss_ir: 0.0080622;  
+r2i_cmo_loss: 0.23987126;  i2r_cmo_loss: 0.27307466;  
+r2r_id_loss: 0.14138946;  i2i_id_loss: 0.107551515;  
+rgb_cross_loss: 0.024282483;  ir_cross_loss: 0.018109487;  
+weak_r2c_loss: 0.015116704;  
+R1:0.6908;   R10:0.9530;  R20:0.9829;  mAP:0.6721;  mINP:0.5490
+                               Best_R1: 0.6931(epoch:72);    Best mAP: 0.6729(epoch:72);    Best mINP: 0.5501(epoch:73)
+=================================================
+=================================================
+Epoch: 74;Time: 2026-03-28 01:22:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0073029264;  tri_loss_ir: 0.007733396;  
+r2i_cmo_loss: 0.23750366;  i2r_cmo_loss: 0.27219212;  
+r2r_id_loss: 0.14330037;  i2i_id_loss: 0.10958898;  
+rgb_cross_loss: 0.024394507;  ir_cross_loss: 0.0182778;  
+weak_r2c_loss: 0.0017693731;  
+R1:0.6917;   R10:0.9520;  R20:0.9825;  mAP:0.6726;  mINP:0.5513
+                               Best_R1: 0.6931(epoch:72);    Best mAP: 0.6729(epoch:72);    Best mINP: 0.5513(epoch:75)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-28 08:05:45 | start phase2 from epoch 71
+=================================================
+Epoch: 71;Time: 2026-03-28 08:50:24;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0059486404;  tri_loss_ir: 0.006309444;  
+r2i_cmo_loss: 0.23545314;  i2r_cmo_loss: 0.26932436;  
+r2r_id_loss: 0.13384669;  i2i_id_loss: 0.10133724;  
+rgb_cross_loss: 0.01625225;  ir_cross_loss: 0.013470247;  
+weak_r2c_loss: 0.0032272786;  
+R1:0.6925;   R10:0.9535;  R20:0.9834;  mAP:0.6742;  mINP:0.5533
+                               Best_R1: 0.6925(epoch:72);    Best mAP: 0.6742(epoch:72);    Best mINP: 0.5533(epoch:72)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-28 14:29:58 | start phase2 from epoch 71
+=================================================
+Epoch: 71;Time: 2026-03-28 15:14:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0052267215;  tri_loss_ir: 0.005553095;  
+r2i_cmo_loss: 0.22682609;  i2r_cmo_loss: 0.26115227;  
+r2r_id_loss: 0.13055454;  i2i_id_loss: 0.10000766;  
+rgb_cross_loss: 0.014068357;  ir_cross_loss: 0.012308162;  
+weak_r2c_loss: 0.0015661529;  
+R1:0.6920;   R10:0.9531;  R20:0.9835;  mAP:0.6744;  mINP:0.5543
+                               Best_R1: 0.6920(epoch:72);    Best mAP: 0.6744(epoch:72);    Best mINP: 0.5543(epoch:72)
+=================================================
+=================================================
+Epoch: 72;Time: 2026-03-28 15:59:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005617092;  tri_loss_ir: 0.0059994897;  
+r2i_cmo_loss: 0.22471201;  i2r_cmo_loss: 0.25871962;  
+r2r_id_loss: 0.13805537;  i2i_id_loss: 0.106298774;  
+rgb_cross_loss: 0.016037203;  ir_cross_loss: 0.01364023;  
+weak_r2c_loss: 0.0019636985;  
+R1:0.6961;   R10:0.9525;  R20:0.9818;  mAP:0.6772;  mINP:0.5577
+                               Best_R1: 0.6961(epoch:73);    Best mAP: 0.6772(epoch:73);    Best mINP: 0.5577(epoch:73)
+=================================================
+=================================================
+Epoch: 73;Time: 2026-03-28 16:44:15;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053262273;  tri_loss_ir: 0.005690153;  
+r2i_cmo_loss: 0.22250083;  i2r_cmo_loss: 0.2571966;  
+r2r_id_loss: 0.13413729;  i2i_id_loss: 0.105113864;  
+rgb_cross_loss: 0.015427918;  ir_cross_loss: 0.013415412;  
+weak_r2c_loss: 0.021656891;  
+R1:0.6966;   R10:0.9509;  R20:0.9811;  mAP:0.6752;  mINP:0.5537
+                               Best_R1: 0.6966(epoch:74);    Best mAP: 0.6772(epoch:73);    Best mINP: 0.5577(epoch:73)
+=================================================
+=================================================
+Epoch: 74;Time: 2026-03-28 17:29:02;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00507072;  tri_loss_ir: 0.005379921;  
+r2i_cmo_loss: 0.22109698;  i2r_cmo_loss: 0.2564379;  
+r2r_id_loss: 0.13259563;  i2i_id_loss: 0.10492679;  
+rgb_cross_loss: 0.015004947;  ir_cross_loss: 0.013419851;  
+weak_r2c_loss: 0.0029503098;  
+R1:0.6945;   R10:0.9529;  R20:0.9821;  mAP:0.6764;  mINP:0.5578
+                               Best_R1: 0.6966(epoch:74);    Best mAP: 0.6772(epoch:73);    Best mINP: 0.5578(epoch:75)
+=================================================
+=================================================
+Epoch: 75;Time: 2026-03-28 18:13:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004732904;  tri_loss_ir: 0.005150634;  
+r2i_cmo_loss: 0.21831357;  i2r_cmo_loss: 0.25452375;  
+r2r_id_loss: 0.12710898;  i2i_id_loss: 0.10198075;  
+rgb_cross_loss: 0.014197304;  ir_cross_loss: 0.01302154;  
+weak_r2c_loss: 0.0152256405;  
+R1:0.6978;   R10:0.9547;  R20:0.9840;  mAP:0.6793;  mINP:0.5605
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 76;Time: 2026-03-28 18:58:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004298686;  tri_loss_ir: 0.0045497008;  
+r2i_cmo_loss: 0.21550868;  i2r_cmo_loss: 0.25253096;  
+r2r_id_loss: 0.12438519;  i2i_id_loss: 0.09945356;  
+rgb_cross_loss: 0.013889977;  ir_cross_loss: 0.0126985;  
+weak_r2c_loss: 0.0025062105;  
+R1:0.6968;   R10:0.9523;  R20:0.9822;  mAP:0.6786;  mINP:0.5600
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 77;Time: 2026-03-28 19:43:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0064613656;  tri_loss_ir: 0.006954767;  
+r2i_cmo_loss: 0.2192554;  i2r_cmo_loss: 0.25371018;  
+r2r_id_loss: 0.15189143;  i2i_id_loss: 0.11807533;  
+rgb_cross_loss: 0.024587054;  ir_cross_loss: 0.019431515;  
+weak_r2c_loss: 0.014031822;  
+R1:0.6897;   R10:0.9493;  R20:0.9807;  mAP:0.6727;  mINP:0.5535
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 78;Time: 2026-03-28 20:27:26;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0059516686;  tri_loss_ir: 0.00635671;  
+r2i_cmo_loss: 0.21870534;  i2r_cmo_loss: 0.2523829;  
+r2r_id_loss: 0.14930502;  i2i_id_loss: 0.116463214;  
+rgb_cross_loss: 0.023621;  ir_cross_loss: 0.019384656;  
+weak_r2c_loss: 0.0029618668;  
+R1:0.6951;   R10:0.9524;  R20:0.9820;  mAP:0.6752;  mINP:0.5536
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 79;Time: 2026-03-28 21:11:46;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0069963983;  tri_loss_ir: 0.0073601278;  
+r2i_cmo_loss: 0.22047125;  i2r_cmo_loss: 0.25337386;  
+r2r_id_loss: 0.15439275;  i2i_id_loss: 0.12020577;  
+rgb_cross_loss: 0.027218595;  ir_cross_loss: 0.021598333;  
+weak_r2c_loss: 0.0028188184;  
+R1:0.6923;   R10:0.9514;  R20:0.9819;  mAP:0.6736;  mINP:0.5530
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 80;Time: 2026-03-28 21:56:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006817125;  tri_loss_ir: 0.0072308397;  
+r2i_cmo_loss: 0.21992102;  i2r_cmo_loss: 0.25209892;  
+r2r_id_loss: 0.1488473;  i2i_id_loss: 0.11497393;  
+rgb_cross_loss: 0.025577268;  ir_cross_loss: 0.01980209;  
+weak_r2c_loss: 0.002699743;  
+R1:0.6916;   R10:0.9527;  R20:0.9833;  mAP:0.6736;  mINP:0.5521
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 81;Time: 2026-03-28 22:40:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006610318;  tri_loss_ir: 0.0070038857;  
+r2i_cmo_loss: 0.21961643;  i2r_cmo_loss: 0.25274536;  
+r2r_id_loss: 0.15089276;  i2i_id_loss: 0.11606667;  
+rgb_cross_loss: 0.02600921;  ir_cross_loss: 0.020194195;  
+weak_r2c_loss: 0.001793069;  
+R1:0.6933;   R10:0.9515;  R20:0.9828;  mAP:0.6745;  mINP:0.5541
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 82;Time: 2026-03-28 23:25:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0067063887;  tri_loss_ir: 0.007137712;  
+r2i_cmo_loss: 0.21891782;  i2r_cmo_loss: 0.25351325;  
+r2r_id_loss: 0.15013593;  i2i_id_loss: 0.116694495;  
+rgb_cross_loss: 0.026033772;  ir_cross_loss: 0.020095685;  
+weak_r2c_loss: 0.0031487497;  
+R1:0.6916;   R10:0.9503;  R20:0.9818;  mAP:0.6725;  mINP:0.5517
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 83;Time: 2026-03-29 00:09:43;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00643503;  tri_loss_ir: 0.006782159;  
+r2i_cmo_loss: 0.22053486;  i2r_cmo_loss: 0.25056228;  
+r2r_id_loss: 0.14868036;  i2i_id_loss: 0.11311037;  
+rgb_cross_loss: 0.025704509;  ir_cross_loss: 0.019279912;  
+weak_r2c_loss: 0.0027246408;  
+R1:0.6926;   R10:0.9514;  R20:0.9824;  mAP:0.6731;  mINP:0.5523
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 84;Time: 2026-03-29 00:54:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0063527403;  tri_loss_ir: 0.006750832;  
+r2i_cmo_loss: 0.21943158;  i2r_cmo_loss: 0.25282595;  
+r2r_id_loss: 0.1453125;  i2i_id_loss: 0.11356892;  
+rgb_cross_loss: 0.025127767;  ir_cross_loss: 0.020147841;  
+weak_r2c_loss: 0.001987189;  
+R1:0.6966;   R10:0.9505;  R20:0.9819;  mAP:0.6779;  mINP:0.5587
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 85;Time: 2026-03-29 01:39:07;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006217151;  tri_loss_ir: 0.00652647;  
+r2i_cmo_loss: 0.22022277;  i2r_cmo_loss: 0.25178856;  
+r2r_id_loss: 0.14461249;  i2i_id_loss: 0.11071295;  
+rgb_cross_loss: 0.024906645;  ir_cross_loss: 0.018952027;  
+weak_r2c_loss: 0.0021721055;  
+R1:0.6932;   R10:0.9517;  R20:0.9830;  mAP:0.6754;  mINP:0.5554
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 86;Time: 2026-03-29 02:23:46;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0065281326;  tri_loss_ir: 0.0068571153;  
+r2i_cmo_loss: 0.22070396;  i2r_cmo_loss: 0.25201076;  
+r2r_id_loss: 0.14641789;  i2i_id_loss: 0.11279311;  
+rgb_cross_loss: 0.025720922;  ir_cross_loss: 0.019341687;  
+weak_r2c_loss: 0.0030610387;  
+R1:0.6892;   R10:0.9511;  R20:0.9826;  mAP:0.6710;  mINP:0.5499
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 87;Time: 2026-03-29 03:08:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006443567;  tri_loss_ir: 0.006786149;  
+r2i_cmo_loss: 0.21858795;  i2r_cmo_loss: 0.2511175;  
+r2r_id_loss: 0.14125292;  i2i_id_loss: 0.11190239;  
+rgb_cross_loss: 0.024071014;  ir_cross_loss: 0.019361388;  
+weak_r2c_loss: 0.003369518;  
+R1:0.6905;   R10:0.9514;  R20:0.9814;  mAP:0.6722;  mINP:0.5519
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 88;Time: 2026-03-29 03:52:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0060448544;  tri_loss_ir: 0.0063242204;  
+r2i_cmo_loss: 0.21941155;  i2r_cmo_loss: 0.25189131;  
+r2r_id_loss: 0.1394651;  i2i_id_loss: 0.111563526;  
+rgb_cross_loss: 0.023898523;  ir_cross_loss: 0.019008996;  
+weak_r2c_loss: 0.0024991739;  
+R1:0.6949;   R10:0.9527;  R20:0.9822;  mAP:0.6752;  mINP:0.5542
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 89;Time: 2026-03-29 04:37:30;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0061265505;  tri_loss_ir: 0.006395992;  
+r2i_cmo_loss: 0.2170624;  i2r_cmo_loss: 0.25069278;  
+r2r_id_loss: 0.1386085;  i2i_id_loss: 0.11219328;  
+rgb_cross_loss: 0.022994569;  ir_cross_loss: 0.01938375;  
+weak_r2c_loss: 0.002963172;  
+R1:0.6972;   R10:0.9538;  R20:0.9833;  mAP:0.6766;  mINP:0.5554
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 90;Time: 2026-03-29 05:21:46;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0059890156;  tri_loss_ir: 0.0064064534;  
+r2i_cmo_loss: 0.216974;  i2r_cmo_loss: 0.2504213;  
+r2r_id_loss: 0.13841023;  i2i_id_loss: 0.10799552;  
+rgb_cross_loss: 0.02209311;  ir_cross_loss: 0.018065596;  
+weak_r2c_loss: 0.0025965406;  
+R1:0.6968;   R10:0.9526;  R20:0.9830;  mAP:0.6772;  mINP:0.5562
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 91;Time: 2026-03-29 06:06:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0060672504;  tri_loss_ir: 0.0064143497;  
+r2i_cmo_loss: 0.21818556;  i2r_cmo_loss: 0.24944048;  
+r2r_id_loss: 0.14173537;  i2i_id_loss: 0.10827612;  
+rgb_cross_loss: 0.022760985;  ir_cross_loss: 0.018291919;  
+weak_r2c_loss: 0.0014796683;  
+R1:0.6958;   R10:0.9527;  R20:0.9825;  mAP:0.6760;  mINP:0.5546
+                               Best_R1: 0.6978(epoch:76);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+=================================================
+Epoch: 92;Time: 2026-03-29 06:51:04;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0066125165;  tri_loss_ir: 0.0069201696;  
+r2i_cmo_loss: 0.2188329;  i2r_cmo_loss: 0.2484885;  
+r2r_id_loss: 0.14131883;  i2i_id_loss: 0.10956899;  
+rgb_cross_loss: 0.02344447;  ir_cross_loss: 0.018897535;  
+weak_r2c_loss: 0.0022021665;  
+R1:0.6983;   R10:0.9532;  R20:0.9825;  mAP:0.6778;  mINP:0.5571
+                               Best_R1: 0.6983(epoch:93);    Best mAP: 0.6793(epoch:76);    Best mINP: 0.5605(epoch:76)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='train', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=1, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-29 20:00:51 | start phase2 from epoch 75
+=================================================
+Epoch: 75;Time: 2026-03-29 20:22:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004548441;  tri_loss_ir: 0.0048424546;  
+r2i_cmo_loss: 0.21322364;  i2r_cmo_loss: 0.2474739;  
+r2r_id_loss: 0.13390228;  i2i_id_loss: 0.10383572;  
+rgb_cross_loss: 0.014522472;  ir_cross_loss: 0.012985332;  
+weak_r2c_loss: 0.0023084877;  
+R1:0.6928;   R10:0.9524;  R20:0.9832;  mAP:0.6750;  mINP:0.5555
+                               Best_R1: 0.6928(epoch:76);    Best mAP: 0.6750(epoch:76);    Best mINP: 0.5555(epoch:76)
+=================================================
+=================================================
+Epoch: 76;Time: 2026-03-29 20:44:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004795518;  tri_loss_ir: 0.0051383288;  
+r2i_cmo_loss: 0.2123728;  i2r_cmo_loss: 0.24623643;  
+r2r_id_loss: 0.13913523;  i2i_id_loss: 0.10804051;  
+rgb_cross_loss: 0.015498144;  ir_cross_loss: 0.013797424;  
+weak_r2c_loss: 0.0017957162;  
+R1:0.6961;   R10:0.9526;  R20:0.9824;  mAP:0.6776;  mINP:0.5588
+                               Best_R1: 0.6961(epoch:77);    Best mAP: 0.6776(epoch:77);    Best mINP: 0.5588(epoch:77)
+=================================================
+=================================================
+Epoch: 77;Time: 2026-03-29 21:06:08;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0046457723;  tri_loss_ir: 0.0049667656;  
+r2i_cmo_loss: 0.21157852;  i2r_cmo_loss: 0.24547881;  
+r2r_id_loss: 0.1362834;  i2i_id_loss: 0.10722275;  
+rgb_cross_loss: 0.015311613;  ir_cross_loss: 0.013728504;  
+weak_r2c_loss: 0.002946701;  
+R1:0.6958;   R10:0.9510;  R20:0.9813;  mAP:0.6753;  mINP:0.5547
+                               Best_R1: 0.6961(epoch:77);    Best mAP: 0.6776(epoch:77);    Best mINP: 0.5588(epoch:77)
+=================================================
+=================================================
+Epoch: 78;Time: 2026-03-29 21:27:50;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0044889585;  tri_loss_ir: 0.0047691213;  
+r2i_cmo_loss: 0.2114268;  i2r_cmo_loss: 0.24548976;  
+r2r_id_loss: 0.13550891;  i2i_id_loss: 0.107138574;  
+rgb_cross_loss: 0.015200105;  ir_cross_loss: 0.013980929;  
+weak_r2c_loss: 0.0025776348;  
+R1:0.6948;   R10:0.9525;  R20:0.9822;  mAP:0.6770;  mINP:0.5590
+                               Best_R1: 0.6961(epoch:77);    Best mAP: 0.6776(epoch:77);    Best mINP: 0.5590(epoch:79)
+=================================================
+=================================================
+Epoch: 79;Time: 2026-03-29 21:49:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0042453585;  tri_loss_ir: 0.0046312506;  
+r2i_cmo_loss: 0.20970002;  i2r_cmo_loss: 0.24442852;  
+r2r_id_loss: 0.13056168;  i2i_id_loss: 0.104275085;  
+rgb_cross_loss: 0.014676395;  ir_cross_loss: 0.013635181;  
+weak_r2c_loss: 0.0026983537;  
+R1:0.6966;   R10:0.9548;  R20:0.9839;  mAP:0.6792;  mINP:0.5609
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 80;Time: 2026-03-29 22:11:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0042033666;  tri_loss_ir: 0.004451624;  
+r2i_cmo_loss: 0.20883545;  i2r_cmo_loss: 0.24377714;  
+r2r_id_loss: 0.13294628;  i2i_id_loss: 0.10537758;  
+rgb_cross_loss: 0.015812105;  ir_cross_loss: 0.014327808;  
+weak_r2c_loss: 0.002496478;  
+R1:0.6960;   R10:0.9519;  R20:0.9821;  mAP:0.6784;  mINP:0.5601
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 81;Time: 2026-03-29 22:32:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0062658167;  tri_loss_ir: 0.0067520025;  
+r2i_cmo_loss: 0.21309058;  i2r_cmo_loss: 0.24567981;  
+r2r_id_loss: 0.15727057;  i2i_id_loss: 0.121280424;  
+rgb_cross_loss: 0.026503652;  ir_cross_loss: 0.021047236;  
+weak_r2c_loss: 0.0035676998;  
+R1:0.6894;   R10:0.9491;  R20:0.9807;  mAP:0.6725;  mINP:0.5537
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 82;Time: 2026-03-29 22:54:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005740514;  tri_loss_ir: 0.006139442;  
+r2i_cmo_loss: 0.21316247;  i2r_cmo_loss: 0.24509698;  
+r2r_id_loss: 0.15324305;  i2i_id_loss: 0.11886434;  
+rgb_cross_loss: 0.025294703;  ir_cross_loss: 0.020863743;  
+weak_r2c_loss: 0.003010521;  
+R1:0.6948;   R10:0.9520;  R20:0.9821;  mAP:0.6749;  mINP:0.5535
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 83;Time: 2026-03-29 23:16:21;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006733174;  tri_loss_ir: 0.0070886705;  
+r2i_cmo_loss: 0.21550764;  i2r_cmo_loss: 0.24642584;  
+r2r_id_loss: 0.1569375;  i2i_id_loss: 0.12113726;  
+rgb_cross_loss: 0.028457144;  ir_cross_loss: 0.022499405;  
+weak_r2c_loss: 0.001269604;  
+R1:0.6928;   R10:0.9515;  R20:0.9818;  mAP:0.6736;  mINP:0.5533
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 84;Time: 2026-03-29 23:38:05;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006552227;  tri_loss_ir: 0.006960528;  
+r2i_cmo_loss: 0.21537615;  i2r_cmo_loss: 0.2457735;  
+r2r_id_loss: 0.15075283;  i2i_id_loss: 0.11567894;  
+rgb_cross_loss: 0.026652189;  ir_cross_loss: 0.020705415;  
+weak_r2c_loss: 0.0019402981;  
+R1:0.6922;   R10:0.9528;  R20:0.9831;  mAP:0.6737;  mINP:0.5525
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 85;Time: 2026-03-29 23:59:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0063618487;  tri_loss_ir: 0.006744607;  
+r2i_cmo_loss: 0.21541338;  i2r_cmo_loss: 0.24682227;  
+r2r_id_loss: 0.15241314;  i2i_id_loss: 0.1163155;  
+rgb_cross_loss: 0.027034579;  ir_cross_loss: 0.02099359;  
+weak_r2c_loss: 0.0018324563;  
+R1:0.6928;   R10:0.9510;  R20:0.9829;  mAP:0.6748;  mINP:0.5552
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 86;Time: 2026-03-30 00:21:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006467738;  tri_loss_ir: 0.006890235;  
+r2i_cmo_loss: 0.21503131;  i2r_cmo_loss: 0.24789628;  
+r2r_id_loss: 0.15122665;  i2i_id_loss: 0.11670471;  
+rgb_cross_loss: 0.027023518;  ir_cross_loss: 0.020836506;  
+weak_r2c_loss: 0.0035774708;  
+R1:0.6907;   R10:0.9500;  R20:0.9816;  mAP:0.6723;  mINP:0.5519
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 87;Time: 2026-03-30 00:43:12;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006202643;  tri_loss_ir: 0.0065453756;  
+r2i_cmo_loss: 0.21689966;  i2r_cmo_loss: 0.245274;  
+r2r_id_loss: 0.1493044;  i2i_id_loss: 0.11287973;  
+rgb_cross_loss: 0.02655529;  ir_cross_loss: 0.01997008;  
+weak_r2c_loss: 0.002966558;  
+R1:0.6930;   R10:0.9514;  R20:0.9821;  mAP:0.6730;  mINP:0.5522
+                               Best_R1: 0.6966(epoch:80);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 88;Time: 2026-03-30 01:04:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0061187763;  tri_loss_ir: 0.0065061543;  
+r2i_cmo_loss: 0.21600473;  i2r_cmo_loss: 0.24777877;  
+r2r_id_loss: 0.14553836;  i2i_id_loss: 0.11308397;  
+rgb_cross_loss: 0.025986293;  ir_cross_loss: 0.020786596;  
+weak_r2c_loss: 0.001994735;  
+R1:0.6970;   R10:0.9502;  R20:0.9817;  mAP:0.6782;  mINP:0.5591
+                               Best_R1: 0.6970(epoch:89);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 89;Time: 2026-03-30 01:26:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005990169;  tri_loss_ir: 0.0062927315;  
+r2i_cmo_loss: 0.21701764;  i2r_cmo_loss: 0.24696851;  
+r2r_id_loss: 0.14452243;  i2i_id_loss: 0.11009146;  
+rgb_cross_loss: 0.025626296;  ir_cross_loss: 0.019493913;  
+weak_r2c_loss: 0.0021676328;  
+R1:0.6923;   R10:0.9513;  R20:0.9829;  mAP:0.6752;  mINP:0.5556
+                               Best_R1: 0.6970(epoch:89);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 90;Time: 2026-03-30 01:48:19;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0063018724;  tri_loss_ir: 0.0066201854;  
+r2i_cmo_loss: 0.21767928;  i2r_cmo_loss: 0.24736474;  
+r2r_id_loss: 0.14621478;  i2i_id_loss: 0.11202194;  
+rgb_cross_loss: 0.026459929;  ir_cross_loss: 0.019840335;  
+weak_r2c_loss: 0.0032214196;  
+R1:0.6894;   R10:0.9512;  R20:0.9825;  mAP:0.6708;  mINP:0.5496
+                               Best_R1: 0.6970(epoch:89);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 91;Time: 2026-03-30 02:09:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006216038;  tri_loss_ir: 0.0065531814;  
+r2i_cmo_loss: 0.21575418;  i2r_cmo_loss: 0.24662977;  
+r2r_id_loss: 0.14077827;  i2i_id_loss: 0.110942535;  
+rgb_cross_loss: 0.024747392;  ir_cross_loss: 0.019803718;  
+weak_r2c_loss: 0.003442735;  
+R1:0.6902;   R10:0.9514;  R20:0.9812;  mAP:0.6720;  mINP:0.5519
+                               Best_R1: 0.6970(epoch:89);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 92;Time: 2026-03-30 02:31:36;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005833883;  tri_loss_ir: 0.0061057694;  
+r2i_cmo_loss: 0.21666415;  i2r_cmo_loss: 0.24763519;  
+r2r_id_loss: 0.13873401;  i2i_id_loss: 0.11055211;  
+rgb_cross_loss: 0.024476497;  ir_cross_loss: 0.019435458;  
+weak_r2c_loss: 0.0025330498;  
+R1:0.6946;   R10:0.9522;  R20:0.9819;  mAP:0.6753;  mINP:0.5543
+                               Best_R1: 0.6970(epoch:89);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 93;Time: 2026-03-30 02:53:15;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005916377;  tri_loss_ir: 0.00617806;  
+r2i_cmo_loss: 0.21444689;  i2r_cmo_loss: 0.24660793;  
+r2r_id_loss: 0.13780327;  i2i_id_loss: 0.11108153;  
+rgb_cross_loss: 0.023540258;  ir_cross_loss: 0.01978039;  
+weak_r2c_loss: 0.0030010834;  
+R1:0.6971;   R10:0.9533;  R20:0.9830;  mAP:0.6764;  mINP:0.5554
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 94;Time: 2026-03-30 03:14:55;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0057870117;  tri_loss_ir: 0.006196966;  
+r2i_cmo_loss: 0.21447477;  i2r_cmo_loss: 0.24640092;  
+r2r_id_loss: 0.13754146;  i2i_id_loss: 0.10685762;  
+rgb_cross_loss: 0.022578465;  ir_cross_loss: 0.018402442;  
+weak_r2c_loss: 0.0026260563;  
+R1:0.6958;   R10:0.9521;  R20:0.9830;  mAP:0.6769;  mINP:0.5562
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 95;Time: 2026-03-30 03:36:35;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0058646062;  tri_loss_ir: 0.006203692;  
+r2i_cmo_loss: 0.21581182;  i2r_cmo_loss: 0.24553628;  
+r2r_id_loss: 0.14058562;  i2i_id_loss: 0.107066356;  
+rgb_cross_loss: 0.023245635;  ir_cross_loss: 0.01857382;  
+weak_r2c_loss: 0.0014594628;  
+R1:0.6946;   R10:0.9530;  R20:0.9825;  mAP:0.6756;  mINP:0.5546
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 96;Time: 2026-03-30 03:58:15;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.006398939;  tri_loss_ir: 0.0066974605;  
+r2i_cmo_loss: 0.21654606;  i2r_cmo_loss: 0.24470893;  
+r2r_id_loss: 0.14010292;  i2i_id_loss: 0.108392805;  
+rgb_cross_loss: 0.023926774;  ir_cross_loss: 0.019191803;  
+weak_r2c_loss: 0.0022246104;  
+R1:0.6968;   R10:0.9530;  R20:0.9822;  mAP:0.6772;  mINP:0.5567
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 97;Time: 2026-03-30 04:19:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0057822275;  tri_loss_ir: 0.0062111756;  
+r2i_cmo_loss: 0.21461502;  i2r_cmo_loss: 0.24527094;  
+r2r_id_loss: 0.13756438;  i2i_id_loss: 0.106991366;  
+rgb_cross_loss: 0.023187842;  ir_cross_loss: 0.018098649;  
+weak_r2c_loss: 0.02063613;  
+R1:0.6953;   R10:0.9542;  R20:0.9840;  mAP:0.6772;  mINP:0.5578
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 98;Time: 2026-03-30 04:41:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005746838;  tri_loss_ir: 0.0059925783;  
+r2i_cmo_loss: 0.21358572;  i2r_cmo_loss: 0.24550755;  
+r2r_id_loss: 0.13386108;  i2i_id_loss: 0.106503986;  
+rgb_cross_loss: 0.021524254;  ir_cross_loss: 0.01802549;  
+weak_r2c_loss: 0.0024515889;  
+R1:0.6927;   R10:0.9501;  R20:0.9801;  mAP:0.6749;  mINP:0.5556
+                               Best_R1: 0.6971(epoch:94);    Best mAP: 0.6792(epoch:80);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 99;Time: 2026-03-30 05:03:22;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005477239;  tri_loss_ir: 0.005817592;  
+r2i_cmo_loss: 0.21344963;  i2r_cmo_loss: 0.24302591;  
+r2r_id_loss: 0.13287495;  i2i_id_loss: 0.104998566;  
+rgb_cross_loss: 0.021002702;  ir_cross_loss: 0.017824085;  
+weak_r2c_loss: 0.0020456417;  
+R1:0.7011;   R10:0.9540;  R20:0.9836;  mAP:0.6801;  mINP:0.5586
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 100;Time: 2026-03-30 05:25:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0054614875;  tri_loss_ir: 0.0057046018;  
+r2i_cmo_loss: 0.21282752;  i2r_cmo_loss: 0.2428449;  
+r2r_id_loss: 0.13225229;  i2i_id_loss: 0.10179857;  
+rgb_cross_loss: 0.021285651;  ir_cross_loss: 0.016204253;  
+weak_r2c_loss: 0.0025607578;  
+R1:0.6959;   R10:0.9515;  R20:0.9828;  mAP:0.6776;  mINP:0.5591
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 101;Time: 2026-03-30 05:46:51;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053679063;  tri_loss_ir: 0.00568578;  
+r2i_cmo_loss: 0.21157753;  i2r_cmo_loss: 0.2430509;  
+r2r_id_loss: 0.12879962;  i2i_id_loss: 0.10377566;  
+rgb_cross_loss: 0.019820368;  ir_cross_loss: 0.016523145;  
+weak_r2c_loss: 0.0024832592;  
+R1:0.6947;   R10:0.9520;  R20:0.9827;  mAP:0.6761;  mINP:0.5565
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 102;Time: 2026-03-30 06:08:36;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005665119;  tri_loss_ir: 0.005936082;  
+r2i_cmo_loss: 0.21448168;  i2r_cmo_loss: 0.24233317;  
+r2r_id_loss: 0.14059736;  i2i_id_loss: 0.10880894;  
+rgb_cross_loss: 0.025485888;  ir_cross_loss: 0.019474896;  
+weak_r2c_loss: 0.002400291;  
+R1:0.6931;   R10:0.9528;  R20:0.9827;  mAP:0.6747;  mINP:0.5547
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 103;Time: 2026-03-30 06:30:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0056674797;  tri_loss_ir: 0.005984586;  
+r2i_cmo_loss: 0.21311194;  i2r_cmo_loss: 0.2429093;  
+r2r_id_loss: 0.14162138;  i2i_id_loss: 0.10843617;  
+rgb_cross_loss: 0.024968024;  ir_cross_loss: 0.020378122;  
+weak_r2c_loss: 0.0024718216;  
+R1:0.6980;   R10:0.9525;  R20:0.9825;  mAP:0.6776;  mINP:0.5564
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 104;Time: 2026-03-30 06:52:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0057821227;  tri_loss_ir: 0.0061894744;  
+r2i_cmo_loss: 0.21405606;  i2r_cmo_loss: 0.24452072;  
+r2r_id_loss: 0.13983494;  i2i_id_loss: 0.11049304;  
+rgb_cross_loss: 0.023724977;  ir_cross_loss: 0.020164002;  
+weak_r2c_loss: 0.0018385623;  
+R1:0.6966;   R10:0.9548;  R20:0.9844;  mAP:0.6775;  mINP:0.5567
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 105;Time: 2026-03-30 07:13:44;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005866741;  tri_loss_ir: 0.0062719453;  
+r2i_cmo_loss: 0.2134303;  i2r_cmo_loss: 0.24233839;  
+r2r_id_loss: 0.1380861;  i2i_id_loss: 0.10844945;  
+rgb_cross_loss: 0.024013868;  ir_cross_loss: 0.019322995;  
+weak_r2c_loss: 0.0018441706;  
+R1:0.6961;   R10:0.9536;  R20:0.9837;  mAP:0.6776;  mINP:0.5576
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 106;Time: 2026-03-30 07:35:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0059514875;  tri_loss_ir: 0.006231308;  
+r2i_cmo_loss: 0.21150129;  i2r_cmo_loss: 0.24400869;  
+weak_r2c_loss: 0.0038813015;  r2r_id_loss: 0.13499242;  
+i2i_id_loss: 0.10960548;  rgb_cross_loss: 0.023066543;  
+ir_cross_loss: 0.019912334;  
+R1:0.6941;   R10:0.9531;  R20:0.9830;  mAP:0.6764;  mINP:0.5559
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 107;Time: 2026-03-30 07:57:06;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0057228846;  tri_loss_ir: 0.0061004227;  
+r2i_cmo_loss: 0.21225663;  i2r_cmo_loss: 0.24218622;  
+r2r_id_loss: 0.1378312;  i2i_id_loss: 0.10791753;  
+rgb_cross_loss: 0.023036292;  ir_cross_loss: 0.018836131;  
+
+R1:0.6952;   R10:0.9527;  R20:0.9823;  mAP:0.6770;  mINP:0.5569
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 108;Time: 2026-03-30 08:18:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0058407974;  tri_loss_ir: 0.0061282013;  
+r2i_cmo_loss: 0.21222574;  i2r_cmo_loss: 0.24278775;  
+r2r_id_loss: 0.13658313;  i2i_id_loss: 0.10674065;  
+rgb_cross_loss: 0.022597335;  ir_cross_loss: 0.0184646;  
+
+R1:0.6981;   R10:0.9514;  R20:0.9814;  mAP:0.6778;  mINP:0.5573
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 109;Time: 2026-03-30 08:40:29;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005532539;  tri_loss_ir: 0.005830102;  
+r2i_cmo_loss: 0.21254441;  i2r_cmo_loss: 0.24278627;  
+r2r_id_loss: 0.13260521;  i2i_id_loss: 0.107473664;  
+rgb_cross_loss: 0.022320798;  ir_cross_loss: 0.018263401;  
+
+R1:0.6912;   R10:0.9499;  R20:0.9821;  mAP:0.6719;  mINP:0.5500
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 110;Time: 2026-03-30 09:02:10;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005649313;  tri_loss_ir: 0.0060266904;  
+r2i_cmo_loss: 0.21219048;  i2r_cmo_loss: 0.24233343;  
+r2r_id_loss: 0.1352739;  i2i_id_loss: 0.10635239;  
+rgb_cross_loss: 0.022613078;  ir_cross_loss: 0.01787565;  
+
+R1:0.6964;   R10:0.9535;  R20:0.9826;  mAP:0.6779;  mINP:0.5579
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 111;Time: 2026-03-30 09:23:52;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0057767523;  tri_loss_ir: 0.006037799;  
+r2i_cmo_loss: 0.21179247;  i2r_cmo_loss: 0.24129331;  
+r2r_id_loss: 0.13590361;  i2i_id_loss: 0.10612701;  
+rgb_cross_loss: 0.022559542;  ir_cross_loss: 0.018022055;  
+weak_r2c_loss: 0.002699931;  
+R1:0.6997;   R10:0.9527;  R20:0.9827;  mAP:0.6794;  mINP:0.5590
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 112;Time: 2026-03-30 09:45:33;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005626478;  tri_loss_ir: 0.0060834945;  
+r2i_cmo_loss: 0.212456;  i2r_cmo_loss: 0.24169923;  
+r2r_id_loss: 0.13390717;  i2i_id_loss: 0.10620811;  
+rgb_cross_loss: 0.021739002;  ir_cross_loss: 0.018007316;  
+
+R1:0.6953;   R10:0.9537;  R20:0.9834;  mAP:0.6762;  mINP:0.5550
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 113;Time: 2026-03-30 10:07:15;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0051219785;  tri_loss_ir: 0.0055074557;  
+r2i_cmo_loss: 0.21042974;  i2r_cmo_loss: 0.24074957;  
+r2r_id_loss: 0.13081051;  i2i_id_loss: 0.10279856;  
+rgb_cross_loss: 0.021071598;  ir_cross_loss: 0.01716507;  
+
+R1:0.6959;   R10:0.9509;  R20:0.9823;  mAP:0.6763;  mINP:0.5566
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 114;Time: 2026-03-30 10:28:59;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005364477;  tri_loss_ir: 0.0057287524;  
+r2i_cmo_loss: 0.2108029;  i2r_cmo_loss: 0.24113515;  
+r2r_id_loss: 0.13200124;  i2i_id_loss: 0.10355238;  
+rgb_cross_loss: 0.020792022;  ir_cross_loss: 0.016676545;  
+weak_r2c_loss: 0.0037918033;  
+R1:0.6969;   R10:0.9494;  R20:0.9803;  mAP:0.6765;  mINP:0.5562
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 115;Time: 2026-03-30 10:50:41;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0051837466;  tri_loss_ir: 0.005525179;  
+r2i_cmo_loss: 0.2104706;  i2r_cmo_loss: 0.24030025;  
+r2r_id_loss: 0.13020335;  i2i_id_loss: 0.104638904;  
+rgb_cross_loss: 0.02001982;  ir_cross_loss: 0.017298834;  
+
+R1:0.6953;   R10:0.9528;  R20:0.9827;  mAP:0.6764;  mINP:0.5567
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 116;Time: 2026-03-30 11:12:23;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053208987;  tri_loss_ir: 0.0056154113;  
+r2i_cmo_loss: 0.21029645;  i2r_cmo_loss: 0.24001935;  
+r2r_id_loss: 0.13428944;  i2i_id_loss: 0.10478157;  
+rgb_cross_loss: 0.021069463;  ir_cross_loss: 0.017733406;  
+
+R1:0.6907;   R10:0.9526;  R20:0.9836;  mAP:0.6722;  mINP:0.5508
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 117;Time: 2026-03-30 11:34:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0052467487;  tri_loss_ir: 0.005620673;  
+r2i_cmo_loss: 0.21054077;  i2r_cmo_loss: 0.23897968;  
+r2r_id_loss: 0.13382679;  i2i_id_loss: 0.103535034;  
+rgb_cross_loss: 0.020581516;  ir_cross_loss: 0.016875004;  
+
+R1:0.6980;   R10:0.9512;  R20:0.9821;  mAP:0.6787;  mINP:0.5590
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6801(epoch:100);    Best mINP: 0.5609(epoch:80)
+=================================================
+=================================================
+Epoch: 118;Time: 2026-03-30 11:55:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0050444514;  tri_loss_ir: 0.0053754584;  
+r2i_cmo_loss: 0.21016686;  i2r_cmo_loss: 0.23785578;  
+r2r_id_loss: 0.13014649;  i2i_id_loss: 0.1016807;  
+rgb_cross_loss: 0.020022536;  ir_cross_loss: 0.016229441;  
+
+R1:0.7004;   R10:0.9522;  R20:0.9814;  mAP:0.6811;  mINP:0.5617
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 119;Time: 2026-03-30 12:17:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0050651836;  tri_loss_ir: 0.005361994;  
+r2i_cmo_loss: 0.2084737;  i2r_cmo_loss: 0.23723987;  
+r2r_id_loss: 0.12938192;  i2i_id_loss: 0.10336144;  
+rgb_cross_loss: 0.019957352;  ir_cross_loss: 0.016264465;  
+
+R1:0.6942;   R10:0.9510;  R20:0.9820;  mAP:0.6750;  mINP:0.5548
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 120;Time: 2026-03-30 12:39:07;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0051973276;  tri_loss_ir: 0.005544379;  
+r2i_cmo_loss: 0.20897159;  i2r_cmo_loss: 0.23830079;  
+r2r_id_loss: 0.1302036;  i2i_id_loss: 0.10339483;  
+rgb_cross_loss: 0.019906191;  ir_cross_loss: 0.016680758;  
+weak_r2c_loss: 0.003913501;  
+R1:0.6932;   R10:0.9507;  R20:0.9809;  mAP:0.6740;  mINP:0.5531
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 121;Time: 2026-03-30 13:00:45;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0047420375;  tri_loss_ir: 0.0051867235;  
+r2i_cmo_loss: 0.20772146;  i2r_cmo_loss: 0.23791121;  
+r2r_id_loss: 0.12806103;  i2i_id_loss: 0.10175915;  
+rgb_cross_loss: 0.0192658;  ir_cross_loss: 0.016423874;  
+weak_r2c_loss: 0.004429842;  
+R1:0.6963;   R10:0.9511;  R20:0.9826;  mAP:0.6767;  mINP:0.5562
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 122;Time: 2026-03-30 13:22:25;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004829518;  tri_loss_ir: 0.0050972174;  
+r2i_cmo_loss: 0.2074304;  i2r_cmo_loss: 0.23570234;  
+r2r_id_loss: 0.1264205;  i2i_id_loss: 0.10057084;  
+rgb_cross_loss: 0.019306792;  ir_cross_loss: 0.015781386;  
+weak_r2c_loss: 0.0015936751;  
+R1:0.6944;   R10:0.9516;  R20:0.9811;  mAP:0.6756;  mINP:0.5554
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 123;Time: 2026-03-30 13:44:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0049910266;  tri_loss_ir: 0.0053092325;  
+r2i_cmo_loss: 0.20688492;  i2r_cmo_loss: 0.23597811;  
+r2r_id_loss: 0.12797982;  i2i_id_loss: 0.1037542;  
+rgb_cross_loss: 0.019317452;  ir_cross_loss: 0.016481157;  
+
+R1:0.6912;   R10:0.9510;  R20:0.9813;  mAP:0.6737;  mINP:0.5542
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 124;Time: 2026-03-30 14:05:43;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00471736;  tri_loss_ir: 0.0050032623;  
+r2i_cmo_loss: 0.2070353;  i2r_cmo_loss: 0.23507066;  
+r2r_id_loss: 0.1278641;  i2i_id_loss: 0.09913589;  
+rgb_cross_loss: 0.019086113;  ir_cross_loss: 0.015573389;  
+
+R1:0.6960;   R10:0.9514;  R20:0.9820;  mAP:0.6782;  mINP:0.5599
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 125;Time: 2026-03-30 14:27:24;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0049354006;  tri_loss_ir: 0.0053653363;  
+r2i_cmo_loss: 0.20732659;  i2r_cmo_loss: 0.23539905;  
+r2r_id_loss: 0.12935616;  i2i_id_loss: 0.10043684;  
+rgb_cross_loss: 0.019203743;  ir_cross_loss: 0.01562697;  
+
+R1:0.6925;   R10:0.9510;  R20:0.9816;  mAP:0.6745;  mINP:0.5553
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 126;Time: 2026-03-30 14:49:06;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00502976;  tri_loss_ir: 0.0053815353;  
+r2i_cmo_loss: 0.20600854;  i2r_cmo_loss: 0.23393968;  
+r2r_id_loss: 0.12710181;  i2i_id_loss: 0.100741334;  
+rgb_cross_loss: 0.018668516;  ir_cross_loss: 0.015797839;  
+
+R1:0.6949;   R10:0.9509;  R20:0.9814;  mAP:0.6757;  mINP:0.5575
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 127;Time: 2026-03-30 15:10:48;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0049624476;  tri_loss_ir: 0.0052593113;  
+r2i_cmo_loss: 0.20548616;  i2r_cmo_loss: 0.23334603;  
+r2r_id_loss: 0.12564784;  i2i_id_loss: 0.09932599;  
+rgb_cross_loss: 0.018357696;  ir_cross_loss: 0.015561766;  
+
+R1:0.6971;   R10:0.9505;  R20:0.9820;  mAP:0.6778;  mINP:0.5580
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 128;Time: 2026-03-30 15:32:31;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004627925;  tri_loss_ir: 0.0048865243;  
+r2i_cmo_loss: 0.2057331;  i2r_cmo_loss: 0.23324765;  
+r2r_id_loss: 0.12705743;  i2i_id_loss: 0.10048915;  
+rgb_cross_loss: 0.018268248;  ir_cross_loss: 0.015582302;  
+
+R1:0.6979;   R10:0.9517;  R20:0.9824;  mAP:0.6794;  mINP:0.5612
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 129;Time: 2026-03-30 15:54:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0044375616;  tri_loss_ir: 0.004681013;  
+r2i_cmo_loss: 0.20495382;  i2r_cmo_loss: 0.23210338;  
+r2r_id_loss: 0.12452071;  i2i_id_loss: 0.09774433;  
+rgb_cross_loss: 0.018043572;  ir_cross_loss: 0.014982676;  
+
+R1:0.6947;   R10:0.9511;  R20:0.9827;  mAP:0.6745;  mINP:0.5534
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 130;Time: 2026-03-30 16:15:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0047328006;  tri_loss_ir: 0.0050493386;  
+r2i_cmo_loss: 0.2049997;  i2r_cmo_loss: 0.23115142;  
+r2r_id_loss: 0.12787238;  i2i_id_loss: 0.098435335;  
+rgb_cross_loss: 0.018491467;  ir_cross_loss: 0.015126475;  
+
+R1:0.6947;   R10:0.9525;  R20:0.9833;  mAP:0.6766;  mINP:0.5563
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 131;Time: 2026-03-30 16:37:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0046569863;  tri_loss_ir: 0.004890686;  
+r2i_cmo_loss: 0.20305312;  i2r_cmo_loss: 0.23193131;  
+r2r_id_loss: 0.12551114;  i2i_id_loss: 0.09918586;  
+rgb_cross_loss: 0.017752085;  ir_cross_loss: 0.015226894;  
+
+R1:0.6948;   R10:0.9509;  R20:0.9816;  mAP:0.6753;  mINP:0.5551
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 132;Time: 2026-03-30 16:59:16;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0044709747;  tri_loss_ir: 0.004751525;  
+r2i_cmo_loss: 0.20246668;  i2r_cmo_loss: 0.23001951;  
+r2r_id_loss: 0.12328005;  i2i_id_loss: 0.099681005;  
+rgb_cross_loss: 0.01714168;  ir_cross_loss: 0.015308815;  
+weak_r2c_loss: 0.010552802;  
+R1:0.6948;   R10:0.9508;  R20:0.9812;  mAP:0.6745;  mINP:0.5536
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 133;Time: 2026-03-30 17:20:58;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004379345;  tri_loss_ir: 0.0046816203;  
+r2i_cmo_loss: 0.20270412;  i2r_cmo_loss: 0.23078828;  
+r2r_id_loss: 0.12337054;  i2i_id_loss: 0.09982142;  
+rgb_cross_loss: 0.017356848;  ir_cross_loss: 0.015228158;  
+
+R1:0.6984;   R10:0.9500;  R20:0.9814;  mAP:0.6783;  mINP:0.5587
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 134;Time: 2026-03-30 17:42:39;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.00432655;  tri_loss_ir: 0.0046388637;  
+r2i_cmo_loss: 0.20154972;  i2r_cmo_loss: 0.22988397;  
+r2r_id_loss: 0.1225025;  i2i_id_loss: 0.09704541;  
+rgb_cross_loss: 0.017012935;  ir_cross_loss: 0.014804711;  
+weak_r2c_loss: 0.0027056132;  
+R1:0.6946;   R10:0.9510;  R20:0.9811;  mAP:0.6755;  mINP:0.5546
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 135;Time: 2026-03-30 18:04:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004232717;  tri_loss_ir: 0.0046232753;  
+r2i_cmo_loss: 0.2021467;  i2r_cmo_loss: 0.22746672;  
+r2r_id_loss: 0.12387391;  i2i_id_loss: 0.0961669;  
+rgb_cross_loss: 0.016889255;  ir_cross_loss: 0.014470243;  
+weak_r2c_loss: 0.0029717835;  
+R1:0.6946;   R10:0.9504;  R20:0.9811;  mAP:0.6769;  mINP:0.5577
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 136;Time: 2026-03-30 18:26:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.004371448;  tri_loss_ir: 0.0046798415;  
+r2i_cmo_loss: 0.20232342;  i2r_cmo_loss: 0.2285311;  
+r2r_id_loss: 0.12274168;  i2i_id_loss: 0.09754564;  
+rgb_cross_loss: 0.016885705;  ir_cross_loss: 0.014725335;  
+weak_r2c_loss: 0.0019852284;  
+R1:0.6952;   R10:0.9527;  R20:0.9830;  mAP:0.6772;  mINP:0.5576
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 137;Time: 2026-03-30 18:47:45;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053111794;  tri_loss_ir: 0.0055604484;  
+r2i_cmo_loss: 0.20352864;  i2r_cmo_loss: 0.22947629;  
+r2r_id_loss: 0.13811916;  i2i_id_loss: 0.10963287;  
+rgb_cross_loss: 0.025609596;  ir_cross_loss: 0.020774007;  
+
+R1:0.6872;   R10:0.9498;  R20:0.9800;  mAP:0.6700;  mINP:0.5500
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 138;Time: 2026-03-30 19:09:27;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0052849604;  tri_loss_ir: 0.0055126864;  
+r2i_cmo_loss: 0.20373623;  i2r_cmo_loss: 0.22907901;  
+r2r_id_loss: 0.1333622;  i2i_id_loss: 0.10774974;  
+rgb_cross_loss: 0.024438852;  ir_cross_loss: 0.02093757;  
+
+R1:0.6869;   R10:0.9489;  R20:0.9805;  mAP:0.6684;  mINP:0.5469
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 139;Time: 2026-03-30 19:31:11;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053556967;  tri_loss_ir: 0.0056434153;  
+r2i_cmo_loss: 0.20290655;  i2r_cmo_loss: 0.2304733;  
+r2r_id_loss: 0.13393672;  i2i_id_loss: 0.106807955;  
+rgb_cross_loss: 0.024254328;  ir_cross_loss: 0.0197455;  
+
+R1:0.6883;   R10:0.9505;  R20:0.9805;  mAP:0.6698;  mINP:0.5490
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 140;Time: 2026-03-30 19:52:56;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0052344515;  tri_loss_ir: 0.0057834866;  
+r2i_cmo_loss: 0.20297393;  i2r_cmo_loss: 0.23090072;  
+r2r_id_loss: 0.13473275;  i2i_id_loss: 0.106283434;  
+rgb_cross_loss: 0.024821302;  ir_cross_loss: 0.02035897;  
+weak_r2c_loss: 0.011146822;  
+R1:0.6878;   R10:0.9498;  R20:0.9812;  mAP:0.6696;  mINP:0.5481
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 141;Time: 2026-03-30 20:14:38;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0055579883;  tri_loss_ir: 0.005790432;  
+r2i_cmo_loss: 0.2034964;  i2r_cmo_loss: 0.22943854;  
+r2r_id_loss: 0.13198331;  i2i_id_loss: 0.10385459;  
+rgb_cross_loss: 0.023907287;  ir_cross_loss: 0.01953833;  
+
+R1:0.6871;   R10:0.9497;  R20:0.9809;  mAP:0.6690;  mINP:0.5490
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 142;Time: 2026-03-30 20:36:17;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0053318986;  tri_loss_ir: 0.0056651374;  
+r2i_cmo_loss: 0.2028812;  i2r_cmo_loss: 0.23025438;  
+r2r_id_loss: 0.13031341;  i2i_id_loss: 0.105398305;  
+rgb_cross_loss: 0.023558376;  ir_cross_loss: 0.020139227;  
+
+R1:0.6895;   R10:0.9508;  R20:0.9821;  mAP:0.6727;  mINP:0.5537
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 143;Time: 2026-03-30 20:57:57;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005357977;  tri_loss_ir: 0.0057808436;  
+r2i_cmo_loss: 0.203621;  i2r_cmo_loss: 0.22963671;  
+r2r_id_loss: 0.13179368;  i2i_id_loss: 0.103009164;  
+rgb_cross_loss: 0.024194945;  ir_cross_loss: 0.019260518;  
+weak_r2c_loss: 0.009437793;  
+R1:0.6894;   R10:0.9496;  R20:0.9809;  mAP:0.6705;  mINP:0.5502
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 144;Time: 2026-03-30 21:19:34;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0052804872;  tri_loss_ir: 0.0056484966;  
+r2i_cmo_loss: 0.2045551;  i2r_cmo_loss: 0.22989473;  
+r2r_id_loss: 0.13133328;  i2i_id_loss: 0.10484511;  
+rgb_cross_loss: 0.02357677;  ir_cross_loss: 0.019665372;  
+weak_r2c_loss: 0.0064660846;  
+R1:0.6922;   R10:0.9509;  R20:0.9814;  mAP:0.6724;  mINP:0.5510
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 145;Time: 2026-03-30 21:41:13;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0056249746;  tri_loss_ir: 0.0059826816;  
+r2i_cmo_loss: 0.20396799;  i2r_cmo_loss: 0.23096938;  
+r2r_id_loss: 0.13218936;  i2i_id_loss: 0.106904864;  
+rgb_cross_loss: 0.02458245;  ir_cross_loss: 0.020383377;  
+weak_r2c_loss: 0.007497548;  
+R1:0.6892;   R10:0.9503;  R20:0.9814;  mAP:0.6709;  mINP:0.5509
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 146;Time: 2026-03-30 22:02:53;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.005233472;  tri_loss_ir: 0.0055833557;  
+r2i_cmo_loss: 0.20382117;  i2r_cmo_loss: 0.2305854;  
+r2r_id_loss: 0.13051234;  i2i_id_loss: 0.10448046;  
+rgb_cross_loss: 0.023192538;  ir_cross_loss: 0.01932337;  
+weak_r2c_loss: 0.004569743;  
+R1:0.6900;   R10:0.9501;  R20:0.9816;  mAP:0.6701;  mINP:0.5496
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 147;Time: 2026-03-30 22:24:37;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0055622864;  tri_loss_ir: 0.0058827256;  
+r2i_cmo_loss: 0.20389988;  i2r_cmo_loss: 0.23075987;  
+r2r_id_loss: 0.12999877;  i2i_id_loss: 0.10447909;  
+rgb_cross_loss: 0.023419721;  ir_cross_loss: 0.01947142;  
+
+R1:0.6915;   R10:0.9511;  R20:0.9817;  mAP:0.6717;  mINP:0.5513
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 148;Time: 2026-03-30 22:46:20;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0054020626;  tri_loss_ir: 0.005687679;  
+r2i_cmo_loss: 0.20494872;  i2r_cmo_loss: 0.22788195;  
+r2r_id_loss: 0.13064429;  i2i_id_loss: 0.10172944;  
+rgb_cross_loss: 0.02417256;  ir_cross_loss: 0.018994361;  
+
+R1:0.6958;   R10:0.9504;  R20:0.9815;  mAP:0.6743;  mINP:0.5531
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+=================================================
+Epoch: 149;Time: 2026-03-30 23:08:03;Setting: ./log/saved_sysu_cssp/sysu_agw_324_0.6_8
+e_lr: 3.0000000000000005e-06
+tri_loss_rgb: 0.0051794043;  tri_loss_ir: 0.005435961;  
+r2i_cmo_loss: 0.20374912;  i2r_cmo_loss: 0.22996922;  
+r2r_id_loss: 0.12957056;  i2i_id_loss: 0.10343518;  
+rgb_cross_loss: 0.02403137;  ir_cross_loss: 0.019369487;  
+
+R1:0.6874;   R10:0.9456;  R20:0.9779;  mAP:0.6679;  mINP:0.5485
+                               Best_R1: 0.7011(epoch:100);    Best mAP: 0.6811(epoch:119);    Best mINP: 0.5617(epoch:119)
+=================================================
+Namespace(dataset='sysu', arch='cssp', mode='test', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode=' indoor', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='test', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='indoor', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-31 09:28:58; Test on Dataset: sysu
+R1:0.7645;   R10:0.9853;  R20:0.9978;  mAP:0.8109;  mINP:0.7775
+               Best_R1: 0.0000;    Best mAP: 0.0000
+Namespace(dataset='sysu', arch='cssp', mode='test', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='indoor', gall_mode='all', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='test', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='indoor', gall_mode='all', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Namespace(dataset='sysu', arch='cssp', mode='test', data_path='/home/share/qsdeng/datasets/', save_path='./log/saved_sysu_cssp/sysu_agw_324_0.6_8', lr=0.0003, weight_decay=0.0005, conf_filter_thresh=0.3, diffusion_weight=0.25, sigma=0.8, cross_weight=1.0, weak_weight=0.25, tri_weight=1, diffusion_timesteps=12, milestones=[30, 70], relabel=1, img_h=288, img_w=144, seed=1, num_workers=8, batch_pidnum=8, pid_numsample=4, test_batch=128, temperature=3, device=0, stage1_epoch=20, stage2_epoch=150, resume=0, debug='wsl', trial=1, search_mode='all', gall_mode='single', test_mode='t2v', model_path='default', dynamic_decay_patience=3, gradual_decay_rate=0.9, num_classes=395)
+Time: 2026-03-31 09:38:56; Test on Dataset: sysu
+R1:0.7004;   R10:0.9522;  R20:0.9814;  mAP:0.6811;  mINP:0.5617
+               Best_R1: 0.0000;    Best mAP: 0.0000
