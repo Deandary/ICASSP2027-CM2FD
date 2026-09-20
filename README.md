@@ -30,7 +30,7 @@ The weakly-supervised setting is more difficult: identity supervision is availab
 1. **Center-Masked Context Modeling** — strengthen contextual representation while reducing excessive dependence on the most dominant local response.
 2. **Feature Denoising** — progressively improve unreliable cross-modality feature correspondences and reduce the influence of noisy matching relationships.
 
-The implementation uses a two-stage optimization strategy and supports the commonly used **SYSU-MM01**, **RegDB**, and **LLCM** benchmarks.
+The implementation uses a two-stage optimization strategy and supports the commonly used **SYSU-MM01**, and **LLCM** benchmarks.
 
 ---
 
@@ -43,18 +43,6 @@ The implementation uses a two-stage optimization strategy and supports the commo
 **Figure 1. Overall framework of CM2FD.**
 
 The framework contains visible and infrared streams with shared representation learning. The architecture combines context-aware feature enhancement, cross-modality relationship modeling, and feature denoising. During training, the method progressively establishes cross-modality correspondences and separates reliable common pairs, modality-specific pairs, and remaining uncertain pairs.
-
-The major components shown in the framework include:
-
-- **DMA**: feature interaction / attention module for strengthening modality-aware representation.
-- **Center-Masked Context Encoding**: masks the central response of a convolutional receptive field and aggregates surrounding context, encouraging the network to exploit complementary spatial evidence.
-- **GCSA**: grouped channel self-attention for modeling long-range dependencies among feature groups.
-- **CMPP**: multi-scale context aggregation using parallel dilated convolutions and global pooling.
-- **LFD**: latent/feature denoising branch with feature perturbation, modality memory, and restoration-based learning.
-- **Cross-modality pair partitioning**: dynamically organizes discovered relations into common, specific, and remaining pairs for subsequent optimization.
-
-> The exact mathematical definitions, loss terms, and training schedule should be referred to the paper once the manuscript is publicly available.
-
 ---
 
 ## Method Highlights
