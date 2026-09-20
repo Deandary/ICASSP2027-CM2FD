@@ -18,26 +18,6 @@
 
 ---
 
-## Contents
-
-- [Overview](#overview)
-- [Framework](#framework)
-- [Method Highlights](#method-highlights)
-- [Repository Structure](#repository-structure)
-- [Environment](#environment)
-- [Datasets](#datasets)
-- [Data Preparation](#data-preparation)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Important Implementation Notes](#important-implementation-notes)
-- [Results](#results)
-- [Reproducibility Checklist](#reproducibility-checklist)
-- [Acknowledgements](#acknowledgements)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
-
----
 
 ## Overview
 
